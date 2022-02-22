@@ -12,7 +12,7 @@ html {
 
 
 body {
-    background-color: #f2f2f2;
+    background-color: #f9f9f9;
     color: #666;
     box-sizing: border-box;
     font-family: Helvetica;
@@ -199,7 +199,41 @@ main {
     float: right;
 }
 
+.checkout-cart__box {
+    color: #666;
+    font-size: 14px;
+    height: 35px;
+    padding: 16px 20px 0;
+    margin-bottom: 14px;
+    background-color: #fbfbfb;
+    border-radius: 3px;
+    border-top: 1px solid #eee;
+}
 
+.chechout-cart__title {
+    display: inline-block !important;
+    font-weight: bold;
+    width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.checkout-cart__item-count {
+    float: right;
+}
+
+.checkout-cart__item {
+    background: #fff;
+    border-top: 1px solid #eee;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 12px;
+    padding: 16px 20px;
+    width: 100%;
+    vertical-align: middle;
+    align-items: center;
+}
 
 /* Medium screen */
 @media screen and (max-width: 1020px) {
