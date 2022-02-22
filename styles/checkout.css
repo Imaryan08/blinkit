@@ -12,7 +12,7 @@ html {
 
 
 body {
-    background-color: #eee;
+    background-color: #f2f2f2;
     color: #666;
     box-sizing: border-box;
     font-family: Helvetica;
@@ -118,21 +118,27 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 982px;
-    height: 300px;
+    /* height: 300px; */
     color: #666;
     font-size: 14px;
-    display: block;
-    background-color: #f2f2f2;
+}
+
+.wrapper {
+    display: block!important;
+    float: none!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    clear: both!important;
 }
 
 .checkout {
-    width: 672px;
-    display: block;
 }
 
 .checkout-left-display {
     background-color: white;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 22%);
+    float: left;
+    width: 672px;
 }
 
 .checkout-step {
@@ -183,13 +189,14 @@ main {
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 22%);
     display: block;
     color: #666;
-    background-color: #fbfbfb;
+    background-color: white;
     border-radius: 3px;
-    border: 1px solid #eee;
+    border: 1px solid white;
     color: #666;
     font-size: 14px;
     margin-bottom: 14px;
     width: 292px;
+    float: right;
 }
 
 
@@ -203,5 +210,9 @@ main {
     .checkout-wrapper {
         width: 100%;
         margin-top: 58px;
+    }
+
+    .checkout-right-display {
+        display: none;
     }
 }
