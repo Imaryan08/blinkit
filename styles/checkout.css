@@ -243,6 +243,65 @@ main {
     padding-top: 6px;
 }
 
+.payment {
+    padding-right: 32px;
+}
+
+
+.payment-invoice {
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin-bottom: 16px;
+    padding: 22px 30px;
+    position: relative;
+    width: 100%;
+}
+
+.payment-invoice__row {
+    margin-bottom: 12px;
+    color: #666;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+hr {
+    border-top: 1px dotted #dbdbdb;
+}
+
+.payment-invoice__total {
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.payment-invoice__total span {
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.payment-promo {
+    margin: 0 0 16px;
+    font-weight: bold;
+    color: #0c831f;
+    border-radius: 3px;
+    border: 1px solid #eee;
+}
+
+.fa-gift {
+    color: #3a8421;
+    font-size: 18px;
+    padding: 16px;
+}
+
 /* Medium screen */
 @media screen and (max-width: 1020px) {
     #nav-text-container {
