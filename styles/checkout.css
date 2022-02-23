@@ -235,15 +235,23 @@ main {
     align-items: center;
 }
 
+.checkout-step__name {
+    font-size: 20px; 
+    vertical-align: middle;
+    color: #333;
+    padding-bottom: 26px;
+    padding-top: 6px;
+}
+
 /* Medium screen */
 @media screen and (max-width: 1020px) {
     #nav-text-container {
         display: none;
     }
 
-    .checkout-wrapper {
+    .checkout-left-display {
         width: 100%;
-        margin-top: 58px;
+        margin-top: -48px;
     }
 
     .checkout-right-display {
