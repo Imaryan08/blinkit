@@ -48,7 +48,7 @@
                         <i class="fa fa-check-circle" aria-hidden="true"></i>
                         <div class="checkout-step__content">
                             <div class="checkout-step__content-lead">Delivery Address</div>
-                            <div>Home: #314, 1st main, 5th cross, Delhi - 42</div>
+                            <div>Home: #314, 1st main, 5th cross, Delhi - 92</div>
                         </div>
                     </div>
 
@@ -74,6 +74,52 @@
                                 <i class="fa fa-gift" aria-hidden="true"></i>
                                 Promocode and Bank offers
                             </div>
+
+                            <div class="payment-options">
+                                <ul class="payment-options__tabs">
+                                    <li class="payment-options__tabs--selected" id="payment-option-wallet">Wallet</li>
+                                    <li id="payment-option-upi">UPI</li>
+                                    <li id="payment-option-card">Card</li>
+                                    <li id="payment-option-cash">Cash</li>
+                                    <li id="payment-option-net-banking">Net Banking</li>
+                                </ul>
+
+                                <div class="soft-bottom">
+                                    <div class="payment-wallets">
+                                        <ul class="list-inline">
+                                            <li>
+                                                <label for="Paytm" class="wallet-opt" data-test-id="Paytm">
+                                                    <input id="Paytm" type="radio" class="radio-element" name="wallet">
+                                                    <div class="wallet-type">
+                                                        <img alt="Paytm" class="" src="https://cdn.grofers.com/app/uploads/payments/paytm.png">
+                                                    </div>
+                                                    <div class="payment-wallet__details">
+                                                        <div class="payment-wallet__details--title">Paytm</div>
+                                                        <div class="payment-wallet__details--sub">up to ₹100 Paytm cb | min txn ₹750 | no code needed | valid thrice per user b/w 1-28 Feb '22 | t&amp;c apply</div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="Paytm" class="wallet-opt" data-test-id="Mobikwik">
+                                                    <input id="Mobikwik" type="radio" class="radio-element" name="wallet">
+                                                    <div class="wallet-type">
+                                                        <img alt="Mobikwik" class="" src="https://cdn.grofers.com/app/uploads/payments/mobikwik.png">
+                                                    </div>
+                                                    <div class="payment-wallet__details">
+                                                        <div class="payment-wallet__details--title">Mobikwik</div>
+                                                        <div class="payment-wallet__details--sub">flat 5% MobiKwik cb |min txn ₹799 |no code needed |max cb ₹75 |valid twice | 1-28 Feb'22 | t&c apply OR up to ₹50 MobiKwik cb |min txn ₹299 |no code needed |valid once till 28 Feb'22 |t&c apply</div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="payment-btn-holder">
+                                        <button class="btn">Pay Now</button>
+                                    </div>
+                                    <div class="bottom-text">You will be redirected to wallet’s website to authorize payment</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -81,7 +127,7 @@
 
                 <div class="checkout-right-display">
                     <div class="checkout-cart__box">
-                        <span class="chechout-cart__title">
+                        <span class="checkout-cart__title">
                             My Cart
                         </span>
                         <span class="checkout-cart__item-count">1 items</span>
@@ -95,5 +141,7 @@
             </div>
         </div>
     </main>
+
 </body>
 </html>
+<script src="scripts/checkout.js"></script>
