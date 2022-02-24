@@ -40,15 +40,15 @@
                         <i class="fa fa-check-circle" aria-hidden="true"></i>
                         <div class="checkout-step__content">
                             <div class="checkout-step__content-lead">Phone Number Verification</div>
-                            <div>+918475968123</div>
+                            <div>+91<span id="cust-phone"></span></div>
                         </div>
                     </div>
 
                     <div class="checkout-step">
                         <i class="fa fa-check-circle" aria-hidden="true"></i>
                         <div class="checkout-step__content">
-                            <div class="checkout-step__content-lead">Delivery Address</div>
-                            <div>Home: #314, 1st main, 5th cross, Delhi - 92</div>
+                            <div class="checkout-step__content-lead"> Delivery Address</div>
+                            <div> <span id="cust-address"></span></div>
                         </div>
                     </div>
 
@@ -60,13 +60,13 @@
                             <div class="payment-invoice">
                                 <div class="">
                                     <div class="payment-invoice__row float-left">Total Amount</div>
-                                    <div class="payment-invoice__row float-right"> &#8377;22</div>
+                                    <div class="payment-invoice__row float-right"> &#8377; <span class="total-amt"></span></div>
                                 </div>
                                 <div class="clear"></div>
                                 <hr />
                                 <div class="payment-invoice__total">
                                     <div class="payment-invoice__row float-left">Amount Payable <span>(incl. of all taxes)</span></div>
-                                    <div class="payment-invoice__row float-right"> &#8377;22</div>
+                                    <div class="payment-invoice__row float-right"> &#8377; <span class="total-amt"></span></div>
                                 </div>
                             </div>
 
@@ -157,7 +157,7 @@
                                     <div id="payment-placeholder"></div>
 
                                     <div class="payment-btn-holder">
-                                        <button class="btn">Pay Now</button>
+                                        <button class="btn" id="btn-pay-now">Pay Now</button>
                                     </div>
                                     <div class="bottom-text">You will be redirected to wallet’s website to authorize payment</div>
                                 </div>

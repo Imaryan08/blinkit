@@ -1,0 +1,196 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+}
+
+
+body {
+    background-color: #f9f9f9;
+    color: #666;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    display: block;
+}
+
+#nav {
+
+    background-color: #ffe141;
+    height: 64px;
+    width: 100%;
+    color: black;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 7%);
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: no-wrap;
+
+    font-size: 14px;
+    font-weight: lighter;
+
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+#logo {
+    height: 64px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+#logo > a {
+    color: inherit;
+    cursor: pointer;
+
+    height: 100%;
+    margin-left: 15px;
+
+    text-decoration: none;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo img {
+    width: 92px;
+    height: 35px;
+    aspect-ratio: auto 94 / 35;
+    border-style: none;
+}
+
+#nav-text-container {
+    font-size: 14px;
+    margin-top: 22px;
+    font-weight: lighter;
+    height: 64px;
+}
+
+.nav-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.item-1 {
+    background-image: url("https://blinkit.com/images/checkout/replacement-guarantee_2x-65edd6a.png");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    display: inline-block;
+    margin-left: 40px;
+    padding-left: 24px;
+}
+
+.item-2 {
+    background-image: url("https://blinkit.com/images/checkout/genuine-products_2x-b5f0c7f.png");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    display: inline-block;
+    margin-left: 40px;
+    padding-left: 24px;
+}
+
+.item-3 {
+    background-image: url("https://blinkit.com/images/checkout/secure-payments_2x-66f0eb4.png");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    display: inline-block;
+    margin-left: 40px;
+    padding-left: 24px;
+}
+
+.wrapper {
+    margin-bottom: 120px;
+    margin-top: 120px;
+    color: #666;
+    font-size: 14px;
+}
+
+.display-card {
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 22%);
+    border-radius: 5px;
+    width: 672px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.step {
+    border-top: 1px solid #f2f2f2;
+    padding: 20px 26px;
+}
+
+.step h2 {
+    color: #333;
+    font-weight: lighter;
+}
+
+.step h3 {
+    font-weight: lighter;
+    margin-bottom: 6px;
+    color: #999;
+}
+
+.step-big {
+    height: 168px;
+}
+
+.step-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.step-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr; /*84px*/
+}
+
+.fa {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color:#ccc;
+    padding: 12px;
+    font-size: 18px;
+    width: 48px;
+}
+
+.fa-check-circle {
+    color: #54b226;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    padding: 4px;
+    font-size: 52px;
+    border: none;
+}
+
+#address {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    color: #fff;
+    background-color: #0c831f;
+    font-weight: bold;
+    padding: 10px 32px;
+    border: none;
+    margin: 40px 0;
+}
