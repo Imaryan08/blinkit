@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style/main.css"> 
+    <title>Order</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="sidebar">
+         
+        </div>
+  
+        <div id="main">
+         <div class="sam">
+            <h4>You have no past orders</h4>
+            <p>Let's get you started</p>
+            <button onclick="window.location.href='home.html'"> Start shoping</button>
+         </div>
+        </div>
+      </div>  
+
+</body>
+</html>
+<script type="module">
+ 
+ import navbar from "./components/navbar.js";
+ //console.log('navbar:', navbar)
+ let sidebar_div = document.getElementById("sidebar");
+ sidebar_div.innerHTML = navbar();
+
+</script>
