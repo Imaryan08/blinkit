@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./style/main.css">  
+    <title>Address</title>
+</head>
+<style>
+
+
+</style>
+<body>
+    <div id="container">
+        <div id="sidebar">
+         
+        </div>
+  
+        <div id="main">
+            <div class="baba">
+            <div class="w3-container">
+             
+                <button onclick="document.getElementById('id01').style.display='block'" class="w-button w3-green">Add new Address</button>
+              
+                <div id="id01" class="w3-modal">
+                  <div class="w3-modal-content">
+                    <div class="w3-container">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="w3-green">&times;</span>
+                      
+                        <div id="head">
+                        <p2>Add New Delivery Address</p2>
+                        <p>Please enter the accurate address, it will help us to serve you better</p>
+                       </div>
+                      
+                      <div>
+                           Area / Locality
+                           <input type="text" class="userid" id="add"  placeholder="E.g. Sector 32 Kormangla or Park residency">
+                       </div>
+                           Name
+                           <div id="flex">
+                              
+                               <select name="Title" id="title">
+                                   <option value="">Title</option>
+                                   <option >Mr</option>
+                                   <option >Mrs</option>
+                                   <option >Miss</option>
+                           <input type="text" class="userid" id="name" placeholder="First & Last Name">
+                       </div>
+                       <div>
+                       Flat / House / Office No.
+                           <input type="text" class="userid" id="fnumber">
+                       </div>
+                       <div>
+                           Street / Society / Office Name
+                           <input type="text" class="userid" id="street">
+                       </div>
+                           <div class="flex">
+                           <input type="radio" name="address">Home
+                           <input type="radio" name="address"> Office
+                           <input type="radio" name="address">Other
+                       </div>
+                       <div id="btn">
+                       <button id="add_address">Continue</button>
+                       <button id="butt">Cancel</button>
+                   </div>
+                    </div>
+                   </div>
+                </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+           
+      </div>  
+</body>
+</html>
+<script type="module">
+ 
+ import navbar from "./components/navbar.js";
+ let sidebar_div = document.getElementById("sidebar");
+ sidebar_div.innerHTML = navbar();
+ 
+let Continue = document.querySelector('#add_address');
+let address = JSON.parse(localStorage.getItem('address')) || [];
+//console.log(' Continue:',  Continue)
+  Continue.addEventListener("click", () => {
+      console.log('clicked')
+    
+      let add = document.querySelector('#add').value;
+      let name = document.querySelector('#name').value;
+
+      let fnumber = document.querySelector('#fnumber').value;
+
+      let street = document.querySelector('#street').value;
+
+    let obj = {add: add, name: name, fnumber: fnumber, street: street};
+    address.push(address);
+
+    localStorage.setItem('address',JSON.stringify(obj));
+  })
+
+
+
+
+
+</script>

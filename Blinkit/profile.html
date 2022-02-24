@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Profile</title>
+</head>
+<style>
+#sam{
+    width: 15%;
+    font-family: sans-serif;
+    margin: auto;
+    margin-right: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+}
+#flex{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    margin-bottom: 50px;
+}
+
+</style>
+<body>
+    <div id="sam">
+       <h1>my account</h1> 
+       
+       <div onclick="window.location.href='order.html'"> <p > my orders </p></div>
+
+       <div  onclick="window.location.href='address.html'"> <p> saved address </p></div>
+
+       
+        <div onclick="window.location.href='wallet.html'" id="flex">
+        <p>my wallet </p>
+        <p>₹0</p>
+    </div>
+    <div>  <p onclick="window.location.href='/'">log out </p></div>
+      </div>  
+</body>
+</html>
+<script>
+ 
+
+</script>
