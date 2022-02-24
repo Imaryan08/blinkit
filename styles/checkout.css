@@ -3,7 +3,7 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
@@ -445,6 +445,103 @@ input[type='radio']:checked:after {
     margin-bottom: 10px;
 }
 
+.payment-option-display__hidden {
+    display: none;
+}
+
+.payment-option-display__shown {
+    display: block !important;
+}
+
+.new-card {
+    padding: 32px 66px;
+    width: 539px;
+}
+
+.new-card__cardno {
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.push__half--bottom{
+    margin-bottom: 5px;
+}
+
+.relative {
+    position: relative;
+}
+
+.input {
+    overflow: visible;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    cursor: text;
+    font-size: 14px;
+    outline: 0;
+    padding: 12px 10px;
+}
+
+.upi__verify-button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0c831f;
+    background-color: #fff;
+    padding: 5px;
+    border: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.bank-offer__validations {
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.tab {
+    border: 1px solid #eee;
+    border-top: none;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    height: 360px;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 535px;
+    font-size: 12px;
+}
+
+.display--inline-block {
+    display: inline-block;
+}
+
+.input-group {
+    width: 104px;
+    margin: 0;
+}
+
+.new-card__save {
+    margin: 30px 0;
+}
+
+.checkbox {
+    margin-right: 10px;
+    background-color: #0c831f;
+    size: 18px;
+}
+
+.bold-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.push-left {
+    margin-top: 5px;
+    margin-left: 25px;
+}
 
 /* Medium screen */
 @media screen and (max-width: 1020px) {
