@@ -40,15 +40,15 @@
                         <i class="fa fa-check-circle" aria-hidden="true"></i>
                         <div class="checkout-step__content">
                             <div class="checkout-step__content-lead">Phone Number Verification</div>
-                            <div>+918475968123</div>
+                            <div>+91<span id="cust-phone"></span></div>
                         </div>
                     </div>
 
                     <div class="checkout-step">
                         <i class="fa fa-check-circle" aria-hidden="true"></i>
                         <div class="checkout-step__content">
-                            <div class="checkout-step__content-lead">Delivery Address</div>
-                            <div>Home: #314, 1st main, 5th cross, Delhi - 92</div>
+                            <div class="checkout-step__content-lead"> Delivery Address</div>
+                            <div> <span id="cust-address"></span></div>
                         </div>
                     </div>
 
@@ -60,13 +60,13 @@
                             <div class="payment-invoice">
                                 <div class="">
                                     <div class="payment-invoice__row float-left">Total Amount</div>
-                                    <div class="payment-invoice__row float-right"> &#8377;22</div>
+                                    <div class="payment-invoice__row float-right"> &#8377; <span class="total-amt"></span></div>
                                 </div>
                                 <div class="clear"></div>
                                 <hr />
                                 <div class="payment-invoice__total">
                                     <div class="payment-invoice__row float-left">Amount Payable <span>(incl. of all taxes)</span></div>
-                                    <div class="payment-invoice__row float-right"> &#8377;22</div>
+                                    <div class="payment-invoice__row float-right"> &#8377; <span class="total-amt"></span></div>
                                 </div>
                             </div>
 
@@ -85,7 +85,7 @@
                                 </ul>
 
                                 <div class="soft-bottom">
-                                    <div class="payment-wallets">
+                                    <div class="payment-wallets payment-option-display__hidden payment-option-display__shown" id="payment-wallets">
                                         <ul class="list-inline">
                                             <li>
                                                 <label for="Paytm" class="wallet-opt" data-test-id="Paytm">
@@ -114,8 +114,50 @@
                                         </ul>
                                     </div>
 
+                                    <div class="new-card payment-option-display__hidden" id="payment-upi">
+                                        <label class="new-card__cardno" for="card-number"><span class="push__half--bottom">UPI ID</span>
+                                            <form class="relative">
+                                                <input class="input" type="text" name="cardnumber" placeholder="Enter UPI ID" autocomplete="off" value="">
+                                                <button class="upi__verify-button" type="submit" disabled>verify</button>
+                                            </form>
+                                            <div class="bank-offer__validations"></div>
+                                        </label>
+                                    </div>
+
+                                    <div class="new-card tab payment-option-display__hidden" id="payment-card">
+                                        <div>
+                                            <label class="" for="card-number"><span class="push__half--bottom">Card Number</span>
+                                                <input class="input card-number" placeholder="Card Number" type="text" name="cardnumber">
+                                                <div class="bank-offer__validations"></div>
+                                            </label>
+                                            <label class="display--inline-block float-left" for="expiry-month"><span class="push__half--bottom">Valid Through</span>
+                                                <div class="">
+                                                    <input class="input input-group"  maxlength="2" placeholder="MM" type="number"
+                                                    name="ccmonth">
+                                                    <input class="input input-group"  maxlength="2" placeholder="YY" type="number" name="ccyear">
+                                                </div>
+                                            </label>
+                                            <label class="display--inline-block float-right" for="cvv"><span class="push__half--bottom display--block">CVV</span>
+                                                <div class="">
+                                                    <input class="input input-group" type="password" name="cvc">
+                                                </div>
+                                            </label>
+                                            <div class="clear"></div>
+
+                                            <div class="new-card__save">
+                                                <label class="" for="save-this">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="bold-text">Save this card for future use</span>
+                                                    <div class="push-left">It's perfectly secure</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="payment-placeholder"></div>
+
                                     <div class="payment-btn-holder">
-                                        <button class="btn">Pay Now</button>
+                                        <button class="btn" id="btn-pay-now">Pay Now</button>
                                     </div>
                                     <div class="bottom-text">You will be redirected to wallet’s website to authorize payment</div>
                                 </div>
