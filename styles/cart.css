@@ -10,6 +10,12 @@ html {
     line-height: 1.15;
 }
 
+body {
+    color: #666;
+    font-size: 12px;
+    font-family: Helvetica;
+}
+
 #nav {
 
     background-color: #ffe141;
@@ -81,12 +87,13 @@ html {
 }
 
 #cart {
-  position: fixed;
-  width: 256px;
-  top: 64px;
-  min-height: 100vh;
-  overflow-y: scroll;
-  z-index: 0;
+    position: fixed;
+    width: 360px;
+    top: 82px;
+    min-height: 100vh;
+    overflow-y: scroll;
+    z-index: 0;
+    height: 100%;
 }
 
 .slideout-menu-left {
@@ -130,4 +137,100 @@ html {
   width: 100%;
   background-color: rgba(0,0,0,.5);
   z-index: 99;
+}
+
+.cart-page {
+    background-color: whitesmoke;
+}
+
+.cart__title {
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    padding: 16px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 16%) 0px 0px 10px;
+    line-height: 20px;
+}
+
+.cart-container {
+    height: calc(100% - 96px);
+    background-color: white;
+}
+
+.cart-container h2 {
+    padding: 16px 12px 0;
+    color: black;
+}
+
+.cart-container h4 {
+    font-weight: lighter;
+    padding: 4px 12px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.flex-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 16px;
+}
+
+hr {
+    border-top: 1px solid whitesmoke;
+}
+
+.cart-item {
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    display: flex;
+}
+
+.cart-item > img {
+    width: 150px;
+    height: 150px;
+}
+
+.cart-item h3 {
+    color: black;
+    font-weight: lighter;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.cart-item h2 {
+    color: black;
+    margin-left: -12px;
+}
+
+.cart-item h5 {
+    font-weight: lighter;
+    position: relative;
+    top: 32px;
+}
+
+.cart-item button {
+    background-color: #ffe141;
+    border: none;
+    border-radius: 20px;
+    padding: 3px 6px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    top: 14px;
+    left: 120px;
+}
+
+.cart-item p {
+    display: inline;
+    position: relative;
+    top: 14px;
+    left: 120px;
+    padding: 8px;
 }
