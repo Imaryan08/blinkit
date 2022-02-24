@@ -26,3 +26,7 @@ slideout
     this.panel.classList.remove('panel-open');
     this.panel.removeEventListener('click', close);
   });
+
+  document.querySelector('#btn-checkout').addEventListener('click', () => {
+    window.location = 'checkout.html';
+  });

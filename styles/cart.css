@@ -184,6 +184,10 @@ hr {
     border-top: 1px solid whitesmoke;
 }
 
+.cart-items {
+    overflow: scroll;
+}
+
 .cart-item {
     border-bottom: 1px solid whitesmoke;
     margin-bottom: 12px;
@@ -233,4 +237,35 @@ hr {
     top: 14px;
     left: 120px;
     padding: 8px;
+}
+
+.checkout {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+}
+
+.checkout__delivery--title {
+    color: black;
+    overflow: hidden;
+    margin: 12px 64px;
+}
+
+.checkout__delivery--sub {
+    overflow: hidden;
+    margin:  12px 64px;
+}
+
+#btn-checkout {
+    height: 46px;
+    color: white;
+    font-weight: bold;
+    background-color:#0c831f;
+    border-radius: 3px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    font-size: 14px;
 }
