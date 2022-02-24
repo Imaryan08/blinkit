@@ -144,3 +144,29 @@ ul li {
     padding-top: 20px;
     padding-bottom: 10px;
 }
+
+
+/* product css */
+    #product_div{
+        border: 1px solid wheat;
+    }
+    img{
+        width: 120px;
+        height: 120px;
+    }
+    #small_div{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    #very_small{
+        display: flex;
+        flex-direction: column;
+    }
+    #duttom{
+        border-radius: 15px;
+        padding: 0px 10px ;
+        background: #FFE141;
+        border: none;
+        height: 32px;
+    }

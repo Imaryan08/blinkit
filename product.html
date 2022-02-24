@@ -24,25 +24,49 @@
             <a href="" class="col">More <i class='fas fa-angle-down'></i></a>
         </div>
     </div>
-
+             <div id="cart-count" style="text-align: center;"></div>
+            
     <div class="container">
         <div class="row products">
             <div class="col-3 productCat">
-                <div class="row productCatList">Bakery & Biscuits</div>
-                <div class="row productCatList">Cookies</div>
-                <div class="row productCatList">Glucose & Marie</div>
-                <div class="row productCatList">Sweet & Salty</div>
-                <div class="row productCatList">Healthy & Digestive</div>
-                <div class="row productCatList">Cream Biscuits</div>
-                <div class="row productCatList">Rusks & Wafers</div>
-                <div class="row productCatList">Cakes & Rolls</div>
-                <div class="row productCatList">Burns & Bakery</div>
-                <div class="row productCatList">Baking & Dessert Mixes</div>
-                <div class="row productCatList">Baking Ingredients</div>
+                <div onclick="getproduct('all.json')" class="row productCatList">Bakery & Biscuits</div>
+                <div onclick="getproduct('cookies.json')" class="row productCatList">Cookies</div>
+                <div onclick="getproduct('buns.json')" class="row productCatList">Glucose & Marie</div>
+                <div onclick="getproduct('cakes.json')" class="row productCatList">Sweet & Salty</div>
+                <div onclick="getproduct('healthy.json')" class="row productCatList">Healthy & Digestive</div>
+                <div onclick="getproduct('buns.json')" class="row productCatList">Cream Biscuits</div>
+                <div onclick="getproduct('cakes.json')" class="row productCatList">Rusks & Wafers</div>
+                <div onclick="getproduct('mixes.json')" class="row productCatList">Cakes & Rolls</div>
+                <div onclick="getproduct('cakes.json')" class="row productCatList">Burns & Bakery</div>
+                <div onclick="getproduct('buns.json')" class="row productCatList">Baking & Dessert Mixes</div>
+                <div onclick="getproduct('mixes.json')" class="row productCatList">Baking Ingredients</div>
             </div>
             
             <div class="col-9">
-                
+                <div style="display: flex; justify-content: space-between;">
+                   <div>Bakery & Biscuits</div>  
+                 <div id="sort-filter">
+                    <select name="sort" id="sortButton" onchange="sortProducts()">
+                      <option value="">SORT</option>
+                      <option value="asc">Low to High</option>
+                      <option value="desc">High to Low</option>
+                    </select>
+                 </div>
+                </div>
+                <div class="row" id="box" style="border:1px solid #eee; padding: 10px 5px">
+                    <!-- <div class="col-3 productDetails" id="product_div">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=400,h=400/app/images/products/sliding_image/391306a.jpg" alt="">
+                        <h6>Grocery 1kg sugar</h6>
+                        <p>1 kg</p>
+                        <div id="small_div">
+                            <div class="price" id="very_small">
+                                <span>$47</span>
+                                 <span><strike>$60</strike></span> -->
+                            <!-- </div>
+                            <button id="duttom">Add to Cart</button>
+                        </div>
+                    </div> --> 
+                </div>
             </div>
         </div>
     </div>
@@ -383,6 +407,7 @@ Whole Farm
             </div>
         </div>
     </div>
+    <script src="./scripts/products.js"></script>
 </html>
 
 
