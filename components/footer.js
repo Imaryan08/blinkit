@@ -1,5 +1,46 @@
 let footer = () => {
     return `
+    <div class="row m-5 p-5">
+        <div class="offset-1 col mobileDiv">
+            <img class="mobile" src="https://blinkit.com/images/home/blinkit-get-app-e7d56e3.png" alt="">
+        </div>
+
+        <div class="col">
+            <div class="row mt-4 pt-2">
+                <div class="col"><h3 class="font-weight-bold">get the blinkit app</h3></div>
+            </div>
+            <div class="row">
+                <div class="col"><p class="mt-2">We will send you a link, open it on your phone to download the app</p></div>
+            </div>
+            <div class="row mt-4">
+                <div class="col"><input type="radio" name="" value="email"> email</div>
+                <div class="col"><input type="radio" name="" value="phone"> phone</div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col"><input type="email" placeholder="email" class="email"></div>
+                <div class="col"><button class="btn-success p-1 successBtn">share</button></div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col">
+                    <p>Download app from</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col downloadIcon"><img src="https://blinkit.com/images/home/app-store_1x-b88bb81.png" alt=""></div>
+                <div class="col downloadIcon"><img src="https://blinkit.com/images/home/google-play_1x-9335bb6.png" alt=""></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+        
+    </div>
     <div class="container features1">
     <div class="row">
         <div class="col-12">
