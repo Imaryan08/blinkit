@@ -1,4 +1,4 @@
-const totalAmt = false || '22';
+const totalAmt = JSON.parse(localStorage.getItem('totalAmt'));
 document.querySelector('#item-cost').innerText = totalAmt;
 
 const itemLength = false || 1;

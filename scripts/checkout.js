@@ -87,3 +87,5 @@ document.querySelector('#cust-address').innerText = address;
 
 const phone = false || '8475968123';
 document.querySelector('#cust-phone').innerText = phone;
+
+localStorage.setItem('totalAmt', totalAmt);
