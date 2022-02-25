@@ -16,7 +16,14 @@
         </div>
   
         <div id="main">
+
+          
             <div class="baba">
+              <h3>Saved Address</h3>
+              <div id="adrs">
+                
+              </div>
+
             <div class="w3-container">
              
                 <button onclick="document.getElementById('id01').style.display='block'" class="w-button w3-green">Add new Address</button>
@@ -60,7 +67,7 @@
                        </div>
                        <div id="btn">
                        <button id="add_address">Continue</button>
-                       <button id="butt">Cancel</button>
+                       <button onclick="window.location.href='address.html'" id="butt">Cancel</button>
                    </div>
                     </div>
                    </div>
@@ -82,7 +89,7 @@
  sidebar_div.innerHTML = navbar();
  
 let Continue = document.querySelector('#add_address');
-let address = JSON.parse(localStorage.getItem('address')) || [];
+let addres = JSON.parse(localStorage.getItem('address')) || [];
 //console.log(' Continue:',  Continue)
   Continue.addEventListener("click", () => {
       console.log('clicked')
@@ -95,13 +102,41 @@ let address = JSON.parse(localStorage.getItem('address')) || [];
       let street = document.querySelector('#street').value;
 
     let obj = {add: add, name: name, fnumber: fnumber, street: street};
-    address.push(address);
+    //addres.push(addres);
 
     localStorage.setItem('address',JSON.stringify(obj));
   })
 
+  let address_Data = JSON.parse(localStorage.getItem('address'));
+  console.log('address_Data:', address_Data)
+
+  var adrs = [];
+adrs.push( address_Data);
+let main = document.getElementById("adrs");
+
+appendAdress(adrs, main);
+
+function appendAdress(adrs, main) {
+    adrs.forEach(element => {
+        let div = document.createElement("div");
+        let h3 = document.createElement("h3");
+        h3.innerText = `Name: ${element.name}`;
+      
+        let p5 = document.createElement("p5");
+        p5.innerText = `Area/locality: ${element.add}`;
+        let p8 = document.createElement("p8");
+        p8.innerText = ` House NO. : ${element.fnumber}`;
+        let p9 = document.createElement("p9");
+        p9.innerText = ` Street: ${element.street}`;
 
 
+        div.append(h3,p5,p8,p9);
+       
+        main.append(div);
 
+
+        
+    });
+  }
 
 </script>
