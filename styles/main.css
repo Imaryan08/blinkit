@@ -5,7 +5,7 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     font-family: sans-serif;
     margin: auto;
-}
+} 
 #sidebar{
     flex: 2;
     cursor: pointer;
