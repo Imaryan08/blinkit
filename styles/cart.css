@@ -162,7 +162,6 @@ body {
 
 .slideout-panel {
   position: relative;
-  top: 64px;
   z-index: 1;
   will-change: transform;
   background-color: #f9f9f9;
