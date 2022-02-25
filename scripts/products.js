@@ -1,10 +1,3 @@
-// let fruits_vegetable = JSON.parse(localStorage.getItem('fruits_vegetable'));
-
-// console.log(fruits_vegetable);
-
-// let productDetails = document.querySelector('.productDetails');
-  
-//   fetch for product page 
 
     var d = "all.json";
    
@@ -83,9 +76,13 @@
                 Div.setAttribute("class","col-3 productDetails");
                 Div.setAttribute("id","product_div");
  
+                let div1 = document.createElement("div");
+                div1.style.display="block";
                  var Img = document.createElement("img");
                  Img.setAttribute("src",D.img);
 
+                 let heading= document.createElement("div");
+                 heading.style.height="90px"
                  var H6 =document.createElement("h6");
                  H6.textContent=D.productName;
 
@@ -110,8 +107,10 @@
                   };
 
                   Div_21.append(Spam);
+                  div1.append(Img)
+                  heading.append(H6);
                   Div2.append(Div_21,Button);
-                  Div.append(Img,H6,P,Div2);
+                  Div.append(div1,heading,P,Div2);
                   document.getElementById("box").append(Div);
 
                   

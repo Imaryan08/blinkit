@@ -148,13 +148,15 @@ ul li {
 
 /* product css */
     #product_div{
-        border: 1px solid wheat;
+        margin-top: 5px;
+        border: 1px solid rgb(233, 206, 157);
     }
     img{
         width: 120px;
         height: 120px;
     }
     #small_div{
+        margin-bottom: 5px;
         display: flex;
         justify-content: space-between;
 
@@ -162,7 +164,7 @@ ul li {
     #very_small{
         display: flex;
         flex-direction: column;
-    }
+        }
     #duttom{
         border-radius: 15px;
         padding: 0px 10px ;
