@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav {
+
+    background-color: #ffe141;
+    height: 64px;
+    width: 100%;
+    color: black;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 7%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: no-wrap;
+
+    font-size: 14px;
+    font-weight: lighter;
+
+    /* position: fixed;
+    z-index: 1000;
+    top: 0; */
+
+}
+
+#logo {
+    height: 64px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+#logo > a {
+    color: inherit;
+    cursor: pointer;
+
+    height: 100%;
+    margin-left: 15px;
+
+    text-decoration: none;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo img {
+    width: 92px;
+    height: 35px;
+    aspect-ratio: auto 94 / 35;
+    border-style: none;
+}
+
+#btn-toggle-cart {
+    background-color: #0c831f;
+    border-radius: 58px;
+    color: #fff;
+    background-position: 22px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    cursor: pointer;
+    line-height: 40px;
+    position: relative;
+    height: 40px;
+    width: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.fa-shopping-cart {
+    color: #fff;
+    font-size: 12px;
+}
+
+.nav__left {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.nav__right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    width: 20%;
+}
+
+.location-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.h3 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#nav-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    height: 100%;
+}
+
+#searchbar {
+    width: 90%;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 70%;
+    color: #666;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1580px) {
+    .nav__items-count,
+    .location-info,
+    .nav_profile,
+    .nav__app-link {
+        display: none;
+    }
+}
