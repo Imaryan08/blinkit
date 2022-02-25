@@ -314,9 +314,9 @@ Whole Farm
         <div class="col"><img src="https://blinkit.com/images/payment/sodexo-82f2019.png" alt=""></div>
         <div class="col"><img src="https://blinkit.com/images/payment/bhim-upi-02aef45.png" alt=""></div>
         <div class="col"><img src="https://blinkit.com/images/payment/paytm-b393728.png" alt=""></div>
-        <div class="col"><img src="https://blinkit.com/images/payment/paytm-b393728.png" alt=""></div>
-        <div class="col"><img src="https://blinkit.com/images/payment/paytm-b393728.png" alt=""></div>
-        <div class="col"><img src="https://blinkit.com/images/payment/paytm-b393728.png" alt=""></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
     </div>
 </div>
 
