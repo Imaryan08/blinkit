@@ -40,7 +40,44 @@ document.querySelector('#btn-pay-now').addEventListener('click', () => {
 });
 
 
-const totalAmt = false || '22';
+
+/*******/
+let totalAmt = 0;
+const display = document.querySelector('.checkout-right-display');
+const checkoutItems = JSON.parse(localStorage.getItem('checkoutItems'));
+
+document.querySelector('.checkout-cart__item-count').innerText = `${checkoutItems.length} Items`
+
+checkoutItems.forEach((item) => {
+    console.log(item);
+    if (item.count === 0) {
+        return
+    }
+
+    const main = document.createElement('div');
+    main.classList.add('checkout-cart__item');
+
+    const img = document.createElement('img');
+    img.src = item.image;
+    main.append(img);
+
+    const div = document.createElement('div');
+    const h5 = document.createElement('h5');
+    const h6 = document.createElement('h6');
+
+    h6.innerText = item.title;
+
+    const amt = Number(item.price) * Number(item.count);
+    h5.innerText = amt;
+    totalAmt += amt;
+
+    div.append(h6, h5);
+    main.append(div);
+    display.append(main);
+});
+
+
+
 document.querySelectorAll('.total-amt').forEach((e) => {
     e.innerText = totalAmt;
 });
