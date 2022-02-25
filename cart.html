@@ -9,17 +9,38 @@
     <link rel="icon" type="image/x-icon" href="https://blinkit.com/images/header/blinkit_logo-3898547.png">
     <link rel="stylesheet" href="styles/cart.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
 </head>
 <body>
     <nav id="nav">
-        <div id="logo">
-            <a href="/">
-                <img src="https://blinkit.com/images/header/blinkit_logo-3898547.png" alt="blinkit (formerly Grofers)" />
-            </a>
+
+        <div class="nav__left">
+            <div id="logo">
+                <a href="/">
+                    <img src="https://blinkit.com/images/header/blinkit_logo-3898547.png" alt="blinkit (formerly Grofers)" />
+                </a>
+            </div>
+
+            <div class="location-info">
+                <div class="h3">delivered in 22 min</div>
+                <div id="location">#314 1st main 5th block Delhi - 92</div>
+            </div>
         </div>
-        <div id="btn-toggle-cart">
-            <i></i>
-            my cart
+
+        <div id="nav-search">
+            <input type="text" id="searchbar" />
+        </div>
+
+        <div class="nav__right">
+            <div class="nav__profile">profile</div>
+            <div id="btn-toggle-cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span class="">2</span>Items
+            </div>
+            <div class="nav__app-link">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                get the app
+            </div>
         </div>
     </nav>
 
