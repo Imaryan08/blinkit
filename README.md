@@ -3,11 +3,7 @@ Grocery Website
 
 
 # JSON Links
-<<<<<<< Updated upstream
 #### base url: https://littlebluepenguin.s3.ap-south-1.amazonaws.com/data/
-=======
-#### base url: https://littlebluepenguin.s3.ap-south-1.amazonaws.com/data/attaRiceDall/all.json
->>>>>>> Stashed changes
 
 #### categories:
 
