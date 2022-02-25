@@ -1,7 +1,8 @@
 
-    var d = "all.json";
+  var d = "all.json";
    
   async function getproduct(d){
+      console.log('d:', d)
       try{
          let P_data = await fetch(`https://littlebluepenguin.s3.ap-south-1.amazonaws.com/data/bakeryAndBiscuits/${d}`);
             let  data = await P_data.json();
@@ -129,4 +130,9 @@
       }
 
 
+let foot = document.querySelector('.footer');
+
+import footer from '/scripts/footer.js';
+
+foot.innerHTML = footer();
      
