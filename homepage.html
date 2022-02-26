@@ -9,8 +9,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/homepageStyle.css">
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <link rel="stylesheet" href="styles/cart.css">
 </head>
 <body>
+    <nav id="nav">
+
+    </nav>
+
+    <div id="cart">
+    </div>
+
+    <main id="panel" class="panel">
+
     <div class="main-body-container">
         <div id="top-image1">
             <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,h=235/layout-engine/2022-01/Group-33704-3.jpg?621445f07cb52">
@@ -170,18 +182,8 @@
             <div class="biscuits">
             </div>
         </div>
-<<<<<<< HEAD
         <!-- -------------------- -->
-        <div class="fruit_heading">
-            <div id="fruit">
-                <p>dairy<br><span>butter, cheese, milk, curd and more</span></p>
-            </div>
-            <div id="see_more">
-                <div id="more"><b>see more</b></div>
-                <div id="arrows">
-                    <button id="arrow-left3"> < </button>
-                    <button id="arrow-right3">></button>
-=======
+    
         <!-- -------diary product div -->
         <div class="motherdairy">
             <div class="fruit_heading">
@@ -194,7 +196,6 @@
                         <button id="arrow-left3"><</button>
                         <button id="arrow-right3">></button>
                     </div>
->>>>>>> eb7fd8b3f029efcd72c80a190453b122ef4bf927
                 </div>
             </div>
             <!-- product adding with functionality -->
@@ -204,8 +205,20 @@
     </div>
 
     <div class="footer"></div>
+    </main>
 </body>
 </html>
+
+<script type="module">
+
+    import {navbar, cart} from './components/navbar.js';
+    import cartBuilder from './scripts/cart.js';
+
+    document.getElementById('nav').innerHTML = navbar();
+    document.getElementById('cart').innerHTML = cart();
+
+    cartBuilder();
+</script>
 
 <script src="/scripts/homepage.js" type="module"></script>
 <script type="module" src="/components/brandlinks.js"></script>
