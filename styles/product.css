@@ -33,12 +33,16 @@
 .productCatList{
     padding: 17px 14px 18px 30px;
     border-bottom: 1px solid lightgray;
+    cursor: pointer;
 }
-
-.productCatList:hover{
+.background-effect{
+    background-color: green;
+    color: white;
+}
+/* .productCatList:hover{
     cursor: pointer;
     background-color: rgba(102, 102, 102, 0.1);
-}
+} */
 
 /* product css */
 #product_div{
