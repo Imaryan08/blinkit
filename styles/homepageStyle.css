@@ -145,7 +145,7 @@ a{
     margin-top: 20px;
 }
 #fruit{
-    flex-grow: 2;
+    flex-grow: 3;
     padding-left: 10px;
     line-height: 18px;
     text-align: left;
@@ -153,6 +153,7 @@ a{
 #see_more{
     flex: 1;
     display: flex;
+    justify-content: flex-end;
 }
 .p{
     margin-top: 0px;
@@ -176,10 +177,11 @@ b{
     font-size: 16px;
     margin-top: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 #arrows{
-    flex: 0.5;
-    text-align: center;
+    flex: 1;
+    text-align: right;
     padding-right: 20px;
     cursor: pointer;
     padding-top: 8px;
