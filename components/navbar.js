@@ -18,7 +18,7 @@ function navbar() {
             <div class="nav__profile">profile</div>
             <div id="btn-toggle-cart">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <span class="">2</span>Items
+                <span class="nav-cart-count">2</span>Items
             </div>
             <div class="nav__app-link">
                 <i class="fa fa-mobile" aria-hidden="true"></i>
@@ -35,7 +35,7 @@ function cart() {
             <h1 class="cart__title">my cart</h1>
             <div class="flex-text">
                 <div>Shipment 1 of 1</div>
-                <div class="">1 item(s)</div>
+                <div class="">item(s)</div>
             </div>
             <div class="cart-container">
                 <div class="">

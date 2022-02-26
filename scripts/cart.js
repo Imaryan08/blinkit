@@ -36,8 +36,17 @@ slideout
 // get from local storage
 // remember to keep the keys same, i.e, [image, title, price, quantity]
 const cartItems = [];
+const checkoutItems = [];
+const localCartItems = JSON.parse(localStorage.getItem('cart')) || [];
+localCartItems.forEach((e) => {
+  const item = {};
+  item.image = e.img;
+  item.price = e.price.slice(1, e.price.length);
+  item.title = e.productName;
+  item.quantity = e.quantity;
 
-const checkoutItems = JSON.parse(localStorage.getItem('cart')) || [];
+  cartItems.push(item);
+});
 
 const cartdiv = document.querySelector('#cart-items');
 

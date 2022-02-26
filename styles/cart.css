@@ -263,17 +263,20 @@ hr {
     display: flex;
     flex-wrap: wrap;
     margin-top: 12px;
+    font-size: 14px;
 }
 
 .cart-item h2 {
     color: black;
     margin-left: -12px;
+    font-size: 16px;
 }
 
 .cart-item h5 {
     font-weight: lighter;
     position: relative;
     top: 32px;
+    font-size: 12px;
 }
 
 .cart-item button {
@@ -297,9 +300,9 @@ hr {
 }
 
 .checkout {
-    position: absolute;
-    bottom: 100px;
-    width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 360px;
 }
 
 .checkout__delivery--title {
