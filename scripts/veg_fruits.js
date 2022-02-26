@@ -1,3 +1,10 @@
+document.querySelectorAll('.productCat > div').forEach((e) => {
+  e.addEventListener('click', () => {
+      document.querySelector('.background-effect').classList.remove('background-effect');
+      e.classList.add('background-effect');
+  });
+});
+
 let d = "all.json";
 let sortvalue = document.getElementById("sortButton").value;
 
