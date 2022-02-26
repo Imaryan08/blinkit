@@ -1,3 +1,5 @@
+export default function cartBulider () {
+    
   const slideout = new Slideout({
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('cart'),
@@ -30,20 +32,6 @@ slideout
   document.querySelector('#btn-checkout').addEventListener('click', () => {
     window.location = 'checkout.html';
   });
-
-
-String.prototype.format = function () {
-  // store arguments in an array
-  var args = arguments;
-  // use replace to iterate over the string
-  // select the match and check if related argument is present
-  // if yes, replace the match with the argument
-  return this.replace(/{([0-9]+)}/g, function (match, index) {
-    // check if the argument is present
-    return typeof args[index] == 'undefined' ? match : args[index];
-  });
-};
-
 
 // get from local storage
 // remember to keep the keys same, i.e, [image, title, price, quantity]
@@ -122,3 +110,4 @@ cartItems.forEach((item, index) => {
 
   cartdiv.append(main);
 })
+  }
