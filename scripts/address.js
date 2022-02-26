@@ -49,9 +49,9 @@ function appendAdress(adrs, main) {
 
     del.addEventListener('click',function(){
         document.querySelector(".Add").style.display="none";
-      adrs.splice(adrs, 1);
+      adrs.splice(Add);
       localStorage.setItem('address',JSON.stringify(adrs));
-      //window.location.reload();
+     window.location.reload();
      
     });
     
