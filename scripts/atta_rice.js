@@ -178,17 +178,8 @@ function renderproduct(data) {
   }
 }
 
-//importing navbar
-// let navbar = document.querySelector('.nav');
-
-// import nav from '/components/navbar.js';
-
-// navbar.innerHTML = nav();
-
-//importing footer
+// adding footer
 let foot = document.querySelector(".footer");
-
 import footer from "/components/footer.js";
-
 foot.innerHTML = footer();
 
