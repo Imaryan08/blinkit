@@ -925,8 +925,8 @@ let foot = document.querySelector('.footer');
     foot.innerHTML = footer();
 
 
-    let nav = document.querySelector('.nav');
+    // let nav = document.querySelector('.nav');
 
-    import navbar from '/components/navbar.js';
+    // import navbar from '/components/navbar.js';
 
-    nav.innerHTML = navbar();
+    // nav.innerHTML = navbar();
