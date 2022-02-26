@@ -118,14 +118,20 @@ a{
     0%{
         background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_Jim%20Jam_Britannia_889.jpg?6214d1bfb3a4e");
     }
-    35%{
+    20%{
         background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_vicks_png_898.jpg?6214b5f0ac5c6");
     }
-    70%{
+    40%{
         background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_NUTRITION_NESTLE_906.jpg?6214b5ef679bb");
     }
-    100%{
+    60%{
         background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_Bournvita_Cadbury_877.jpg?6214b5eeb6867");
+    }
+    80%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_complan_zydus_660.jpg?621a49089e939");
+    }
+    100%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_maggie_nestle_888.jpg?621a4904bd8c8");
     }
 }
 /* -------------------vegetables div---------------- */
