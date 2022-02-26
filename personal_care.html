@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal_care</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/product.css">
     <link rel="stylesheet" href="./styles/footer.css" >
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     <link rel="stylesheet" href="styles/cart.css">
@@ -37,26 +37,21 @@
             <a href="" class="col">More <i class='fas fa-angle-down'></i></a>
         </div>
     </div>
-
+    <div id="cart-count" style="text-align: center; visibility: hidden;"></div>
     <div class="container">
         <div class="row products">
             <div class="col-3 productCat">
-                <div id="all.json" class="row productCatList">Personal Care</div>
-                <!-- <div id="device.json" class="row productCatList">Devices</div> -->
-                <div id="sanitizers.json" class="row productCatList">Sanitizers</div>
+                <div id="sanitizers.json" class="row productCatList">Masks & Sanitizers</div>
                 <div id="supplements.json" class="row productCatList">Supplements</div>
-                <!-- <div class="row productCatList">Shower Gels & Scrubs</div>
-                <div class="row productCatList">Facial Care</div>
-                <div class="row productCatList">Body Moisturizer & More</div>
-                <div class="row productCatList">Shampoo & Conditioner</div>
-                <div class="row productCatList">Hear Colour & More</div>
-                <div class="row productCatList">Hear Oil & Serum</div>
-                <div class="row productCatList">Feminine Care</div>
-                <div class="row productCatList">Cosmetics</div>
-                <div class="row productCatList">Deodorants Powders</div>
-                <div class="row productCatList">Men's Grooming</div>
-                <div class="row productCatList">Personal Grooming</div>
-                <div class="row productCatList">Hands & Foot Care</div> -->
+                <div id="devices.json" class="row productCatList">Healthcare devices</div>
+                <div id="all.json" class="row productCatList">Pharma & Wellness</div>
+                <div id="sanitizers.json" class="row productCatList">Cough & Cold</div>
+                <div id="supplements.json" class="row productCatList">Digestive Care</div>
+                <div id="devices.json" class="row productCatList">Antiseptic Liquid</div>
+                <div id="all.json" class="row productCatList">Skin Treatment</div>
+                <div id="sanitizers.json" class="row productCatList">Herbal Drinks</div>
+                <div id="all.json" class="row productCatList">Handwash</div>
+                <div id="devices.json" class="row productCatList">Mouth Fresheners</div>
             </div>
             
             <div class="col-9">
@@ -83,11 +78,7 @@
 </html>
 
 <script type="module">
-    let foot = document.querySelector('.footer');
-
-    import { footer } from '/components/footer.js';
-
-    foot.innerHTML = footer();
+    
 
     import {navbar, cart} from './components/navbar.js';
     import cartBuilder from './scripts/cart.js';
@@ -99,3 +90,4 @@
 </script>
 
 <script src="/scripts/personal_care.js" type="module"></script> 
+<script src="/components/brandlinks.js"></script> 
