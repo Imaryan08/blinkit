@@ -1,9 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
 .features1{
     margin-top: 50px;
 }
 .features1 h6{
     font-weight: 500;
-    font-size: 12px;
+    font-size: 12px; 
 }
 .features1 p {
     font-weight: 200;
