@@ -11,7 +11,7 @@ for (let i = 0; i < bakery.length; i++) {
     getproduct(d);
   });
 }
-
+ 
 let getproduct = async (d) => {
   try {
     let P_data = await fetch(

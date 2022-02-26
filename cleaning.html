@@ -39,11 +39,10 @@
         </div>
     </div>
     <!-- cart count -->
-    <div id="cart-count" style="text-align: center;"></div>
+    <div id="cart-count" style="text-align: center; visibility: hidden;"></div>
     <div class="container">
         <div class="row products">
             <div class="col-3 productCat">
-<<<<<<< HEAD
                 <div id="detergent.json" class="row productCatList">Detergent Powder & Bars</div>
                 <div id="all.json" class="row productCatList">Cleaning Essentials</div>
                 <div id="cleaningTools.json" class="row productCatList">Cleaning Tools</div>
@@ -55,24 +54,10 @@
                 <div id="detergent.json" class="row productCatList">Laundry Additives</div>
                 <div id="cleaningTools.json" class="row productCatList">Dishwashimg Bars</div>
                 <div id="all.json" class="row productCatList">Dishwashimg Gels & Powder</div>
-=======
-                <div id="all.json" class="row productCatList">Cleaning Essentials</div>
-                <div id="accessories.json" class="row productCatList">Dishwashing Accessories</div>
-                <div id="detergent.json" class="row productCatList">Detergent Powder & Bars</div>
-                <!-- <div class="row productCatList">Disinfectants</div>
-                <div class="row productCatList">Liquid Detergents</div>
-                <div class="row productCatList">Laundry Additives</div>
-                <div class="row productCatList">Dishwashimg Bars</div>
-                <div class="row productCatList">Dishwashimg Gels & Powder</div> -->
-                <div id="cleaningTools.json" class="row productCatList">Cleaning Tools</div>
-                <div id="toilet.json" class="row productCatList">Toilet Cleaners & More</div>
-                <div id="floor.json" class="row productCatList">Floor Cleaners & More</div>
->>>>>>> 6eb36756884f210853ec26e2c3c95b18deacce0e
             </div>
             
             <div class="col-9">
                 <div style="display: flex; justify-content: space-between;">
-<<<<<<< HEAD
                     <div>Cleaning Essentials </div>  
                   <div id="sort-filter">
                      <select name="sort" id="sortButton">
@@ -85,19 +70,6 @@
                  <div class="row" id="box" style="border:1px solid #eee; padding: 10px 5px">
                      
                  </div>
-=======
-                   <div>Cleaning Essentials</div>  
-                 <div id="sort-filter">
-                    <select name="sort" id="sortButton">
-                      <option value="" selected>SORT</option>
-                      <option value="asc">Low to High</option>
-                      <option value="desc">High to Low</option>
-                    </select>
-                 </div>
-                </div>
-
-                <div class="row" id="box" style="border:1px solid #eee; padding: 10px 5px"></div>
->>>>>>> 6eb36756884f210853ec26e2c3c95b18deacce0e
             </div>
         </div>
     </div>
@@ -106,18 +78,7 @@
 
 </html>
 
-<<<<<<< HEAD
-
-<script src="/scripts/breakfast.js" type="module"></script> 
-<script type="module" src="/components/cleaning.js"></script>
-=======
 <script type="module">
-    let foot = document.querySelector('.footer');
-
-    import { footer } from '/components/footer.js';
-
-    foot.innerHTML = footer();
-
 
     import {navbar, cart} from './components/navbar.js';
     import cartBuilder from './scripts/cart.js';
@@ -127,5 +88,7 @@
 
     cartBuilder();
 </script>
-<script src="/scripts/cleaning.js" type="module"></script> 
->>>>>>> 6eb36756884f210853ec26e2c3c95b18deacce0e
+
+<script src="/scripts/cleaning.js" type="module"></script>
+<script src="/components/brandlinks.js"></script> 
+
