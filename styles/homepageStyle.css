@@ -1,46 +1,63 @@
-.main-body{
-    border: 1px solid black;
-    width: 100%;
-    margin: auto;
+.main-body-container{
     display: flex;
     flex-direction: column;
-    column-gap: 6px;
+    column-gap: 5px;
+    width: 97%;
+    margin: auto;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+#top-image1{
     text-align: center;
 }
-.four-images{
+#download-app-image2{
+    text-align: center;
+}
+.offers-image3{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.four-images > div > img{
-    width: 97%;
+.offers-image3 img{
+    max-width:97% ;
 }
-.categories{
-    width: 97%;
-    margin: auto;
+.product-categories-20images{
     display: grid;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: auto;
+    gap: 2px;
 }
-#prod:hover{
+#hovering-effect:hover{
     border: 2px solid rgb(41, 38, 38);
-    border-radius: 4px;
+    border-radius: 3px;
 }
-.offers_heading{
+.bankoffers_heading{
     font-size: 21px;
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
     margin-left: 30px;
     font-weight: 500;
 }
-.banks_offer{
+.bankoffers_heading p{
+    margin-top: 25px;
+    margin-left: 26px;
+    margin-bottom: 10px;
+}
+/* ---------------------- */
+.bank-slider{
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+#banks_offer{
     display: grid;
     grid-template-columns: repeat(8,290px);
     grid-template-rows: 100px;
     gap: 10px;
-    width: 95%;
+    width: 98%;
     margin: auto;
-    overflow: hidden;
+    overflow:hidden;
     position: relative;
 }
 .bank_name{
@@ -59,43 +76,59 @@
 .bank_name div img{
     width: 99%;
 }
-#arr-btn{
-    width: 9%;
-    height: 105%;
-   position: relative;
-   bottom: 70px;
-   text-align: center;
-}
-.left-btn{
+
+/* ------------------bank offers styling below-------------- */
+
+.prev, .next {
+    cursor: pointer;
     position: absolute;
-    transform: translateY(-50%);
-    font-size: 20px;
-    border: 2px solid rgb(110, 100, 100);
-    width: 2%;
-    top: 188%;
-}
-.left-btn:hover{
-    background-color: rgba(256,0,256,0.6);
-}
-.right-btn{
-    position: absolute;
-    top: 189%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    border: 2px solid rgb(126, 114, 114);
-    width: 2%;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(235, 103, 103);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
     right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  /* ------------ads slide show animation */
+  .slide{
+    width: 80%;
+    height: 450px;
+    background-image: url("https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcms-contents.pharmeasy.in%2Fbanner%2Ff190cbe684b-Otrivin-CB-Jan.jpg&w=750&q=75");
+    margin: 10px auto;
+    animation: slide 30s  infinite;
+    border-radius: 4px;
+    margin-top: 20px;
 }
-.right-btn:hover{
-    background-color: rgba(256,0,256,0.6);
+@keyframes slide{
+    0%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_Jim%20Jam_Britannia_889.jpg?6214d1bfb3a4e");
+    }
+    35%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_vicks_png_898.jpg?6214b5f0ac5c6");
+    }
+    70%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_NUTRITION_NESTLE_906.jpg?6214b5ef679bb");
+    }
+    100%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_Bournvita_Cadbury_877.jpg?6214b5eeb6867");
+    }
 }
-.carousel{
-    text-align: center;
-    margin: 20px auto;
-}
-
-/* ------------------------------------------------------ */
-
+/* -------------------vegetables div---------------- */
 .fruit_heading{
     display: flex;
     flex-direction: row;
@@ -115,7 +148,7 @@
     flex: 1;
     display: flex;
 }
-p{
+.p{
     margin-top: 0px;
     font-size: 22px;
     font-weight: bolder;
@@ -176,6 +209,9 @@ b{
     transform: scale(1.01);
     
 }
+
+/* -----------------------chemist div */
+
 .cartBtn{
     width: 100%;
     position: absolute;
@@ -236,7 +272,17 @@ b{
     --webkit-box-shadow : inset 0px 0px 6px rgba(0,0,4,0.3)
 }
 
-
+/* ------------second offers div styling below----------------- */
+.offer_pic{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    width: 95%;
+}
+ 
+/* ------------------biscuits div  ---------------*/
 .biscuits{
     display: grid;
     width: 95%;
@@ -256,6 +302,7 @@ b{
 .biscuits::-webkit-scrollbar-track{
     --webkit-box-shadow : inset 0px 0px 6px rgba(0,0,4,0.3)
 }
+/* ------------------dairy products div--------- */
 .dairy{
     display: grid;
     width: 95%;
@@ -274,161 +321,4 @@ b{
 }
 .dairy::-webkit-scrollbar-track{
     --webkit-box-shadow : inset 0px 0px 6px rgba(0,0,4,0.3)
-}
-.offer_pic{
-    display: flex;
-    margin: auto;
-    flex-direction: row;
-    gap: 10px;
-    margin-top: 20px;
-    width: 95%;
-}
-/* 
---------------------------------- */
-
-
-.subMenuParent{
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.15);
-}
-.subMenu{
-    padding: 8px;
-    background: #fff;
-}
-
-.subMenu > a{
-    font-family: okra,helvetica;
-    font-size: 14px;
-    color: gray;
-}
-
-.products{
-    margin-top: 20px;
-    border-right: 3px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.22);
-}
-
-.productCat{
-    overflow-y: scroll;
-    height: 500px;
-}
-
-.productCatList{
-    padding: 17px 14px 18px 30px;
-    border-bottom: 1px solid lightgray;
-}
-
-.productCatList:hover{
-    cursor: pointer;
-    background-color: rgba(102, 102, 102, 0.1);
-}
-
-.features1{
-    margin-top: 50px;
-}
-.features1 h6{
-    font-weight: 500;
-    font-size: 12px;
-}
-.features1 p {
-    font-weight: 200;
-    font-size: 12px;
-    color: #666666;
-}
-
-
-.features{
-    margin-top: 50px;
-    padding-bottom: 80px;
-}
-
-.featuresCard{
-    display: flex;
-}
-.featuresCard p {
-    font-size: 12px;
-    color:  gray;
-}
-ul li {
-    font-size: 14px;
-    color: #666666;
-}
-
-.categories{
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
-}
-.categories > div > div:first-child{
-    border-right: 1px solid #eee;
-}
-.categories > div > div:last-child{
-    padding-left: 50px;
-}
-.social ul li {
-    display: inline-block;
-    font-size:18px; 
-    color: white; 
-    background:black;
-    padding: 5px 10px;
-    border-radius: 50%;
-    margin: 0 10px
-}
-.download ul {
-    display: flex;
-}
-.download ul li img{
-    width: 120px;
-    height: 35px;
-    margin: 0px 20px;
-}
-.socialDiv{
-    border-bottom: 1px solid #eee;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.brands a{
-    color: gray;
-}
-
-.paymentPartners{
-    margin-top: 40px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-.paymentPartners div:last-child  .col{
-    width: 60px;
-    height: 60px;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0;
-}
-.paymentPartners div:last-child img{
-    width: 100%;
-    object-fit: contain;
-    height: 100%;
-}
-
-.subfooter1{
-    color: #666666;
-    font-size: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-
-}
-.subfooter2{
-    color: #666666;
-    font-size: 12px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-
-
-#footer{
-    text-align: justify;
 }

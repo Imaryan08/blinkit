@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breakfast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/product.css">
@@ -24,26 +25,39 @@
             <a href="" class="col">More <i class='fas fa-angle-down'></i></a>
         </div>
     </div>
-
+    <!-- cart count -->
+    <div id="cart-count" style="text-align: center;"></div>
     <div class="container">
         <div class="row products">
             <div class="col-3 productCat">
-                <div class="row productCatList">Breakfast & Instant Food</div>
-                <div class="row productCatList">Breakfast Cereal</div>
-                <div class="row productCatList">Noodles, Pasta & Soup</div>
-                <div class="row productCatList">Vermicelli</div>
-                <div class="row productCatList">Instant Mixes</div>
-                <div class="row productCatList">Batter</div>
-                <div class="row productCatList">Canned Food</div>
-                <div class="row productCatList">Energy Bars</div>
-                <div class="row productCatList">Frozen Veg Snacks</div>
-                <div class="row productCatList">Frozen Non-Veg Snacks</div>
-                <div class="row productCatList">Salad Dressings</div>
-                <div class="row productCatList">Chyawanprash</div>
+                <div id="noodles.json" class="row productCatList">Noodles, Pasta & Soup</div>
+                <div id="frozenVeg.json" class="row productCatList">Frozen Veg Snacks</div>
+                <div id="frozenNonVeg.json" class="row productCatList">Frozen Non-Veg Snacks</div>
+                <div id="instantMixes.json" class="row productCatList">Instant Mixes</div>
+                <div id="cereal.json" class="row productCatList">Vermicelli</div>
+                <div id="frozenVeg.json" class="row productCatList">Batter</div>
+                <div id="all.json" class="row productCatList">Breakfast & Instant Food</div>
+                <div id="cereal.json" class="row productCatList">Canned Food</div>
+                <div id="noodles.json" class="row productCatList">Energy Bars</div>
+                <div id="frozenNonVeg.json" class="row productCatList">Salad Dressings</div>
+                <div id="cereal.json" class="row productCatList">Chyawanprash</div>
+                <div id="cereal.json" class="row productCatList">Breakfast Cereal</div>
             </div>
             
             <div class="col-9">
-                
+                <div style="display: flex; justify-content: space-between;">
+                    <div>Breakfast & Instant Food </div>  
+                  <div id="sort-filter">
+                     <select name="sort" id="sortButton">
+                       <option value="" selected>SORT</option>
+                       <option value="asc">Low to High</option>
+                       <option value="desc">High to Low</option>
+                     </select>
+                  </div>
+                 </div>
+                 <div class="row" id="box" style="border:1px solid #eee; padding: 10px 5px">
+                     
+                 </div>
             </div>
         </div>
     </div>
@@ -52,10 +66,5 @@
     
 </html>
 
-<script type="module">
-    let foot = document.querySelector('.footer');
-
-    import footer from '/components/footer.js';
-
-    foot.innerHTML = footer();
-</script>
+<script src="/scripts/breakfast.js" type="module"></script> 
+<script type="module" src="/components/brandlinks.js"></script>

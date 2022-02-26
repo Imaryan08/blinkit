@@ -1,4 +1,3 @@
-
 let d = "all.json";
 let sortvalue = document.getElementById("sortButton").value;
 
@@ -16,7 +15,7 @@ for (let i = 0; i < bakery.length; i++) {
 let getproduct = async (d) => {
   try {
     let P_data = await fetch(
-      `https://littlebluepenguin.s3.ap-south-1.amazonaws.com/data/bakeryAndBiscuits/${d}`
+      `https://littlebluepenguin.s3.ap-south-1.amazonaws.com/data/fruitsAndVegetables/${d}`
     );
     let data = await P_data.json();
     renderproduct(data);
@@ -179,6 +178,12 @@ function renderproduct(data) {
   }
 }
 
+//importing navbar
+// let navbar = document.querySelector('.nav');
+
+// import nav from '/components/navbar.js';
+
+// navbar.innerHTML = nav();
 
 //importing footer
 let foot = document.querySelector(".footer");
