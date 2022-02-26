@@ -19,7 +19,7 @@ let footer = () => {
                 <div class="col"></div>
                 <div class="col"></div>
             </div>
-
+ 
             <div class="row mt-4">
                 <div class="col"><input type="email" placeholder="email" class="email"></div>
                 <div class="col"><button class="btn-success p-1 successBtn">share</button></div>

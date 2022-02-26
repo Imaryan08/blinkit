@@ -923,3 +923,10 @@ let foot = document.querySelector('.footer');
     import footer from '/components/footer.js';
 
     foot.innerHTML = footer();
+
+
+    let nav = document.querySelector('.nav');
+
+    import navbar from '/components/navbar.js';
+
+    nav.innerHTML = navbar();
