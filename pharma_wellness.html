@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masala_oil</title>
+    <title>Pharma & Wellness</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -16,12 +16,12 @@
 
         <div class="subMenu container">
             <a href="./atta_rice.html" class="col">atta,rice & dal</a>
-            <a href="./masala_oil.html" class="col">masala,oil & more</a>
             <a href="./veg_fruits.html" class="col">vegetables & fruits</a>
             <a href="./cleaning.html" class="col">cleaning & essentials</a>
             <a href="./breakfast.html" class="col">breakfast & instant food</a>
             <a href="./product.html" class="col">bakery & biscuits</a>
             <a href="./cleaning.html" class="col">Personal care</a>
+            <a href="./pharma_wellness.html" class="col">Pharma & Wellness</a>
             <a href="" class="col">More <i class='fas fa-angle-down'></i></a>
         </div>
     </div>
@@ -31,21 +31,33 @@
     <div class="container">
         <div class="row products">
             <div class="col-3 productCat">
-                <div id="all.json" class="row productCatList">Masala, Oli & More</div>
-                <div id=".json" class="row productCatList">Powdered Masala</div>
-                <div id=".json" class="row productCatList">Whole spices</div>
-                <div id=".json" class="row productCatList">Sal, Sugar & Jaggery</div>
-                <div id=".json" class="row productCatList">Ghee & Vanaspati</div>
-                <div id=".json" class="row productCatList">Oil</div>
-                <div id=".json" class="row productCatList">Dates & Seeds</div>
-                <div id=".json" class="row productCatList">Dry Fruits</div>
-                <div id=".json" class="row productCatList">Herbs & seasoning</div>
-                <div id=".json" class="row productCatList">Papad & Fryums</div>
-                <div id=".json" class="row productCatList">Mouth Fresheners</div>
+                <div id="sanitizers.json" class="row productCatList">Masks & Sanitizers</div>
+                <div id="supplements.json" class="row productCatList">Supplements</div>
+                <div id="devices.json" class="row productCatList">Healthcare devices</div>
+                <div id="all.json" class="row productCatList">Pharma & Wellness</div>
+                <div id="sanitizers.json" class="row productCatList">Cough & Cold</div>
+                <div id="supplements.json" class="row productCatList">Digestive Care</div>
+                <div id="devices.json" class="row productCatList">Antiseptic Liquid</div>
+                <div id="all.json" class="row productCatList">Skin Treatment</div>
+                <div id="sanitizers.json" class="row productCatList">Herbal Drinks</div>
+                <div id="all.json" class="row productCatList">Handwash</div>
+                <div id="devices.json" class="row productCatList">Mouth Fresheners</div>
             </div>
             
             <div class="col-9">
-                
+                <div style="display: flex; justify-content: space-between;">
+                    <div>Pharma & Wellness</div>  
+                  <div id="sort-filter">
+                     <select name="sort" id="sortButton">
+                       <option value="" selected>SORT</option>
+                       <option value="asc">Low to High</option>
+                       <option value="desc">High to Low</option>
+                     </select>
+                  </div>
+                 </div>
+                 <div class="row" id="box" style="border:1px solid #eee; padding: 10px 5px">
+                     
+                 </div>
             </div>
         </div>
     </div>
@@ -53,13 +65,7 @@
     <div class="footer"></div>
 </html>
 
-<!-- <script type="module">
-    let foot = document.querySelector('.footer');
 
-    import footer from '/components/footer.js';
 
-    foot.innerHTML = footer();
-</script> -->
-
-<script src="/scripts/products.js" type="module"></script> 
+<script src="/scripts/pharma_wellness.js" type="module"></script> 
 <script type="module" src="/components/brandlinks.js"></script>
