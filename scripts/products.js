@@ -1,11 +1,14 @@
 let d = "all.json";
+let sortvalue = document.getElementById("sortButton").value;
 
 let bakery = document.querySelectorAll(".productCatList");
 
 for (let i = 0; i < bakery.length; i++) {
   bakery[i].addEventListener("click", () => {
+    let q = document.querySelector('#sortButton').value;
     d = bakery[i].getAttribute("id");
     getproduct(d);
+    filter(d);
   });
 }
 
@@ -40,10 +43,50 @@ function refreshCartCount(cart) {
 }
 
 //low to high  filter
+
+let filter = async (d) => {
+
+  var data = await getproduct(d);
+
+  sortvalue = document.getElementById("sortButton").value;
+
+  if (sortvalue == "asc") {
+    data.sort(function (a, b) {
+      var Pra = "";
+      var Prb = "";
+      for (var i = 1; i < a.price.length; i++) {
+        Pra += a.price[i];
+      }
+      for (var i = 1; i < b.price.length; i++) {
+        Prb += b.price[i];
+      }
+
+      return Number(Pra) - Number(Prb);
+    });
+  }
+
+  if (sortvalue == "desc") {
+    data.sort(function (a, b) {
+      var Pra = "";
+      var Prb = "";
+      for (var i = 1; i < a.price.length; i++) {
+        Pra += a.price[i];
+      }
+      for (var i = 1; i < b.price.length; i++) {
+        Prb += b.price[i];
+      }
+
+      return Number(Prb) - Number(Pra);
+    });
+  }
+  renderproduct(data);
+
+}
+
 document.querySelector("#sortButton").addEventListener("change", async () => {
   var data = await getproduct(d);
 
-  var sortvalue = document.getElementById("sortButton").value;
+  sortvalue = document.getElementById("sortButton").value;
 
   if (sortvalue == "asc") {
     data.sort(function (a, b) {
@@ -76,6 +119,9 @@ document.querySelector("#sortButton").addEventListener("change", async () => {
   }
   renderproduct(data);
 });
+
+
+
 
 function renderproduct(data) {
   document.getElementById("box").textContent = "";

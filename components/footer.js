@@ -13,8 +13,8 @@ let footer = () => {
                 <div class="col"><p class="mt-2">We will send you a link, open it on your phone to download the app</p></div>
             </div>
             <div class="row mt-4">
-                <div class="col"><input type="radio" name="" value="email"> email</div>
-                <div class="col"><input type="radio" name="" value="phone"> phone</div>
+                <div class="col"><input type="radio" name="userContact" value="email"> email</div>
+                <div class="col"><input type="radio" name="userContact" value="phone"> phone</div>
                 <div class="col"></div>
                 <div class="col"></div>
                 <div class="col"></div>
