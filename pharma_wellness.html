@@ -10,8 +10,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/product.css">
     <link rel="stylesheet" href="./styles/footer.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <link rel="stylesheet" href="styles/cart.css">
 </head>
 <body>
+
+    <nav id="nav">
+
+    </nav>
+
+    <div id="cart">
+    </div>
+
+    <main id="panel" class="panel">
+
     <div class="subMenuParent container-fluid">
 
         <div class="subMenu container">
@@ -63,9 +76,19 @@
     </div>
 
     <div class="footer"></div>
+    </main>
+    </body>
 </html>
 
+<script type="module">
+    import {navbar, cart} from './components/navbar.js';
+    import cartBuilder from './scripts/cart.js';
 
+    document.getElementById('nav').innerHTML = navbar();
+    document.getElementById('cart').innerHTML = cart();
+
+    cartBuilder();
+</script>
 
 <script src="/scripts/pharma_wellness.js" type="module"></script> 
 <script type="module" src="/components/brandlinks.js"></script>
