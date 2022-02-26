@@ -2,7 +2,7 @@ function navbar() {
     return `
         <div class="nav__left">
             <div id="logo">
-                <a href="/">
+                <a href="/index.html">
                     <img src="https://blinkit.com/images/header/blinkit_logo-3898547.png" alt="blinkit (formerly Grofers)" />
                 </a>
             </div>
