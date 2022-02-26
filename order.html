@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="./styles/main.css">   
+
     <title>Order</title>
 </head>
 
@@ -14,11 +15,12 @@
         <div id="main">
             <div id="show">
                 <div id="cont"></div>
-    
                 <p id="totalDisplay"></p>
                 <br />
                 <br />
              </div>
+             <img class="img" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=486,h=486/assets/ui/empty_states/emp_empty_order_history.png" alt="/">
+
  <div class="sam">
             <h4>You have no past orders</h4>
             <p>Let's get you started</p>
@@ -35,6 +37,7 @@
  //console.log('navbar:', navbar)
  let sidebar_div = document.getElementById("sidebar");
  sidebar_div.innerHTML = navbar();
+
 
 
  let order_placed = localStorage.getItem("order_placed");

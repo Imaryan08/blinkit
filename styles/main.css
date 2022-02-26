@@ -17,22 +17,19 @@
 #main{
     flex: 8;
   box-shadow: none; 
-    
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .sai{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     widows: 100%;
     height: 150px;
 }
-div{
-    
-}
 
 .sam{
     margin: auto;
     width: 30%;
    box-shadow: none;
-   margin-top: 100px;
+  
 }
 .sam>p{
     color: gray;
@@ -125,14 +122,12 @@ p2{
     width: 200px;
     background-color: #182;
     color: white;
- margin-top: 100px;
- 
     
 }
 
 #show{
     width: 80%;
-    height: 300px;
+    height: 200px;
     border: 1px solid gray;
     display: flex;
     justify-content: space-between;
@@ -162,5 +157,49 @@ h3{
     border: 1px solid gray;
     /* color: black; */
     text-align: center;
+
   }
   
+  #del{
+    background-color: #182;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 40%;
+   margin: auto;
+   color: white;
+}
+#del:hover{
+    color: red;
+    cursor: pointer;
+    
+}
+.Add {
+    margin: auto;
+    height: 85%;
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  border: 1px solid black;
+    overflow: hidden;
+  }
+
+  .img{
+      margin-top: 0%;
+     width: 50%; 
+     height: 200px;
+    margin-left: 200px;
+     align-items: center;
+     margin-bottom: 0%;
+     
+  }
+  .text{
+      text-align: center;
+      margin-top: 0%;
+  }
+  .text>h6{
+      color: black;
+      
+  }
