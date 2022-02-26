@@ -97,82 +97,82 @@ function showdata(homePageData){
         div1.addEventListener("click",()=>{
             if(element.id==1)
             {
-                window.location.href=""
+                window.location.href="veg_fruits.html"
             }
-            else if(id==2)
+            else if(element.id==2)
             {
                 window.location.href=""
             }
-            else if(id==3)
+            else if(element.id==3)
+            {
+                window.location.href="breakfast.html"
+            }
+            else if(element.id==4)
+            {
+                window.location.href="product.html"
+            }
+            else if(element.id==5)
             {
                 window.location.href=""
             }
-            else if(id==4)
+            else if(element.id==6)
             {
                 window.location.href=""
             }
-            else if(id==5)
+            else if(element.id==7)
             {
                 window.location.href=""
             }
-            else if(id==6)
+            else if(element.id==8)
             {
                 window.location.href=""
             }
-            else if(id==7)
+            else if(element.id==9)
             {
                 window.location.href=""
             }
-            else if(id==8)
+            else if(element.id==10)
             {
-                window.location.href=""
+                window.location.href="https://blinkit.com/cln/everyday-low-prices/clid/61f00a9ce096460017038f12"
             }
-            else if(id==9)
+            else if(element.id==11)
             {
-                window.location.href=""
+                window.location.href="atta_rice.html"
             }
-            else if(id==10)
+            else if(element.id==12)
             {
-                window.location.href=""
+                window.location.href="masala_oil.html"
             }
-            else if(id==11)
+            else if(element.id==13)
             {
-                window.location.href=""
+                window.location.href="https://blinkit.com/cln/everyday-low-prices/clid/61962f6e038dff0016d41f97"
             }
-            else if(id==12)
+            else if(element.id==14)
             {
-                window.location.href=""
+                window.location.href="https://blinkit.com/cln/everyday-low-prices/clid/61eec076e096460017038efb"
             }
-            else if(id==13)
+            else if(element.id==15)
             {
-                window.location.href=""
+                window.location.href="personal_care.html"
             }
-            else if(id==14)
+            else if(element.id==16)
             {
-                window.location.href=""
+                window.location.href="cleaning.html"
             }
-            else if(id==15)
+            else if(element.id==17)
             {
-                window.location.href=""
+                window.location.href="https://blinkit.com/cln/everyday-low-prices/clid/61eea21fa1664e0017ab223f"
             }
-            else if(id==16)
+            else if(element.id==18)
             {
-                window.location.href=""
+                window.location.href="https://blinkit.com/cln/everyday-low-prices/clid/5f33cb29e75ea1001632c1fd"
             }
-            else if(id==17)
+            else if(element.id==19)
             {
-                window.location.href=""
-            }
-            else if(id==18)
-            {
-                window.location.href=""
-            }
-            else if(id==19)
-            {
-                window.location.href=""
+                window.location.href="https://blinkit.com/cln/everyday-low-prices/clid/61ee8cd7a1664e0017ab223e"
             }
             else{
-                window.location.href=""
+                window.location.href="https://blinkit.com/cln/everyday-low-prices/clid/61eebc65a1664e0017ab2241"
             }
         })
         div.append(div1);
