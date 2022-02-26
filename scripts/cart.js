@@ -1,4 +1,4 @@
- const slideout = new Slideout({
+  const slideout = new Slideout({
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('cart'),
     'padding': 360,
@@ -46,20 +46,8 @@ String.prototype.format = function () {
 
 
 // get from local storage
-const cartItems = [
-  {
-    image: 'http://cdn.grofers.com/app/images/products/normal/pro_216127.jpg?ts=1590380297',
-    name: 'Unibic Choco Ripple Cookies - Buy 1 Get 1 Free',
-    price: '40',
-    quantity: '2 x 100g',
-  },
-  {
-    image: 'http://cdn.grofers.com/app/images/products/normal/pro_216127.jpg?ts=1590380297',
-    name: 'Unibic Choco Ripple Cookies - Buy 1 Get 1 Free',
-    price: '40',
-    quantity: '2 x 100g',
-  }
-];
+// remember to keep the keys same, i.e, [image, title, price, quantity]
+const cartItems = [];
 
 const checkoutItems = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -76,7 +64,7 @@ cartItems.forEach((item, index) => {
 
   const container = document.createElement('div');
   const h3 = document.createElement('h3');
-  h3.innerText = item.name;
+  h3.innerText = item.title;
 
   const h2 = document.createElement('h2');
   h2.innerText = item.price;
@@ -114,13 +102,15 @@ cartItems.forEach((item, index) => {
     const n = Number(p.innerText) - 1;
     if (n === 0) {
       main.style.display = 'none';
+      checkoutItems[index].count -= 1;
+      localStorage.setItem('checkoutItems', JSON.stringify(checkoutItems));
     } else {
       p.innerText = n;
       let cost = Number(h2.innerText);
       cost -=  Number(item.price);
       h2.innerText = cost;
 
-      checkoutItems[index].count += 1;
+      checkoutItems[index].count -= 1;
 
       localStorage.setItem('checkoutItems', JSON.stringify(checkoutItems));
     }

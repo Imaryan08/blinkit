@@ -543,6 +543,29 @@ input[type='radio']:checked:after {
     margin-left: 25px;
 }
 
+.checkout-cart__item img {
+    width: 50px;
+}
+
+.checkout-cart__item h6 {
+    padding-left: 10px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    overflow: hidden;
+    width: 80%;
+    font-weight: lighter;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+
+.checkout-cart__item h5 {
+    padding-left: 10px;
+    padding-top: 4px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
 /* Medium screen */
 @media screen and (max-width: 1020px) {
     #nav-text-container {
