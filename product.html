@@ -30,25 +30,25 @@
     <div class="container">
         <div class="row products">
             <div class="col-3 productCat">
-                <div onclick="getproduct('all.json')" id="all.json" class="row productCatList">Bakery & Biscuits</div>
-                <div onclick="getproduct('cookies.json')" id="cookies.json" class="row productCatList">Cookies</div>
-                <div onclick="getproduct('buns.json')" id="buns.json" class="row productCatList">Glucose & Marie</div>
-                <div onclick="getproduct('cakes.json')" id="cakes.json" class="row productCatList">Sweet & Salty</div>
-                <div onclick="getproduct('healthy.json')" id="healthy.json" class="row productCatList">Healthy & Digestive</div>
-                <div onclick="getproduct('buns.json')" id="buns.json" class="row productCatList">Cream Biscuits</div>
-                <div onclick="getproduct('cakes.json')" id="cakes.json" class="row productCatList">Rusks & Wafers</div>
-                <div onclick="getproduct('mixes.json')" id="mixes.json" class="row productCatList">Cakes & Rolls</div>
-                <div onclick="getproduct('cakes.json')" id="cakes.json" class="row productCatList">Burns & Bakery</div>
-                <div onclick="getproduct('buns.json')" id="buns.json" class="row productCatList">Baking & Dessert Mixes</div>
-                <div onclick="getproduct('mixes.json')" id="mixes.json" class="row productCatList">Baking Ingredients</div>
+                <div id="all.json" class="row productCatList">Bakery & Biscuits</div>
+                <div id="cookies.json" class="row productCatList">Cookies</div>
+                <div id="buns.json" class="row productCatList">Glucose & Marie</div>
+                <div id="cakes.json" class="row productCatList">Sweet & Salty</div>
+                <div id="healthy.json" class="row productCatList">Healthy & Digestive</div>
+                <div id="buns.json" class="row productCatList">Cream Biscuits</div>
+                <div id="cakes.json" class="row productCatList">Rusks & Wafers</div>
+                <div id="mixes.json" class="row productCatList">Cakes & Rolls</div>
+                <div id="cakes.json" class="row productCatList">Burns & Bakery</div>
+                <div id="buns.json" class="row productCatList">Baking & Dessert Mixes</div>
+                <div id="mixes.json" class="row productCatList">Baking Ingredients</div>
             </div>
             
             <div class="col-9">
                 <div style="display: flex; justify-content: space-between;">
                    <div>Bakery & Biscuits</div>  
                  <div id="sort-filter">
-                    <select name="sort" id="sortButton" onchange="sortProducts()">
-                      <option value="">SORT</option>
+                    <select name="sort" id="sortButton">
+                      <option value="" selected>SORT</option>
                       <option value="asc">Low to High</option>
                       <option value="desc">High to Low</option>
                     </select>
@@ -62,7 +62,7 @@
                         <div id="small_div">
                             <div class="price" id="very_small">
                                 <span>$47</span>
-                                 <span><strike>$60</strike></span> -->
+                                 <span><strike>$60</strike></span> --> 
                             <!-- </div>
                             <button id="duttom">Add to Cart</button>
                         </div>
