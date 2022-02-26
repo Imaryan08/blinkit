@@ -163,9 +163,15 @@ function renderproduct(data) {
     var Button = document.createElement("button");
     Button.setAttribute("id", "duttom");
     Button.textContent = "Add to Cart";
-    Button.onclick = function (event) {
-      // add to cart --> items should get added to cart --> cart count should change in navbar;
+    Button.onclick = function name(event) {
+      Button.style.background="red";
+      Button.style.color="white";
+      Button.textContent="Go to Cart";
       addToCart(D);
+      Button.addEventListener("click",()=>{
+        window.location.href="checkout.html";
+
+      })
     };
 
     Div_21.append(Spam);
