@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy personal care Online</title>
+    <title>Buy bakery & biscuits Online</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/product.css">
+    <link rel="stylesheet" href="./styles/product.css" >
     <link rel="stylesheet" href="./styles/footer.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
@@ -16,7 +16,6 @@
     <link data-react-helmet="true" rel="icon" href="https://blinkit.com/images/faviconChange.ico" type="image/x-icon">
 </head>
 <body>
-
     <nav id="nav">
 
     </nav>
@@ -25,8 +24,8 @@
     </div>
 
     <main id="panel" class="panel">
-    <div class="subMenuParent container-fluid">
 
+    <div class="subMenuParent container-fluid">
         <div class="subMenu container">
             <a href="./atta_rice.html" class="col">atta,rice & dal</a>
             <a href="./veg_fruits.html" class="col">vegetables & fruits</a>
@@ -38,26 +37,28 @@
             <a href="" class="col">More <i class='fas fa-angle-down'></i></a>
         </div>
     </div>
-    <div id="cart-count" style="text-align: center; visibility: hidden;"></div>
+    <!-- cart count -->
+             <div id="cart-count" style="text-align: center; visibility: hidden;"></div>
+            
     <div class="container">
         <div class="row products">
             <div class="col-3 productCat">
-                <div id="sanitizers.json" class="row background-effect productCatList">Masks & Sanitizers</div>
-                <div id="supplements.json" class="row productCatList">Supplements</div>
-                <div id="devices.json" class="row productCatList">Healthcare devices</div>
-                <div id="all.json" class="row productCatList">Pharma & Wellness</div>
-                <div id="sanitizers.json" class="row productCatList">Cough & Cold</div>
-                <div id="supplements.json" class="row productCatList">Digestive Care</div>
-                <div id="devices.json" class="row productCatList">Antiseptic Liquid</div>
-                <div id="all.json" class="row productCatList">Skin Treatment</div>
-                <div id="sanitizers.json" class="row productCatList">Herbal Drinks</div>
-                <div id="all.json" class="row productCatList">Handwash</div>
-                <div id="devices.json" class="row productCatList">Mouth Fresheners</div>
+                <div id="all.json" class="row background-effect productCatList">Bakery & Biscuits</div>
+                <div id="cookies.json" class="row productCatList">Cookies</div>
+                <div id="buns.json" class="row productCatList">Glucose & Marie</div>
+                <div id="cakes.json" class="row productCatList">Sweet & Salty</div>
+                <div id="healthy.json" class="row productCatList">Healthy & Digestive</div>
+                <div id="buns.json" class="row productCatList">Cream Biscuits</div>
+                <div id="cakes.json" class="row productCatList">Rusks & Wafers</div>
+                <div id="mixes.json" class="row productCatList">Cakes & Rolls</div>
+                <div id="cakes.json" class="row productCatList">Burns & Bakery</div>
+                <div id="buns.json" class="row productCatList">Baking & Dessert Mixes</div>
+                <div id="mixes.json" class="row productCatList">Baking Ingredients</div>
             </div>
             
             <div class="col-9">
                 <div style="display: flex; justify-content: space-between;">
-                   <div>Personal Care</div>  
+                   <div>Bakery & Biscuits</div>  
                  <div id="sort-filter">
                     <select name="sort" id="sortButton">
                       <option value="" selected>SORT</option>
@@ -66,19 +67,35 @@
                     </select>
                  </div>
                 </div>
-
-                <div class="row" id="box" style="border:1px solid #eee; padding: 10px 5px"></div>
+                <div class="row" id="box" style="border:1px solid #eee; padding: 10px 5px">
+                    <!-- <div class="col-3 productDetails" id="product_div">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=400,h=400/app/images/products/sliding_image/391306a.jpg" alt="">
+                        <h6>Grocery 1kg sugar</h6>
+                        <p>1 kg</p>
+                        <div id="small_div">
+                            <div class="price" id="very_small">
+                                <span>$47</span>
+                                 <span><strike>$60</strike></span> --> 
+                            <!-- </div>
+                            <button id="duttom">Add to Cart</button>
+                        </div>
+                    </div> --> 
+                </div>
             </div>
         </div>
     </div>
 
+
     
+ 
 
-    <div class="footer"></div>
-    </main>
-    </body>
-</html>
+    <div class="footer">
 
+    </div>
+</main>
+</body>
+</html> 
+    
 <script type="module">
     import {navbar, cart} from './components/navbar.js';
     import cartBuilder from './scripts/cart.js';
@@ -88,6 +105,6 @@
 
     cartBuilder();
 </script>
+<script src="/scripts/products.js" type="module"></script> 
+<script type="module" src="/components/brandlinks.js"></script>
 
-<script src="/scripts/personal_care.js" type="module"></script> 
-<script src="/components/brandlinks.js"></script> 
