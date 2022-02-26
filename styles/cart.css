@@ -218,6 +218,7 @@ body {
 .cart-container h2 {
     padding: 16px 12px 0;
     color: black;
+    font-size: 16px;
 }
 
 .cart-container h4 {
@@ -225,6 +226,7 @@ body {
     padding: 4px 12px;
     margin-bottom: 12px;
     color: black;
+    font-size: 12px;
 }
 
 .flex-text {
