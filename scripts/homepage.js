@@ -1,87 +1,189 @@
 var homePageData=[
     {
+        id: 1,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-1_0.png?6214463673bd2"
         
     },
     {
+        id:2,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-2_1.png?621446371e144"
     },
     {
+        id:3,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-3_0.png?62144637b8cff"
     },
     {
+        id:4,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-4_0.png?6214463854bcc"
     },
     {
+        id:5,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-5_0.png?62144638e5ea0"
     },
     {
+        id:6,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-6_0.png?621446399a1d9"
     },
     {
+        id:7,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-7_0.png?6214463a3cfa8"
     },
     {
+        id:8,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-8_0.png?6214463ad02a8"
     },
     {
+        id:9,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-9_0.png?6214463b78640"
     },
     {
+        id:10,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-10_0.png?6214463c42c41"
     },
     {
+        id:11,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-11_0.png?6214463ce30da"
     },
     {
+        id:12,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-12_0.png?6214463d94ffe"
     },
     {
+        id:13,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/desktop-13-tea-coffee-health-drink_1.png?6214463e35243"
     },
     {
+        id:14,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-14_0.png?6214463ec4a10"
     },
     {
+        id:15,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-15_0.png?6214463f64a70"
     },
     {
+        id:16,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-16_0.png?6214464018d66"
     },
     {
+        id:17,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-02/18-desktop-home-office-1.png?62144640bb713"
     },
     {
+        id:18,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-18_0.png?62144641602f4"
     },
     {
+        id:19,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-19_0.png?6214464203198"
     },
     {
+        id:20,
         image_link:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=137,h=190/layout-engine/2022-01/Slice-20_0.png?62144642aa29d"
     }
 ];
 function showdata(homePageData){
-    let div = document.querySelector(".categories");
+    let div = document.querySelector(".product-categories-20images");
     homePageData.forEach(element => {
         let div1 = document.createElement("div");
         div1.style.textAlign="center";
         div1.style.display="block"
-        div1.setAttribute("id","prod")
+        div1.setAttribute("id","hovering-effect")
 
         let image= document.createElement("img");
         image.src= element.image_link;
         image.style.width="100%"
 
         div1.append(image);
+        div1.addEventListener("click",()=>{
+            if(element.id==1)
+            {
+                window.location.href=""
+            }
+            else if(id==2)
+            {
+                window.location.href=""
+            }
+            else if(id==3)
+            {
+                window.location.href=""
+            }
+            else if(id==4)
+            {
+                window.location.href=""
+            }
+            else if(id==5)
+            {
+                window.location.href=""
+            }
+            else if(id==6)
+            {
+                window.location.href=""
+            }
+            else if(id==7)
+            {
+                window.location.href=""
+            }
+            else if(id==8)
+            {
+                window.location.href=""
+            }
+            else if(id==9)
+            {
+                window.location.href=""
+            }
+            else if(id==10)
+            {
+                window.location.href=""
+            }
+            else if(id==11)
+            {
+                window.location.href=""
+            }
+            else if(id==12)
+            {
+                window.location.href=""
+            }
+            else if(id==13)
+            {
+                window.location.href=""
+            }
+            else if(id==14)
+            {
+                window.location.href=""
+            }
+            else if(id==15)
+            {
+                window.location.href=""
+            }
+            else if(id==16)
+            {
+                window.location.href=""
+            }
+            else if(id==17)
+            {
+                window.location.href=""
+            }
+            else if(id==18)
+            {
+                window.location.href=""
+            }
+            else if(id==19)
+            {
+                window.location.href=""
+            }
+            else{
+                window.location.href=""
+            }
+        })
         div.append(div1);
     });
 }
 showdata(homePageData);
 
-let slide = document.querySelector(".banks_offer");
-let rightbtn= document.querySelector("#rig");
-let leftbtn= document.querySelector("#lef");
+// bank offers slide 
+let slide = document.querySelector("#banks_offer");
+let rightbtn= document.querySelector(".next");
+let leftbtn= document.querySelector(".prev");
 
 rightbtn.addEventListener("click",()=>{
     slide.scrollLeft += 400;
@@ -91,9 +193,9 @@ rightbtn.addEventListener("click",()=>{
 leftbtn.addEventListener("click",()=>{
     slide.scrollLeft -= 400;
 })
-// -------------------------------------------------
 
-
+// -----------------------------
+import {product,product1,product2,product3} from "/components/homepagelogic.js"
 var fruits_vegetable = [
     {
       Image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/447623a.jpg",
@@ -246,7 +348,7 @@ var fruits_vegetable = [
         price:30.00,
     }
 ]
-import {product,product1,product2,product3} from "./constructor/logic.js"
+
 let display= document.querySelector(".product");
 product(fruits_vegetable,display)
 
@@ -814,3 +916,10 @@ var dairyprod=[
 ]
 let display3= document.querySelector(".dairy");
 product3(dairyprod,display3)
+
+
+let foot = document.querySelector('.footer');
+
+    import footer from '/components/footer.js';
+
+    foot.innerHTML = footer();
