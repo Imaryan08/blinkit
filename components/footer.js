@@ -220,7 +220,7 @@ let footer = () => {
     </div>
     <div class="row">
         <div class="col brands brandLinks">
-            
+            <!-- appending brand links here -->                  
         </div>
     </div>
 </div>
@@ -266,8 +266,5 @@ let footer = () => {
     `;
 }
 
-
-
-
-export {footer};
+export default footer;
 
