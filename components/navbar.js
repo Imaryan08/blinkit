@@ -8,7 +8,7 @@ function navbar() {
             </div>
             <div class="location-info">
                 <div class="h3">delivered in 22 min</div>
-                <div id="location">#314 1st main 5th block Delhi - 92</div>
+                <div id="location">detect location</div>
             </div>
         </div>
         <div id="nav-search">
@@ -54,4 +54,57 @@ function cart() {
   `
 }
 
-export { navbar, cart };
+
+function setLocation() {
+
+    const defaultLocation = '#314 1st main 5th block Delhi - 92';
+    let localLocation = localStorage.getItem('address');
+    if (localLocation !== null) {
+        document.querySelector('#location').innerText = localLocation;
+        return;
+    }
+
+const button = document.querySelector('#location');
+    button.addEventListener('click', () =>{
+        if(navigator)
+            navigator.geolocation.getCurrentPosition( (position) => {
+                console.log(position);
+                let longitude = position.coords.longitude;
+                let latitude = position.coords.latitude;
+
+                getLocation(longitude,latitude);
+                localStorage.setItem('address', localLocation);
+            })
+        else    
+            console.log('geolocation is not supported');
+            button.innerText = defaultLocation;
+            localStorage.setItem('address', localLocation);
+    })
+
+
+    let getLocation = async(longitude, latitude) => {
+
+        button.innerText = "Detecting your location...";
+        fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=b71feba224f94a209d1bdd18ee8bba3a`)
+        .then(response => response.json()).then(response =>{
+        
+        let allDetails = response.results[0].components;
+            console.table(allDetails);
+        
+        let {county, country, state_district} = allDetails;
+        localLocation = `${county}, ${state_district}, ${country}`;
+        button.innerText = localLocation;
+
+        localStorage.setItem('address', localLocation);
+        })
+        .catch(()=>{
+        button.innerText = defaultLocation;
+
+        localStorage.setItem('address', localLocation);
+    });
+    }
+
+
+}
+
+export { navbar, cart, setLocation };

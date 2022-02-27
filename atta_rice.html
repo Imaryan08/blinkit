@@ -82,7 +82,7 @@
 
 <script type="module">
 
-    import {navbar, cart} from './components/navbar.js';
+    import {navbar, cart, setLocation} from './components/navbar.js';
     import { createSlideout, cartBuilder } from './scripts/cart.js';
 
     document.getElementById('nav').innerHTML = navbar();
@@ -91,6 +91,7 @@
     cartBuilder();
 
 
+    setLocation();
 
 </script>
 
