@@ -523,6 +523,9 @@ function product3(dairyprod,display){
         span3.style.background="whitesmoke"
         span3.addEventListener("click",()=>{
             span2.textContent++;
+            var homepageselecteditem =[] || JSON.parse(localStorage.getItem("homepageitem"));
+            homepageselecteditem.push(element);
+            localStorage.setItem("homepageitem",homepageselecteditem)
         })
         
 
