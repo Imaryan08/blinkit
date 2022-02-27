@@ -111,7 +111,7 @@
         async function fechmovies(){
             try{
                 let name = document.getElementById("searchbar").value;
-              let fetchvalue = await fetch(`https://littlebluepenguin.s3.ap-south-1.amazonaws.com/data/attaRiceDall/${name}`);
+              let fetchvalue = await fetch(`https://littlebluepenguin.s3.ap-south-1.amazonaws.com/data/attaRiceDall/${name}.json`);
                 let data = await fetchvalue.json();
                    let Data = data;
                    console.log(Data);
