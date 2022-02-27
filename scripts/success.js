@@ -4,7 +4,7 @@ document.querySelector('#item-cost').innerText = totalAmt;
 const itemLength = false || 1;
 document.querySelector('#item-count').innerText = itemLength;
 
-const address = 'Home: #314, 1st main, 5th cross, Delhi - 92 ';
+const address = localStorage.getItem('address');
 document.querySelector('#address').innerText = address;
 
 document.querySelector('#btn-home').addEventListener('click', () => {

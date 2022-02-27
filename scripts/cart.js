@@ -58,6 +58,7 @@ localCartItems.forEach((e) => {
 });
 
 const cartdiv = document.querySelector('#cart-items');
+cartdiv.innerHTML = null;
 
 cartItems.forEach((item, index) => {
 
