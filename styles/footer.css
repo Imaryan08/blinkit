@@ -72,10 +72,11 @@ ul li {
     border-bottom: 1px solid #eee;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    color: black;
 }
 
 .brands a{
-    color: gray;
+    color: gray !important;
 }
 
 .paymentPartners{
@@ -83,6 +84,7 @@ ul li {
     border-bottom: 1px solid #eee;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    color: black;
 }
 .paymentPartners div:last-child  .col{
     width: 60px;

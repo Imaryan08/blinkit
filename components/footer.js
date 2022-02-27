@@ -76,7 +76,7 @@ let footer = () => {
             <img src="https://blinkit.com/images/home/express-delivery-icon-93fce76.png" style="width:60px; height:60px; margin-top: 10px" alt="">
         </div>
         <div style="margin-left: 15px">
-            <h6>10 minute grocery now</h6>     
+            <h6  style="color: black">10 minute grocery now</h6>     
             <p>Get your order delivered to your doorstep at the earliest from dark stores near you.</p>               
         </div>
     </div>
@@ -85,7 +85,7 @@ let footer = () => {
             <img src="https://blinkit.com/images/home/footer-best-price-icon-90b5bd7.png" style="width:60px; height:60px; margin-top: 10px" alt="">
         </div>
         <div style="margin-left: 15px">
-            <h6>Best Prices & Offers</h6>     
+            <h6  style="color: black">Best Prices & Offers</h6>     
             <p>Cheaper prices than your local supermarket, great cashback offers to top it off.</p>               
         </div>
     </div>
@@ -94,7 +94,7 @@ let footer = () => {
             <img src="https://blinkit.com/images/home/footer-genuine-products-icon-d2756ce.png" style="width:60px; height:60px; margin-top: 10px" alt="">
         </div>
         <div style="margin-left: 15px">
-            <h6>Wide Assortment</h6>     
+            <h6 style="color: black">Wide Assortment</h6>     
             <p>Choose from 5000+ products across food, personal care, household & other categories</p>               
         </div>
     </div>
@@ -103,7 +103,7 @@ let footer = () => {
             <img src="https://blinkit.com/images/home/footer-easy-returns-icon-02b777e.png" style="width:60px; height:60px; margin-top: 10px" alt="">
         </div>
         <div style="margin-left: 15px">
-            <h6>Easy Returns</h6>     
+            <h6 style="color: black">Easy Returns</h6>     
             <p>Not satisfied with a product? Return it at the doorstep & get a refund within hours.</p>               
         </div>
     </div>
@@ -113,7 +113,7 @@ let footer = () => {
 <div class="container categories">
     <div class="row">
         <div class="col-5">
-            <h6>Categories</h6>
+            <h6  style="color: black">Categories</h6>
             <div class="row">
                 <div class="col">
                         <ul>
@@ -149,7 +149,7 @@ let footer = () => {
         <div class="col-7">
             <div class="row">
                 <div class="col-3">
-                    <h6>Company</h6>
+                    <h6  style="color: black">Company</h6>
                     <ul>
                         <a href=""><li>About</li></a>
                         <a href=""><li>Careers</li></a>
@@ -160,7 +160,7 @@ let footer = () => {
                     </ul>
                 </div>
                 <div class="col-3">
-                    <h6>For Consumers</h6>
+                    <h6 style="color: black">For Consumers</h6>
                     <ul>
                         <a href=""><li>Privacy</li></a>
                         <a href=""><li>Terms</li></a>
@@ -171,7 +171,7 @@ let footer = () => {
                     </ul>
                 </div>
                 <div class="col-3">
-                    <h6>For Partners</h6>
+                    <h6 style="color: black">For Partners</h6>
                     <ul>
                         <a href=""><li>Partner</li></a>
                         <a href=""><li>Express</li></a>
@@ -215,7 +215,7 @@ let footer = () => {
 <div class="container">
     <div class="row">
         <div class="col">
-            <h6>Brands available on blinkit (formerly grofers)</h6>
+            <h6 style="color: black">Brands available on blinkit (formerly grofers)</h6>
         </div>
     </div>
     <div class="row">
