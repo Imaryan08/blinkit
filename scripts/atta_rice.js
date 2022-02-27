@@ -177,6 +177,7 @@ function renderproduct(data) {
         window.location.href = 'checkout.html';
       })
     }, {once: true})
+
     Div_21.append(Spam);
     div1.append(Img);
     heading.append(H6);

@@ -1,3 +1,5 @@
+import { cartBuilder } from './cart.js'
+
 document.querySelectorAll('.productCat > div').forEach((e) => {
   e.addEventListener('click', () => {
       document.querySelector('.background-effect').classList.remove('background-effect');
@@ -166,16 +168,17 @@ function renderproduct(data) {
     var Button = document.createElement("button");
     Button.setAttribute("id", "duttom");
     Button.textContent = "Add to Cart";
-    Button.onclick = function name(event) {
+    Button.addEventListener('click', () => {
+
       Button.style.background="red";
       Button.style.color="white";
-      Button.textContent="Go to Cart";
+      Button.textContent="checkout";
       addToCart(D);
-      Button.addEventListener("click",()=>{
-        window.location.href="checkout.html";
-
+      cartBuilder();
+      Button.addEventListener('click', () => {
+        window.location.href = 'checkout.html';
       })
-    };
+    }, {once: true})
 
     Div_21.append(Spam);
     div1.append(Img);

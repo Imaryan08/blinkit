@@ -120,13 +120,13 @@
 </html>
 
 <script type="module">
-  import { navbar, cart } from "./components/navbar.js";
-  import cartBuilder from "./scripts/cart.js";
+    import {navbar, cart} from './components/navbar.js';
+    import { createSlideout, cartBuilder } from './scripts/cart.js';
 
-  document.getElementById("nav").innerHTML = navbar();
-  document.getElementById("cart").innerHTML = cart();
-
-  cartBuilder();
+    document.getElementById('nav').innerHTML = navbar();
+    document.getElementById('cart').innerHTML = cart();
+    const slideout = createSlideout();
+    cartBuilder();
 </script>
 
 <script src="/scripts/cleaning.js" type="module"></script>
