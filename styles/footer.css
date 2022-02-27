@@ -11,6 +11,7 @@
 .features1 h6{
     font-weight: 500;
     font-size: 12px; 
+    color: black;
 }
 .features1 p {
     font-weight: 200;
@@ -43,6 +44,7 @@ ul li {
     padding-bottom: 50px;
     margin-bottom: 50px;
 }
+
 .categories > div > div:first-child{
     border-right: 1px solid #eee;
 }
