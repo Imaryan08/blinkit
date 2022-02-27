@@ -82,7 +82,7 @@ document.querySelectorAll('.total-amt').forEach((e) => {
     e.innerText = totalAmt;
 });
 
-const address = false || 'Home: #314, 1st main, 5th cross, Delhi - 92';
+const address = localStorage.getItem('address');
 document.querySelector('#cust-address').innerText = address;
 
 const phone = false || '8475968123';
