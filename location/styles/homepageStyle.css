@@ -1,0 +1,338 @@
+.main-body-container{
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+    width: 97%;
+    margin: auto;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+#top-image1{
+    text-align: center;
+}
+#download-app-image2{
+    text-align: center;
+}
+.offers-image3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.offers-image3 img{
+    max-width:97% ;
+}
+.product-categories-20images{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: auto;
+    gap: 2px;
+}
+#hovering-effect:hover{
+    border: 2px solid rgb(41, 38, 38);
+    border-radius: 3px;
+}
+.bankoffers_heading{
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    font-weight: 500;
+}
+.bankoffers_heading p{
+    margin-top: 25px;
+    margin-left: 26px;
+    margin-bottom: 10px;
+}
+/* ---------------------- */
+.bank-slider{
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+#banks_offer{
+    display: grid;
+    grid-template-columns: repeat(8,290px);
+    grid-template-rows: 100px;
+    gap: 10px;
+    width: 98%;
+    margin: auto;
+    overflow:hidden;
+    position: relative;
+}
+.bank_name{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    line-height: 19px;
+    border-radius: 8px;
+}
+.bank_name div {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.bank_name div img{
+    width: 99%;
+}
+
+/* ------------------bank offers styling below-------------- */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(235, 103, 103);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  /* ------------ads slide show animation */
+  .slide{
+    width: 80%;
+    height: 450px;
+    background-image: url("https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcms-contents.pharmeasy.in%2Fbanner%2Ff190cbe684b-Otrivin-CB-Jan.jpg&w=750&q=75");
+    margin: 10px auto;
+    animation: slide 30s  infinite;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+@keyframes slide{
+    0%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_Jim%20Jam_Britannia_889.jpg?6214d1bfb3a4e");
+    }
+    20%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_vicks_png_898.jpg?6214b5f0ac5c6");
+    }
+    40%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_NUTRITION_NESTLE_906.jpg?6214b5ef679bb");
+    }
+    60%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_Bournvita_Cadbury_877.jpg?6214b5eeb6867");
+    }
+    80%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_complan_zydus_660.jpg?621a49089e939");
+    }
+    100%{
+        background: url("https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=954,h=477/layout-engine/automation/pb_Brand_maggie_nestle_888.jpg?621a4904bd8c8");
+    }
+}
+/* -------------------vegetables div---------------- */
+.fruit_heading{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    height: 50px;
+    gap: 10px;
+    margin-top: 20px;
+}
+#fruit{
+    flex-grow: 3;
+    padding-left: 10px;
+    line-height: 18px;
+    text-align: left;
+}
+#see_more{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.p{
+    margin-top: 0px;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span{
+    font-size: 14px;
+    font-weight: normal;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#more{
+    flex: 1;
+    text-align: end;
+    padding-top: 10px;
+}
+b{
+    font-size: 16px;
+    margin-top: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#arrows{
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+    cursor: pointer;
+    padding-top: 8px;
+}
+.button{
+    width: 27px;
+    height: 25px;
+}
+.product{
+    display: grid;
+    width: 95%;
+    margin: auto;
+    grid-template-columns: repeat(25,165px);
+    grid-template-rows: 300px;
+    gap: 11px;
+    position: relative;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+.product::-webkit-scrollbar{
+    width: 3px;
+    height: 4px;
+    background-color: #d5ddd5;
+}
+.product::-webkit-scrollbar-track{
+    --webkit-box-shadow : inset 0px 0px 6px rgba(0,0,4,0.3)
+}
+#image{
+    transform: scale(.95);
+    transition: all .4s;
+}
+#image:hover{
+    transform: scale(1.01);
+    
+}
+
+/* -----------------------chemist div */
+
+.cartBtn{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* display: none; */
+}
+.cartBtn{
+    height: 33px;
+    background: #f8db35;
+    display: flex;
+    top: 80%;
+    margin-top: 10px;
+    justify-content: space-between;
+    border-radius: 4px;
+    display:none;
+}
+#cartBtn{
+    width: 100%;
+    height: 30px;
+    background: #f8db35;
+    border-radius: 3px;
+    display: flex;
+    top: 93%;
+    margin-top: 10px;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+#plus{
+    font-size: 22px;
+    margin-right: -120px;
+    border: 1px solid black;
+    height: 10px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-bottom: 1px;
+    
+}
+
+.chemist{
+    display: grid;
+    width: 95%;
+    margin: auto;
+    grid-template-columns: repeat(20,167px);
+    grid-template-rows: 340px;
+    gap: 11px;
+    position: relative;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+.chemist::-webkit-scrollbar{
+    width: 3px;
+    height: 4px;
+    background-color: #d5ddd5;
+}
+.chemist::-webkit-scrollbar-track{
+    --webkit-box-shadow : inset 0px 0px 6px rgba(0,0,4,0.3)
+}
+
+/* ------------second offers div styling below----------------- */
+.offer_pic{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    width: 95%;
+}
+ 
+/* ------------------biscuits div  ---------------*/
+.biscuits{
+    display: grid;
+    width: 95%;
+    margin: auto;
+    grid-template-columns: repeat(28,155px);
+    grid-template-rows: 340px;
+    gap: 11px;
+    position: relative;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+.biscuits::-webkit-scrollbar{
+    width: 3px;
+    height: 4px;
+    background-color: #d5ddd5;
+}
+.biscuits::-webkit-scrollbar-track{
+    --webkit-box-shadow : inset 0px 0px 6px rgba(0,0,4,0.3)
+}
+/* ------------------dairy products div--------- */
+.dairy{
+    display: grid;
+    width: 95%;
+    margin: auto;
+    grid-template-columns: repeat(43,155px);
+    grid-template-rows: 320px;
+    gap: 11px;
+    position: relative;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+.dairy::-webkit-scrollbar{
+    width: 3px;
+    height: 4px;
+    background-color: #d5ddd5;
+}
+.dairy::-webkit-scrollbar-track{
+    --webkit-box-shadow : inset 0px 0px 6px rgba(0,0,4,0.3)
+}
+
+.span{
+    font-size: 16px;
+    color: black;
+    font-weight: 800;
+}

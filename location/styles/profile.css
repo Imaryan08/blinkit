@@ -1,0 +1,17 @@
+#sam{
+    width: 15%;
+    font-family: sans-serif;
+    margin: auto;
+    margin-right: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+}
+#flex{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    margin-bottom: 50px;
+}
