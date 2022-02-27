@@ -39,6 +39,8 @@ function createSlideout() {
 function cartBuilder () {
     
 
+  const cartCountDiv = document.querySelector('.nav-cart-count')
+  cartCountDiv.innerText = Number(cartCountDiv.innerText) + 1;
 
 // get from local storage
 // remember to keep the keys same, i.e, [image, title, price, quantity]
