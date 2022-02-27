@@ -87,6 +87,7 @@ function showdata(homePageData){
         let div1 = document.createElement("div");
         div1.style.textAlign="center";
         div1.style.display="block"
+        div1.style.marginTop="5px"
         div1.setAttribute("id","hovering-effect")
 
         let image= document.createElement("img");
