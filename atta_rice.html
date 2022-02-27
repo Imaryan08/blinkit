@@ -99,4 +99,58 @@
 <script type="module" src="/components/brandlinks.js"></script> 
 
 
+<!-- Search functionality  -->
+<script type="module">
+    var Ffech = document.getElementById("searchbar");
+        Ffech.addEventListener("input", () => {
+                Appendmovies(main, 1000);
+            });
+
+        let timerid;
+        let Container = document.getElementById("container");
+        async function fechmovies(){
+            try{
+                let name = document.getElementById("searchbar").value;
+              let fetchvalue = await fetch(`https://littlebluepenguin.s3.ap-south-1.amazonaws.com/data/attaRiceDall/${name}`);
+                let data = await fetchvalue.json();
+                   let Data = data;
+                   console.log(Data);
+                   return Data;
+            }
+            catch(err){
+              console.log(`err ${err}`);
+            }
+        }
+    
+        async function main(){
+             let X = await fechmovies();
+             if(X==undefined){
+                 return false;
+             }
+             Container.textContent =null;
+             console.log(X);
+             X.forEach(function(e1){
+                let Div =document.createElement("div");
+                 Div.setAttribute("id","box");
+                 let Img = document.createElement("img");
+                 Img.setAttribute("src",e1.Poster);
+                 Img.onclick= function(){
+                    //  Details(e1);
+                 } 
+                 Div.append(Img);
+                 Container.append(Div);
+             });
+        }
+         
+         function Appendmovies(fun, delay){
+              if(timerid){
+                clearTimeout(timerid);
+              }
+              timerid = 
+              setTimeout(function(){
+                  fun();
+              },delay);
+         }
+        
+    </script>
 
