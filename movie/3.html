@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }        
+       
+        /* Navbar */
+        .navbar{
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input{
+            padding: 10px;
+            width: 50%;
+            border-radius: 5px;
+            opacity: 0.7;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #movies{
+            margin: auto;
+            height: 250px;
+            width: 49%;
+            overflow-y: scroll;
+            padding: 5px;
+            display: none;
+        }
+        #movies > div{
+            padding: 5px;
+            font-size: 18px;
+            font-family: monospace;
+            font-weight: 600;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            margin: 2px 0;
+            overflow: hidden;
+            padding: 5px;
+            cursor: pointer;
+        }
+        #movies > div > div:first-child{
+            height: 100px;
+            max-width: 30%;
+            overflow: hidden;
+            border-radius: 3px;
+        }
+        #movies > div > div > img{
+            width: 100%;
+            object-fit: contain;
+        }
+        #movies > div > div:last-child{
+            text-align: left;
+            padding: 0px 0 0 20px;
+    
+        }
+
+        #movies > div > div:last-child > p{
+            margin: 5px 0;
+        }
+
+        body{
+            background-size: cover;
+            /* background:  linear-gradient(120deg,rgba(240,3,140,0.85) 0%,#8e6ac7 100%); */
+        }
+        .trendMenu{
+            text-align: center;
+            background-color: rgba(0,0,0,0.4);
+            padding: 10px;
+        }
+        .trendMenu > a{
+            text-decoration: none;
+            font-size: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 4px red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .trendMenu > a:hover{
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="trendMenu">
+        <a href="/trending.html">Click here for Trending Movies</a>
+    </div>
+    <div class="navbar">
+        <input type="search" placeholder="Search"  autocomplete="off" name="query" id="query" oninput="debounce(main, 1000)"  onfocusout="hideData()">
+        <div id="movies">
+            
+        </div>
+    </div>
+
+</body>
+</html>
+<!-- <script src="/3.js"></script> -->
+
+<script>
+let body = document.body;
+body.style.backgroundImage = `url('https://starz.imgix.net/homepage/images/app-desktop-011022.jpg?w=2000&fit=max&auto=format,compress')`;    
+
+let bgImg = [
+    'https://assets.nflxext.com/ffe/siteui/vlv3/6dea7743-5586-45d1-89a2-9569b1bb0340/b8bbb6c3-80f1-4648-8527-521bd3bd8781/IN-en-20220207-popsignuptwoweeks-perspective_alpha_website_medium.jpg',
+    'https://starz.imgix.net/homepage/images/dontbreathe2-desktop.jpg?w=2000&fit=max&auto=format,compress',
+    'https://starz.imgix.net/homepage/images/force-desktop.jpg?w=2000&fit=max&auto=format,compress',
+    'https://starz.imgix.net/homepage/images/shiningvale-desktop.jpg?w=2000&fit=max&auto=format,compress',
+    'https://starz.imgix.net/homepage/images/ols6-desktop.jpg?w=2000&fit=max&auto=format,compress'
+];
+
+
+let i = 0;
+setInterval(function(){
+    if(i === 4){
+        i = 0;
+    }
+    body.style.backgroundImage = `url(${bgImg[i++]})`;    
+},5000)
+
+
+
+async function searchMovie(){
+    try{
+
+        let movie = document.querySelector('#query').value;
+        
+        let res = await fetch(`http://www.omdbapi.com/?apikey=e8fab746&s=${movie}`);
+        let data = await res.json();
+
+        return data.Search;
+    }
+
+    catch(err){
+        console.log('err:', err)
+    }
+
+}
+
+async function main(){
+    let data = await searchMovie();
+
+    if(data === undefined)
+        return false;
+
+    appendData(data);
+}
+
+let movies_div = document.querySelector('#movies');
+
+function appendData(movies){
+    console.log('movies:', movies)
+
+    movies_div.innerHTML = null;
+    movies_div.style.display = 'block';
+
+    movies.map(function (elem){
+
+        let searchedMovie = document.createElement('div');
+
+        let imgDiv = document.createElement('div');
+        let image = document.createElement('img');
+        image.src = elem.Poster;
+        imgDiv.append(image);
+        
+        let detail = document.createElement('div');
+        let movieName = document.createElement('p');
+        movieName.innerHTML = `${elem.Title}`;
+        let year = document.createElement('p');
+        year.innerHTML = `Released Year: ${elem.Year}`;
+        let type = document.createElement('p');
+        type.innerHTML = `Movie Type: ${elem.Type}`;
+        detail.append(movieName,year,type);
+
+        searchedMovie.append(imgDiv, detail);
+        movies_div.append(searchedMovie);
+
+    })
+}
+
+let timerId;
+
+function debounce(func, delay){
+
+    if(timerId){
+        clearTimeout(timerId);
+    }
+
+   timerId = setTimeout(function(){
+        func();
+    },delay)
+}
+
+let input = document.querySelector('#query');
+
+// function displayData(){
+
+// }
+
+function hideData(){
+    movies_div.style.display = 'none';
+    input.value = null;
+}
+</script> 

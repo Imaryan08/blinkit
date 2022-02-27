@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background:  rgba(0,0,0,1);
+        }
+        .trending{
+            display: grid;
+            grid-template-columns: repeat(4, 22%);
+            grid-gap: 20px;
+            padding: 20px;
+            place-content: center;
+        }
+        .trending > div{
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .trending > div:hover{
+            cursor: pointer;
+        }
+        
+        .trending > div > div:first-child{
+            overflow: hidden;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .trending > div >div:first-child > img{
+            object-fit: contain;    
+        }
+        .movieTitle{
+            text-align: center;
+            background: rgba(0,0,0,0.5);
+            padding: 1px 5px; 
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .movieTitle > h2,h3{
+            color: #fff;
+            font-family: monospace;
+
+        }
+        .hoverTextDiv{
+            display: none;
+            color: #fff;
+            font-family: cursive;
+            font-weight: 800;
+            background: rgba(0,0,0,0.3);
+            padding: 1px 10px; 
+            position: absolute;
+            bottom: 0;
+            font-size: 16px;
+            max-height: 181px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .trendMenu{
+            text-align: center;
+            padding: 10px;
+        }
+        .trendMenu > a{
+            text-decoration: none;
+            font-size: 40px;
+            color: #fff;
+            text-shadow: 2px 2px 4px red;
+            font-family: monospace;
+            opacity: 1;
+        }
+        .trendMenu > a:hover{
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="trendMenu">
+        <a onclick="returnHome()">Click here for Homepage<small style="font-size:14px; color: red"> (hover on movie!!!)</small></a>
+    </div>
+    <div class="trending">
+
+    </div>
+</body>
+</html>
+<script src="trending.js"></script>
