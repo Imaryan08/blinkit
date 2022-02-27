@@ -47,21 +47,40 @@
 /* product css */
 #product_div{
     margin-top: 5px;
-    border: 1px solid rgb(233, 206, 157);
+    border: 1px solid rgba(211, 211, 211,0.5);
+}
+#product_div:hover{
+    cursor: pointer;
+    border: 1px solid rgb(211,211,211,1);
 }
 img{
+    margin-top: 10px;
+    margin-left: 30px;
     width: 120px;
     height: 120px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
 }
+img:hover{
+    top: -10px;
+}
+
+    
 #small_div{
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
-
+    
 }
 #very_small{
     display: flex;
     flex-direction: column;
+    margin-top: 2px; 
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+
     }
 #duttom{
     border-radius: 15px;
@@ -69,4 +88,6 @@ img{
     background: #FFE141;
     border: none;
     height: 32px;
+    width: 98px;
+    align-items: center;
 }

@@ -160,7 +160,7 @@ function renderproduct(data) {
     Div_21.setAttribute("class", "price");
     Div_21.setAttribute("id", "very_small");
 
-    var Spam = document.createElement("span");
+    var Spam = document.createElement("span"); 
     Spam.textContent = D.price;
 
     var Button = document.createElement("button");
