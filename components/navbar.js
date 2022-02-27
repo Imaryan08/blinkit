@@ -41,7 +41,7 @@ function cart() {
             </div>
             <div class="cart-container">
                 <div class="">
-                <h2 class="">delivery in 12 minutes</h2>
+                <h2 class="">delivery in 22 minutes</h2>
                 <h4 class="">from Super Store - Bengaluru Kalyan Nagar ES21</h4>
                 </div>
                 <hr />

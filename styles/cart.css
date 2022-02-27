@@ -156,8 +156,15 @@ body {
     outline: none;
 }
 
+@media screen and (max-width: 1580px) and (min-width: 1200px) {
+    .h3 {
+        display: none;
+    }
+    
+}
 
-@media screen and (max-width: 1580px) {
+
+@media screen and (max-width: 1200px) {
     .nav__items-count,
     .location-info,
     .nav_profile,
