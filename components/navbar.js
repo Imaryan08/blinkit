@@ -12,7 +12,8 @@ function navbar() {
             </div>
         </div>
         <div id="nav-search">
-            <input type="text" id="searchbar" />
+			<i class="fa fa-search icon"></i>
+            <input type="search" id="searchbar" placeholder="Search for products"/>
         </div>
         <div class="nav__right">
             <div class="nav__profile">profile</div>
