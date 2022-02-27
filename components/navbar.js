@@ -18,7 +18,7 @@ function navbar() {
             <div class="nav__profile">profile</div>
             <div id="btn-toggle-cart">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                Cart
+                <span class="nav-cart-count">0</span>Items
             </div>
             <div class="nav__app-link">
                 <i class="fa fa-mobile" aria-hidden="true"></i>
@@ -28,7 +28,6 @@ function navbar() {
   `
 }
 
-// <span class="nav-cart-count">2</span>Items
 
 function cart() {
   return `
