@@ -120,14 +120,14 @@
 </html>
 
 <script type="module">
-    import {navbar, cart, setLocation} from './components/navbar.js';
-    import { createSlideout } from './scripts/cart.js';
+    import {navbar, cart, setLocation, inflateProfile} from './components/navbar.js';
+    import { createSlideout, cartBuilder } from './scripts/cart.js';
 
     document.getElementById('nav').innerHTML = navbar();
     document.getElementById('cart').innerHTML = cart();
     const slideout = createSlideout();
-
     setLocation();
+    inflateProfile();
 </script>
 
 <script src="/scripts/cleaning.js" type="module"></script>

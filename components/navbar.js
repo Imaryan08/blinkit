@@ -55,6 +55,26 @@ function cart() {
   `
 }
 
+function inflateProfile() {
+    const profile = `
+    <div class="dropdown">
+    <div class="dropbtn">Profile</div>
+        <div class="dropdown-content">
+            <h5 style="margin-bottom: 50px;">my account</h5> 
+            <a href="order.html"> <p> my orders </p></a>
+            <div  onclick="window.location.href='address.html'"> <p> saved address </p></div>
+                <div onclick="window.location.href='wallet.html'" id="flex" style="display: flex;justify-content: space-between;">
+                <p>my wallet </p>
+                <p>₹0</p>
+            </div>
+        </div>
+    </div>  
+
+    <link rel="stylesheet" href="/styles/profile.css">
+    `
+    document.querySelector('.nav__profile').innerHTML = profile;
+}
+
 
 function setLocation() {
 
@@ -108,4 +128,4 @@ const button = document.querySelector('#location');
 
 }
 
-export { navbar, cart, setLocation };
+export { navbar, cart, setLocation, inflateProfile };
