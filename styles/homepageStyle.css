@@ -28,10 +28,13 @@ a{
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: auto;
     gap: 2px;
+    margin-top: 20px;
 }
 #hovering-effect:hover{
-    border: 2px solid rgb(41, 38, 38);
+    /* border: 1px solid lightgray;  */
+    transform: scale(1.1);
     border-radius: 3px;
+    cursor: pointer;
 }
 .bankoffers_heading{
     font-size: 21px;
@@ -301,7 +304,7 @@ b{
     position: relative;
     overflow-x: auto;
     margin-top: 10px;
-}
+} 
 .biscuits::-webkit-scrollbar{
     width: 3px;
     height: 4px;
