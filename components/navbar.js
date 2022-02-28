@@ -1,14 +1,14 @@
 function navbar() {
     return `
-        <div class="nav__left">
+        <div class="nav__left"> 
             <div id="logo">
                 <a href="/index.html">
                     <img src="https://blinkit.com/images/header/blinkit_logo-3898547.png" alt="blinkit (formerly Grofers)" />
                 </a>
             </div>
             <div class="location-info">
-                <div class="h3">delivered in 22 min</div>
-                <div id="location">detect location</div>
+                <div class="h3">delivery in 10 min</div>
+                <div id="location">Detect location</div>
             </div>
         </div>
         <div id="nav-search">
@@ -21,11 +21,12 @@ function navbar() {
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 <span class="nav-cart-count">0</span>Items
             </div>
+            </div>
             <div class="nav__app-link">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <i class="fa fa-mobile" style="font-size:20px" aria-hidden="true"></i>
                 get the app
             </div>
-        </div>
+        
   `
 }
 
