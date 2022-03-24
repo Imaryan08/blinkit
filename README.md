@@ -20,18 +20,21 @@ I worked on this project during unit3 contruct week at Masai School with the hel
 ![Home page](https://i.imgur.com/5lu9ulf.png)
  Home page of the website in which navbar showing the current location of user. all the navigation
 
-![category page](https://i.imgur.com/19jMJLR.png)
+![category page(https://i.imgur.com/5OVNNev.png)
 category pages showing all main and sub category of the products
 
 
-![subcategory page](https://i.imgur.com/VovP4uU.png)
+![subcategory page(https://i.imgur.com/pJEXCMW.png)
 
 
 
 
 
-![cart page](https://i.imgur.com/0Xqj9Wi.png)
+![cart page](https://i.imgur.com/C5218J6.png)
 Cart page with product Details and total amount of all the cart product.
+
+![checkout page](https://i.imgur.com/hgFkpFb.png)
+Checkout page with total amount of all the cart products.
 
 
 
