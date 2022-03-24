@@ -12,9 +12,9 @@ Javascript, HTML, CSS
 
 ## Deplyement Link
 
-<a href="https://unruffled-mcnulty-573d70.netlify.app/">Deployement link</a>
+<a href="https://unruffled-mcnulty-573d70.netlify.app/">Netlify link</a>
 
-##Collaborators
+## Collaborators
 
 <a href="">pranav R</a>
 <a href="">Deepanshu mehra</a>
