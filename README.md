@@ -1,15 +1,21 @@
-<h3>blinkit clone</h3>
-<p>Blinkit is an Indian instant delivery service. It was founded in December 2013 and is based out of Gurgaon. Customers of the company use a mobile application to order groceries and essentials online. Blinkit's employees then secure the items from their warehouse and deliver the items to the consumer within 10 minutes.
+![Logo](https://i.imgur.com/zktE2y7.jpg)
 
-I worked on this project during unit3 contruct week at Masai School with the help of other three team members.We focused maily on developing the front end part of the website</p>
+# Blinkit-clone-FrontEnd
 
-<h3>Tech stack used in this project </h3>
-<p>Javascript, HTML, CSS</p>
+Blinkit is an Indian instant delivery service. It was founded in December 2013 and is based out of Gurgaon. Customers of the company use a mobile application to order groceries and essentials online. Blinkit's employees then secure the items from their warehouse and deliver the items to the consumer within 10 minutes.
 
-<h3>Deplyement Link</h3>
+I worked on this project during unit3 contruct week at Masai School with the help of other three team members.We focused maily on developing the front end part of the website
+
+##Tech stack used in this project
+
+Javascript, HTML, CSS
+
+##Deplyement Link
+
 <a href="https://unruffled-mcnulty-573d70.netlify.app/">Deployement link</a>
 
-<h3>Collaborators</h3>
+##Collaborators
+
 <a href="">pranav R</a>
 <a href="">Deepanshu mehra</a>
 <a href="">Sumit Thakur</a>
@@ -20,15 +26,12 @@ I worked on this project during unit3 contruct week at Masai School with the hel
 ![Home page](https://i.imgur.com/5lu9ulf.png)
  Home page of the website in which navbar showing the current location of user. all the navigation
 
-![category page(https://i.imgur.com/5OVNNev.png)
+![category page](https://i.imgur.com/5OVNNev.png)
 category pages showing all main and sub category of the products
 
 
-![subcategory page(https://i.imgur.com/pJEXCMW.png)
-
-
-
-
+![subcategory page](https://i.imgur.com/pJEXCMW.png)
+subcategory pages showing sub category of the main category
 
 ![cart page](https://i.imgur.com/C5218J6.png)
 Cart page with product Details and total amount of all the cart product.
