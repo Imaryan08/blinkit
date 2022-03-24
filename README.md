@@ -6,11 +6,11 @@ Blinkit is an Indian instant delivery service. It was founded in December 2013 a
 
 I worked on this project during unit3 contruct week at Masai School with the help of other three team members.We focused maily on developing the front end part of the website
 
-##Tech stack used in this project
+## Tech stack used in this project
 
 Javascript, HTML, CSS
 
-##Deplyement Link
+## Deplyement Link
 
 <a href="https://unruffled-mcnulty-573d70.netlify.app/">Deployement link</a>
 
