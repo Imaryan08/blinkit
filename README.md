@@ -15,5 +15,39 @@ I worked on this project during unit3 contruct week at Masai School with the hel
 <a href="">Sumit Thakur</a>
 <a href="">Vikash Kumar</a>
 
-<h3>Screenshots</h3>
-img src="./img/index.png"/>
+## Screenshots
+
+![Home page](https://i.imgur.com/5lu9ulf.png)
+ Home page of the website in which navbar showing the current location of user. all the navigation
+
+![category page](https://i.imgur.com/19jMJLR.png)
+category pages showing all main and sub category of the products
+
+
+![subcategory page](https://i.imgur.com/VovP4uU.png)
+
+
+
+
+
+![cart page](https://i.imgur.com/0Xqj9Wi.png)
+Cart page with product Details and total amount of all the cart product.
+
+
+
+
+## Features
+ 
+- OTP based Login and Sign up
+- Geolocation feature for current location
+- Sorting product feature based on name and price
+- Cart page
+
+
+## Area of Resposibility
+
+- Built all the Category pages of the website
+- Integrated all the pages successfully
+- Developed the Payment page
+- Built Add to Cart functionality
+
