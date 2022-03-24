@@ -16,10 +16,10 @@ Javascript, HTML, CSS
 
 ## Collaborators
 
-<a href="">pranav R</a>
-<a href="">Deepanshu mehra</a>
-<a href="">Sumit Thakur</a>
-<a href="">Vikash Kumar</a>
+<a href="https://github.com/git-pranavr">pranav R</a>
+<a href="https://github.com/dmehra2102">Deepanshu mehra</a>
+<a href="https://github.com/SamSumit007">Sumit Thakur</a>
+<a href="https://github.com/VikashKumarNokha">Vikash Kumar</a>
 
 ## Screenshots
 
