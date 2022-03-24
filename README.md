@@ -4,7 +4,7 @@
 
 Blinkit is an Indian instant delivery service. It was founded in December 2013 and is based out of Gurgaon. Customers of the company use a mobile application to order groceries and essentials online. Blinkit's employees then secure the items from their warehouse and deliver the items to the consumer within 10 minutes.
 
-I worked on this project during unit3 contruct week at Masai School with the help of other three team members.We focused maily on developing the front end part of the website
+I worked on this project during unit-3 construct week at Masai School with the help of other four team members.
 
 ## Tech stack used in this project
 
