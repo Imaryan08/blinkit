@@ -1,6 +1,6 @@
 ![Logo](https://i.imgur.com/zktE2y7.jpg)
 
-# Blinkit-clone-FrontEnd
+# Blinkit-clone
 
 Blinkit is an Indian instant delivery service. It was founded in December 2013 and is based out of Gurgaon. Customers of the company use a mobile application to order groceries and essentials online. Blinkit's employees then secure the items from their warehouse and deliver the items to the consumer within 10 minutes.
 
