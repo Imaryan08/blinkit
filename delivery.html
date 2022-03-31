@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/delivery.css">
+</head>
+<body>
+    <div id="container">
+
+        <div id="add">Add New Delivery Address</div>
+        <div id="please">Please enter the accurate address, it will help us to serve you better</div>
+
+        <div class="fields" id="area">
+            <div class="fields-name">Area / Locality</div>
+            <div>
+                <input type="text" style="width: 75%;" placeholder="E.g. Sector 32 or Park View Reside">
+                <button>^ Detect</button>
+            </div>    
+        </div>
+
+        <div class="fields">
+            <div class="fields-name">Name</div>
+            <input type="text">
+        </div>
+
+        <div class="fields">
+            <div class="fields-name">Flat / House / Office No.</div>
+            <input type="text">
+        </div>
+
+        <div class="fields">
+            <div class="fields-name">Street / Society / Office Name</div>
+            <input type="text">
+        </div><br><br>
+
+        <div id="radio">
+            <input type="radio" name="address-type">
+            <div class="fields-name">Homes</div>
+            <input type="radio" name="address-type">
+            <div class="fields-name">Office</div>
+            <input type="radio" name="address-type">
+            <div class="fields-name">Other</div>
+        </div>
+
+        <div id="buttons">
+            <button>Continue</button>
+            <button>Cancel</button>
+        </div>
+        
+    </div>
+</body>
+</html>
