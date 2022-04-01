@@ -256,7 +256,7 @@ function product1(pharama,display){
         para1.style.color="grey";
 
         let para2= document.createElement("p");
-        para2.textContent= "₹"+element.price;
+        para2.textContent= element.price;
         para2.style.fontSize= "18px"
         para2.style.marginTop= "-13px"
 
@@ -405,7 +405,7 @@ function product2(biscuits,display){
         para1.style.color="grey";
 
         let para2= document.createElement("p");
-        para2.textContent= "₹"+element.price;
+        para2.textContent= element.price;
         para2.style.fontSize= "18px"
         para2.style.marginTop= "-13px"
 
@@ -554,7 +554,7 @@ function product3(dairyprod,display){
         para1.style.color="grey";
 
         let para2= document.createElement("p");
-        para2.textContent= "₹"+element.price;
+        para2.textContent= element.price;
         para2.style.fontSize= "18px"
         para2.style.marginTop= "-13px"
 
