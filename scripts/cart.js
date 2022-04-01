@@ -47,6 +47,7 @@ function cartBuilder () {
 const cartItems = [];
 const checkoutItems = [];
 const localCartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
 localCartItems.forEach((e) => {
   const item = {};
   item.image = e.img;

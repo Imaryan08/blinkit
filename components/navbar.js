@@ -32,10 +32,10 @@ function navbar() {
 
 
 function cart() {
-  return `
+    return `
   
         <div class="cart-page">
-            <h1 class="cart__title">my cart</h1>
+            <div class="cart__title">my cart</div>
             <div class="flex-text">
                 <div>Shipment 1 of 1</div>
                 <div class="">item(s)</div>
@@ -53,7 +53,7 @@ function cart() {
         <div class="checkout">
             <div id="btn-checkout">proceed to checkout</div>
         </div>
-  `
+    `
 }
 
 function inflateProfile() {
