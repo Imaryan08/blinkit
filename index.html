@@ -44,7 +44,7 @@
 
 </head>
 
-<body>
+<body >
     <!-- new coomit -->
     <nav id="nav">
 
@@ -415,6 +415,7 @@
 <script type="module">
 
 
+
     import {navbar, cart, setLocation} from './components/navbar.js';
     import { createSlideout, cartBuilder } from './scripts/cart.js';
 
@@ -488,8 +489,10 @@ let singUPData = async ()=>
         });
 
         let collect = await requst.json();
+        
         if(collect.message === undefined)
         {
+            console.log("hdfakjflkadsjfljadjflajslfkjdsaljfjasdlfk")
         var div2 = document.querySelector(".container-register100");
         div2.style.display="none"
         alert(`Account created successfully`)
@@ -510,6 +513,12 @@ document.querySelector("#register-user").addEventListener("click",(event)=>{
 // console.log(document.getElementById("submitId").value)
 // Login Page 
 var login_page = false
+let isLoggedIn = false;
+// if(isLoggedIn==false)
+// {
+//     localStorage.setItem("isLoggedIn",isLoggedIn)
+// }
+
 let loginData = async ()=>
 {
     try {
@@ -532,17 +541,19 @@ let loginData = async ()=>
             },
     })
     let collect = await request.json()
-    console.log('collect:', collect)
+    console.log('collect', collect)
     if(collect.vlaue == false)
     {
+        console.log("error here")
         alert(collect.message,"collect");
+        return false
     }else{
         alert(`Welcome ${collect.userdata.fullName} in Blinkit`);
         return true;
     }
     //   getdata(loginUser.email,collect.token)   
     } catch (error) {
-        // console.log("erro h but asata",error)
+        // console.log("erro h but asata",error) 
         alert("wrong email & password");
     }
 }
@@ -565,16 +576,30 @@ let loginData = async ()=>
 //         alert("Data not matched!!!")
 //     }
 // }
-document.querySelector("#login-user").addEventListener("click",(event)=>{
-    event.preventDefault();
-    login_page = loginData();
+document.querySelector("#login-user").addEventListener("click",async(event)=>{
+    // event.preventDefault();
+    login_page = await loginData();
+    console.log(login_page,'fasdkljflksdjafj')
     if(login_page)
     {
         document.querySelector(".nav__profile").style.display="none"
+        isLoggedIn = true
+        localStorage.setItem("isLoggedIn",isLoggedIn)
         document.querySelector(".nav__login").style.display="block"
         document.querySelector(".container-login100").style.display = "none"
     }
 })
+isLoggedIn = localStorage.getItem("isLoggedIn") || false
+window.onload = function(){ 
+    if(isLoggedIn)
+    {
+        document.querySelector(".nav__profile").style.display="none"
+        document.querySelector(".nav__login").style.display="block"
+        document.querySelector(".container-login100").style.display = "none"
+
+    }
+}
+
 
 </script>
 

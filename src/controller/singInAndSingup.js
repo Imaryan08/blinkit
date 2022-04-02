@@ -26,22 +26,23 @@ const login = async (req, res) => {
     if (!userdata) {
       return res
         .status(500)
-        .send({ message: "Email and Password not correct",vlaue:false});
+        .send({ message: "Email and Password not correct ",vlaue:false});
     }
 
     const check = userdata.checkPassword(req.body.password);
-
+    console.log(process.env.key,"key")
     if (!check) {
       return res
         .status(500)
         .send({ message: "Wrong Email and Password",vlaue:false });
     }
-    console.log(process.env.key)
+    console.log(process.env.key,"key")
     var token = jwt.sign({ userdata }, process.env.key);
     return res.status(200).send({ userdata, token,value:true });
   } catch (error) {
     return res.status(400).send({ message: error.message });
   }
-};
+}; 
+
 
 module.exports = {register,login}
