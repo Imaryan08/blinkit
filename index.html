@@ -416,13 +416,15 @@
 
 
 
-    import {navbar, cart, setLocation} from './components/navbar.js';
+    import {navbar, cart, setLocation,inflateProfile} from './components/navbar.js';
     import { createSlideout, cartBuilder } from './scripts/cart.js';
 
     document.getElementById('nav').innerHTML = navbar();
     document.getElementById('cart').innerHTML = cart();
     const slideout = createSlideout();
     setLocation();
+    // profileHidden()
+    // inflateProfile()
     
 
 
@@ -480,7 +482,7 @@ let singUPData = async ()=>
         }
         register_data = JSON.stringify(register_data);
         // console.log(register_data)
-        let requst = await fetch("http://localhost:4000/register",{
+        let requst = await fetch("http://localhost:5000/register",{
             method:"POST",
             body:register_data,
             headers:{
@@ -514,10 +516,6 @@ document.querySelector("#register-user").addEventListener("click",(event)=>{
 // Login Page 
 var login_page = false
 let isLoggedIn = false;
-// if(isLoggedIn==false)
-// {
-//     localStorage.setItem("isLoggedIn",isLoggedIn)
-// }
 
 let loginData = async ()=>
 {
@@ -532,7 +530,7 @@ let loginData = async ()=>
     let login = JSON.stringify(loginUser);
 
     let request =  await fetch(
-        "http://localhost:4000/login",
+        "http://localhost:5000/login",
         {
         method:"POST",
         body:login,
@@ -589,6 +587,7 @@ document.querySelector("#login-user").addEventListener("click",async(event)=>{
         document.querySelector(".container-login100").style.display = "none"
     }
 })
+
 isLoggedIn = localStorage.getItem("isLoggedIn") || false
 window.onload = function(){ 
     if(isLoggedIn)
@@ -599,7 +598,6 @@ window.onload = function(){
 
     }
 }
-
 
 </script>
 

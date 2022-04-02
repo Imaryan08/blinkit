@@ -1,6 +1,6 @@
 const app = require("./index")
 const connect = require("./config/db")
-const port = 4000;
+const port = 5000;
  
 
 app.listen(port,async()=>{
@@ -11,6 +11,5 @@ app.listen(port,async()=>{
         throw error
     }
 })  
-
 
 
