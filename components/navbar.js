@@ -16,7 +16,8 @@ function navbar() {
             <input type="search" id="searchbar" placeholder="Search for products"/>
         </div>
         <div class="nav__right">
-            <div class="nav__profile">profile</div>
+            <div class="nav__profile">Login</div>
+            <div class="nav__login">Profile</div>
             <div id="btn-toggle-cart">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 <span class="nav-cart-count">0</span>Items
@@ -56,25 +57,25 @@ function cart() {
   `
 }
 
-function inflateProfile() {
-    const profile = `
-    <div class="dropdown">
-    <div class="dropbtn">Profile</div>
-        <div class="dropdown-content">
-            <h5 style="margin-bottom: 50px;">my account</h5> 
-            <a href="order.html"> <p> my orders </p></a>
-            <div  onclick="window.location.href='address.html'"> <p> saved address </p></div>
-                <div onclick="window.location.href='wallet.html'" id="flex" style="display: flex;justify-content: space-between;">
-                <p>my wallet </p>
-                <p>₹0</p>
-            </div>
-        </div>
-    </div>  
+// function inflateProfile() {
+//     const profile = `
+//     <div class="dropdown">
+//     <div class="dropbtn">Profile</div>
+//         <div class="dropdown-content">
+//             <h5 style="margin-bottom: 50px;">my account</h5> 
+//             <a href="order.html"> <p> my orders </p></a>
+//             <div  onclick="window.location.href='address.html'"> <p> saved address </p></div>
+//                 <div onclick="window.location.href='wallet.html'" id="flex" style="display: flex;justify-content: space-between;">
+//                 <p>my wallet </p>
+//                 <p>₹0</p>
+//             </div>
+//         </div>
+//     </div>  
 
-    <link rel="stylesheet" href="/styles/profile.css">
-    `
-    document.querySelector('.nav__profile').innerHTML = profile;
-}
+//     <link rel="stylesheet" href="/styles/profile.css">
+//     `
+//     document.querySelector('.nav__login').innerHTML = Profile;
+// }
 
 
 function setLocation() {
@@ -129,4 +130,4 @@ const button = document.querySelector('#location');
 
 }
 
-export { navbar, cart, setLocation, inflateProfile };
+export { navbar, cart, setLocation};
