@@ -13,6 +13,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     <link rel="stylesheet" href="styles/cart.css">
     <link data-react-helmet="true" rel="icon" href="https://blinkit.com/images/faviconChange.ico" type="image/x-icon">
+
+    <!-- start write by Abhishek -->
+
+    <!-- ===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--=============================================================================================== -->
+
+<!-- end write by Abhishek -->
+<style>
+    .button{
+        border:0.2px solid;
+    }
+</style>
+
 </head>
 
 <body>
@@ -213,21 +242,339 @@
         </div>
     </div>
 
+
+
+
+ <!-- Login and Register start by Abhihsek-->
+
+ <!-- start Login page -->
+ <div class="container-login100">
+    <div class="wrap-login100 p-l-50 p-r-50 p-t-40 p-b-30 form">
+        <form class="login100-form validate-form">
+            <span class="login100-form-title p-b-40">
+                Login
+            </span>
+            <i class="fa fa-close" id="cancel"></i>
+
+            <div class="wrap-input100 validate-input m-b-16"
+                data-validate="Valid email is required: ex@abc.xyz">
+                <input class="input100" type="text" name="email" placeholder="Email" id="email-lg">
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                    <span class="lnr lnr-envelope"></span>
+                </span>
+            </div>
+
+            <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
+                <input class="input100" type="password" name="pass" placeholder="Password" id="password-lg">
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                    <span class="lnr lnr-lock"></span>
+                </span>
+            </div>
+
+            <div class="contact100-form-checkbox m-l-4">
+                <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                <label class="label-checkbox100" for="ckb1">
+                    Remember me
+                </label>
+            </div>
+
+            <div class="container-login100-form-btn p-t-25">
+                <button class="login100-form-btn" id="login-user">
+                    Login
+                </button>
+            </div>
+
+            <div class="text-center w-full p-t-15 p-b-15">
+                <span class="txt1">
+                    Or login with
+                </span>
+            </div>
+
+            <a href="#" class="btn-face m-b-10">
+                <i class="fa fa-facebook-official"></i>
+                Facebook
+            </a>
+
+            <a href="#" class="btn-google m-b-10">
+                <img src="images/icons/icon-google.png" alt="GOOGLE">
+                Google
+            </a>
+
+            <div class="text-center w-full p-t-15">
+                <span class="txt1">
+                    Not a member?
+                </span>
+
+                <a class="txt1 bo1 hov1" href="#">
+                    Sign up now
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+ <!-- end Login page -->
+<!-- Register Form-->
+<div class="container-register100">
+    <div class="wrap-login100 p-l-50 p-r-50 p-t-40 p-b-30 form1">
+       
+        <form class="login100-form validate-form" action="/register" method="post">
+            <span class="login100-form-title p-b-40">
+                Sign up
+            </span>
+            <i class="fa fa-close" id="cancel1"></i>
+
+            <div class="wrap-input100 validate-input m-b-16"
+                data-validate="Valid email is required: ex@abc.xyz">
+                <input class="input100" type="text" name="name" placeholder="Name" id="fullName">
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                    <span class="lnr lnr-user"></span>
+                </span>
+
+            </div>
+
+            <div class="wrap-input100 validate-input m-b-16"
+                data-validate="Valid email is required: ex@abc.xyz">
+                <input class="input100" type="email" name="email" placeholder="Email" id="email">
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                    <span class="lnr lnr-envelope"></span>
+                </span>
+            </div>
+
+            <div class="wrap-input100 validate-input m-b-16"
+                data-validate="Valid email is required: ex@abc.xyz">
+                <input class="input100" type="text" name="mobile" placeholder="Mobile" id="mobile">
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                    <span class="lnr lnr-phone"></span>
+                </span>
+
+            </div>
+
+            <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
+                <input class="input100" type="password" name="pass" placeholder="Password" id="password">
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                    <span class="lnr lnr-lock"></span>
+                </span>
+            </div>
+
+            <div class="container-login100-form-btn p-t-25">
+                <button class="login100-form-btn" id="register-user">
+                    CREATE ACCOUNT
+                </button>
+            </div>
+
+            <div class="text-center w-full p-t-15">
+                <span class="txt1">
+                   I have a Account?
+                </span>
+
+                <a class="txt1 bo1 hov1" id="log-in" href="#">
+                    Log In now
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+<!--end Register Form-->
+
+<!-- Login and Regisetr end -->
+
+
+
+
+
+
     <div class="footer"></div>
     </main>
+
+
+    <!-- start js by Abhshek -->
+
+     <!--===============================================================================================-->
+     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+     <!--===============================================================================================-->
+     <script src="vendor/bootstrap/js/popper.js"></script>
+     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+     <!--===============================================================================================-->
+     <script src="vendor/select2/select2.min.js"></script>
+     <!--===============================================================================================-->
+     <script src="js/main.js"></script>
+
+     <!-- end js by Abhshek -->
+
+
 </body>
 </html>
 
 <script type="module">
 
-    import {navbar, cart, setLocation, inflateProfile} from './components/navbar.js';
+
+    import {navbar, cart, setLocation} from './components/navbar.js';
     import { createSlideout, cartBuilder } from './scripts/cart.js';
 
     document.getElementById('nav').innerHTML = navbar();
     document.getElementById('cart').innerHTML = cart();
     const slideout = createSlideout();
     setLocation();
-    inflateProfile();
+    
+
+
+    // start login and register page block and none by abhishek
+
+    document.querySelector(".nav__profile").addEventListener("click", () => {
+        document.querySelector(".container-login100").style.display = "block"
+    })
+    document.querySelector(".hov1").addEventListener("click", () => {
+        document.querySelector(".container-login100").style.display = "none"
+        document.querySelector(".container-register100").style.display = "block"
+    })
+    // double click on body both null
+    document.querySelector("body").addEventListener("dblclick", () => {
+        document.querySelector(".container-login100").style.display = "none"
+        document.querySelector(".container-register100").style.display = "none"
+    })
+    //  click cross login none
+    document.querySelector("#cancel").addEventListener("click",()=>{
+        document.querySelector(".container-login100").style.display = "none"
+    })
+
+    //  click cross Register none
+    document.querySelector("#cancel1").addEventListener("click",()=>{
+        document.querySelector(".container-register100").style.display = "none"
+    })
+
+    document.querySelector("#log-in").addEventListener("click",()=>
+    {
+        document.querySelector(".container-login100").style.display = "block"
+        document.querySelector(".container-register100").style.display = "none"
+    })
+
+    // end login and register page block and none
+
+    // ==================================================Login and Sing in ======================================================
+
+// Register Page
+let singUPData = async ()=>
+{
+    try {
+        let fullname = document.getElementById("fullName").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let phone = document.getElementById("mobile").value;
+
+        // console.log(fullname,email,password,phone)
+        // console.log(document.getElementById("password"))
+
+        let register_data = {
+            fullName:fullname,
+            email:email,
+            phone:phone,
+            password:password
+        }
+        register_data = JSON.stringify(register_data);
+        // console.log(register_data)
+        let requst = await fetch("http://localhost:4000/register",{
+            method:"POST",
+            body:register_data,
+            headers:{
+                "Content-Type": "application/json",
+            },
+        });
+
+        let collect = await requst.json();
+        if(collect.message === undefined)
+        {
+        var div2 = document.querySelector(".container-register100");
+        div2.style.display="none"
+        alert(`Account created successfully`)
+        }else{
+            alert(collect.message)
+        }
+    }
+    catch (error) {
+        console.log("Error:",error)
+    }
+}
+
+document.querySelector("#register-user").addEventListener("click",(event)=>{
+    event.preventDefault()
+    singUPData()  
+})
+
+// console.log(document.getElementById("submitId").value)
+// Login Page 
+var login_page = false
+let loginData = async ()=>
+{
+    try {
+    let email = document.getElementById("email-lg").value;
+    let password = document.getElementById("password-lg").value;
+
+    let loginUser = {
+        email:email,
+        password:password
+    }
+    let login = JSON.stringify(loginUser);
+
+    let request =  await fetch(
+        "http://localhost:4000/login",
+        {
+        method:"POST",
+        body:login,
+        headers:{
+                "Content-Type": "application/json"
+            },
+    })
+    let collect = await request.json()
+    console.log('collect:', collect)
+    if(collect.vlaue == false)
+    {
+        alert(collect.message,"collect");
+    }else{
+        alert(`Welcome ${collect.userdata.fullName} in Blinkit`);
+        return true;
+    }
+    //   getdata(loginUser.email,collect.token)   
+    } catch (error) {
+        // console.log("erro h but asata",error)
+        alert("wrong email & password");
+    }
+}
+// let getdata = async (username,token) =>{
+//     try {
+//         let res = await fetch(`https://masai-api-mocker.herokuapp.com/user/${username}`,{
+//             headers:{
+//                 "Content-Type": "application/json",
+//                 Authorization : `Bearer ${token}`
+//             },
+
+//         })
+//         let data = await res.json();
+//         console.log("data",data);
+//         alert("Login successful");
+//         localStorage.setItem("UserInfo",JSON.stringify(data));
+//         window.location.href="newindex.html"
+        
+//     } catch (error) {
+//         alert("Data not matched!!!")
+//     }
+// }
+document.querySelector("#login-user").addEventListener("click",(event)=>{
+    event.preventDefault();
+    login_page = loginData();
+    if(login_page)
+    {
+        document.querySelector(".nav__profile").style.display="none"
+        document.querySelector(".nav__login").style.display="block"
+        document.querySelector(".container-login100").style.display = "none"
+    }
+})
 
 </script>
 
