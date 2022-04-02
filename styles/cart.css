@@ -342,7 +342,7 @@ hr {
 .cart-item button {
     background-color: #ffe141;
     border: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 20px;
     padding: 3px 6px;
     color: black;
