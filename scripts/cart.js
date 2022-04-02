@@ -2,7 +2,7 @@ function createSlideout() {
   const slideout = new Slideout({
       'panel': document.getElementById('panel'),
       'menu': document.getElementById('cart'),
-      'padding': 400,
+      'padding': 360,
       'side': 'right',
     });
 
