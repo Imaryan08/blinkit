@@ -491,7 +491,7 @@ let singUPData = async ()=>
         {
         var div2 = document.querySelector(".container-register100");
         div2.style.display="none"
-        alert(` Welcome ${collect.registerData.fullName} in Blinkit`)
+        alert(`Account created successfully`)
         }else{
             alert(collect.message)
         }
@@ -519,7 +519,8 @@ let loginData = async ()=>
         email:email,
         password:password
     }
-    let login = JSON.stringify(loginUser)
+    let login = JSON.stringify(loginUser);
+
     let request =  await fetch(
         "http://localhost:4000/login",
         {
@@ -530,17 +531,17 @@ let loginData = async ()=>
             },
     })
     let collect = await request.json()
+    console.log('collect:', collect)
     if(collect.vlaue == false)
     {
         alert(collect.message,"collect");
     }else{
-        
-        alert("login sussefull")
+        alert(`Welcome ${collect.userdata.fullName} in Blinkit`);
         return true;
     }
     //   getdata(loginUser.email,collect.token)   
     } catch (error) {
-        console.log("erro h but asata",error)
+        // console.log("erro h but asata",error)
         alert("wrong email & password");
     }
 }

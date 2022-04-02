@@ -6,7 +6,7 @@ const register = async (req, res) => {
   try {
     let registerData = await User.findOne({ email: req.body.email }).lean().exec();
     if (registerData) {
-      return res.status(500).send({ message: "Email is already exit" });
+      return res.status(500).send({ message: "Email is already exist" });
     }
 
     registerData = await User.create(req.body);
@@ -34,7 +34,7 @@ const login = async (req, res) => {
     if (!check) {
       return res
         .status(500)
-        .send({ message: "Email and Password not correct",vlaue:false });
+        .send({ message: "Wrong Email and Password",vlaue:false });
     }
     console.log(process.env.key)
     var token = jwt.sign({ userdata }, process.env.key);
