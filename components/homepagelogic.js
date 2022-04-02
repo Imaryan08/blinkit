@@ -104,6 +104,7 @@ function product(fruits_vegetable,display){
         para1.style.fontFamily="'Comfortaa', cursive"
         para1.style.fontWeight="normal";
         para1.style.color="grey";
+        para1.style.lineHeight="42px";
 
         let para2= document.createElement("p");
         para2.textContent= "₹"+element.price;
@@ -254,6 +255,8 @@ function product1(pharama,display){
         para1.style.fontFamily="'Comfortaa', cursive"
         para1.style.fontWeight="normal";
         para1.style.color="grey";
+        para1.style.lineHeight="42px";
+        para1.style.paddingBottom="8px"
 
         let para2= document.createElement("p");
         para2.textContent= element.price;
@@ -403,6 +406,8 @@ function product2(biscuits,display){
         para1.style.fontFamily="'Comfortaa', cursive"
         para1.style.fontWeight="normal";
         para1.style.color="grey";
+        para1.style.lineHeight="38px";
+        para1.style.paddingBottom="8px"
 
         let para2= document.createElement("p");
         para2.textContent= element.price;
@@ -552,6 +557,8 @@ function product3(dairyprod,display){
         para1.style.fontFamily="'Comfortaa', cursive"
         para1.style.fontWeight="normal";
         para1.style.color="grey";
+        para1.style.lineHeight="39px";
+        para1.style.paddingBottom="8px"
 
         let para2= document.createElement("p");
         para2.textContent= element.price;

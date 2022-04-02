@@ -1,0 +1,32 @@
+{
+  "name": "authorisation_assingmant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhimeh-1824/authorisation_assingmant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhimeh-1824/authorisation_assingmant/issues"
+  },
+  "homepage": "https://github.com/abhimeh-1824/authorisation_assingmant#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.9",
+    "passport": "^0.5.2",
+    "passport-google-oauth20": "^2.0.0",
+    "uuid": "^8.3.2"
+  }
+}
