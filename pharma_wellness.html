@@ -90,6 +90,21 @@
     const slideout = createSlideout();
     setLocation();
     inflateProfile();
+
+
+var isLoggedIn = localStorage.getItem("isLoggedIn") || false
+window.onload = function(){ 
+    console.log(isLoggedIn)
+    if(isLoggedIn)
+    {
+        document.querySelector(".nav__profile").style.display="none"
+        document.querySelector(".nav__login").style.display="block"
+
+    }else{
+        document.querySelector(".nav__profile").style.display="block"
+        document.querySelector(".nav__login").style.display="none"
+    }
+}
 </script>
 
 <script src="/scripts/pharma_wellness.js" type="module"></script> 

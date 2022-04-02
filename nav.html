@@ -53,4 +53,15 @@
 
     cartBuilder();
 
+isLoggedIn = localStorage.getItem("isLoggedIn") || false
+window.onload = function(){ 
+    if(isLoggedIn)
+    {
+        document.querySelector(".nav__profile").style.display="none"
+        document.querySelector(".nav__login").style.display="block"
+        // document.querySelector(".container-login100").style.display = "none"
+    }
+}
+
+
 </script>

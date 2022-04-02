@@ -29,6 +29,7 @@ function navbar() {
             </div>
         
   `
+
 }
 
 
@@ -74,7 +75,7 @@ function inflateProfile() {
 
     <link rel="stylesheet" href="/styles/profile.css">
     `
-    document.querySelector('.nav__login').innerHTML = Profile;
+    document.querySelector('.nav__login').innerHTML = "Profile";
 }
 
 
@@ -126,8 +127,6 @@ const button = document.querySelector('#location');
         localStorage.setItem('address', localLocation);
     });
     }
-
-
 }
 
 export { navbar, cart, setLocation, inflateProfile};

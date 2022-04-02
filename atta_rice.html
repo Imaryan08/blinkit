@@ -84,12 +84,15 @@
 
     import {navbar, cart, setLocation, inflateProfile} from './components/navbar.js';
     import { createSlideout, cartBuilder } from './scripts/cart.js';
+    // import{isLog} from './index.html'
 
     document.getElementById('nav').innerHTML = navbar();
     document.getElementById('cart').innerHTML = cart();
     const slideout = createSlideout();
     setLocation();
     inflateProfile();
+    // profileHidden()
+    // isLog()
 
 </script>
 
@@ -149,6 +152,22 @@
                   fun();
               },delay);
          }
-        
+
+
+var isLoggedIn = localStorage.getItem("isLoggedIn") || false
+
+window.onload = function(){ 
+    console.log(isLoggedIn)
+    if(isLoggedIn)
+    {
+        document.querySelector(".nav__profile").style.display="none"
+        document.querySelector(".nav__login").style.display="block"
+
+    }else{
+        document.querySelector(".nav__profile").style.display="block"
+        document.querySelector(".nav__login").style.display="none"
+    }
+}
+      
     </script>
 
