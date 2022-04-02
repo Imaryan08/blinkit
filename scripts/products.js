@@ -1,3 +1,7 @@
+let cart = JSON.parse(localStorage.getItem("cart"));
+console.log(cart.length)
+
+// refreshCartCount(cart.length);
 
 import { cartBuilder } from './cart.js'
 
@@ -38,7 +42,6 @@ let getproduct = async (d) => {
 };
 getproduct(d);
 
-let cart = localStorage.getItem("cart");
 
 if (!cart) {
   cart = [];
@@ -186,8 +189,11 @@ function renderproduct(data) {
     document.getElementById("box").append(Div);
   });
 
+
+
   function addToCart(prod) {
-    let cart = JSON.parse(localStorage.getItem("cart"));
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    console.log(cart)
 
     cart.push(prod);
 

@@ -6,6 +6,7 @@ function createSlideout() {
       'side': 'right',
     });
 
+   
 
 
   function close(eve) {
@@ -58,6 +59,9 @@ localCartItems.forEach((e) => {
   cartItems.push(item);
 });
 
+
+var rupeeSymbol = '₹' // rupeesSymbol
+
 const cartdiv = document.querySelector('#cart-items');
 cartdiv.innerHTML = null;
 
@@ -75,7 +79,7 @@ cartItems.forEach((item, index) => {
   h3.innerText = item.title;
 
   const h2 = document.createElement('h2');
-  h2.innerText = item.price;
+  h2.innerText = rupeeSymbol+item.price;
 
   const qty = document.createElement('h5');
   qty.innerText = item.quantity;
@@ -95,10 +99,12 @@ cartItems.forEach((item, index) => {
 
   btnPlus.addEventListener('click', () => {
     p.innerText = Number(p.innerText) + 1;
-    
-    let cost = Number(h2.innerText);
+    let cost = h2.innerText;
+    cost = cost.split('');
+    cost.shift();
+    cost = +cost.join('');
     cost +=  Number(item.price);
-    h2.innerText = cost;
+    h2.innerText = rupeeSymbol+(Number(cost));
 
     checkoutItems[index].count += 1;
 
