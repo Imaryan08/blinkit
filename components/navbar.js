@@ -1,5 +1,5 @@
 function navbar() {
-    return `
+  return `
         <div class="nav__left"> 
             <div id="logo">
                 <a href="/index.html">
@@ -18,6 +18,26 @@ function navbar() {
         <div class="nav__right">
             <div class="nav__profile">Login</div>
             <div class="nav__login">Profile</div>
+
+            <div id="container">
+        <div class="bold">my account</div>
+        <div class="light" id="mobile" onclick="mobile()">num</div>
+        <div class="light" onclick="order()">my orders</div>
+        <div class="light" onclick="address()">saved address</div>
+        <div class="light" onclick="wallet()">my wallet <span class="walletAmount">₹0</span> </div>
+        <div class="light" onclick="faq()">faq's</div>
+        <div class="light" onclick="logout()">log out</div>
+        <div id="scan">
+            <img src="https://blinkit.com/16d25a2a463302cf78682e3e3c694122.svg" alt="">
+            <div>
+                <div class="bold">simple way to <br> order everything</div>
+                <div class="bold" id="blue">in 10 minutes</div>
+                <div class="light" style="font-size: 15px;">scan the qr code and <br> download blinkit app</div>
+            </div>
+        </div>
+    </div>
+
+
             <div id="btn-toggle-cart">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 <span class="nav-cart-count">0</span>Items
@@ -28,13 +48,11 @@ function navbar() {
                 get the app
             </div>
         
-  `
-
+  `;
 }
 
-
 function cart() {
-    return `
+  return `
   
         <div class="cart-page">
             <div class="cart__title">my cart</div>
@@ -55,11 +73,11 @@ function cart() {
         <div class="checkout">
             <div id="btn-checkout">proceed to checkout</div>
         </div>
-    `
+    `;
 }
 
 function inflateProfile() {
-    const profile = `
+  const profile = `
     <div class="dropdown">
     <div class="dropbtn">Profile</div>
         <div class="dropdown-content">
@@ -74,59 +92,56 @@ function inflateProfile() {
     </div>  
 
     <link rel="stylesheet" href="/styles/profile.css">
-    `
-    document.querySelector('.nav__login').innerHTML = "Profile";
+    `;
+  document.querySelector(".nav__login").innerHTML = "Profile";
 }
 
-
 function setLocation() {
+  const defaultLocation = "#314 1st main 5th block Delhi - 92";
+  let localLocation = localStorage.getItem("address");
+  if (localLocation !== null) {
+    document.querySelector("#location").innerText = localLocation;
+    return;
+  }
 
-    const defaultLocation = '#314 1st main 5th block Delhi - 92';
-    let localLocation = localStorage.getItem('address');
-    if (localLocation !== null) {
-        document.querySelector('#location').innerText = localLocation;
-        return;
-    }
+  const button = document.querySelector("#location");
+  button.addEventListener("click", () => {
+    if (navigator)
+      navigator.geolocation.getCurrentPosition((position) => {
+        console.log(position);
+        let longitude = position.coords.longitude;
+        let latitude = position.coords.latitude;
 
-const button = document.querySelector('#location');
-    button.addEventListener('click', () =>{
-        if(navigator)
-            navigator.geolocation.getCurrentPosition( (position) => {
-                console.log(position);
-                let longitude = position.coords.longitude;
-                let latitude = position.coords.latitude;
+        getLocation(longitude, latitude);
+        localStorage.setItem("address", localLocation);
+      });
+    else console.log("geolocation is not supported");
+    button.innerText = defaultLocation;
+    localStorage.setItem("address", localLocation);
+  });
 
-                getLocation(longitude,latitude);
-                localStorage.setItem('address', localLocation);
-            })
-        else    
-            console.log('geolocation is not supported');
-            button.innerText = defaultLocation;
-            localStorage.setItem('address', localLocation);
-    })
-
-
-    let getLocation = async(longitude, latitude) => {
-
-        button.innerText = "Detecting your location...";
-        fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=b71feba224f94a209d1bdd18ee8bba3a`)
-        .then(response => response.json()).then(response =>{
-        
+  let getLocation = async (longitude, latitude) => {
+    button.innerText = "Detecting your location...";
+    fetch(
+      `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=b71feba224f94a209d1bdd18ee8bba3a`
+    )
+      .then((response) => response.json())
+      .then((response) => {
         let allDetails = response.results[0].components;
-            console.table(allDetails);
-        
-        let {county, country, state_district} = allDetails;
+        console.table(allDetails);
+
+        let { county, country, state_district } = allDetails;
         localLocation = `${county}, ${state_district}, ${country}`;
         button.innerText = localLocation;
 
-        localStorage.setItem('address', localLocation);
-        })
-        .catch(()=>{
+        localStorage.setItem("address", localLocation);
+      })
+      .catch(() => {
         button.innerText = defaultLocation;
 
-        localStorage.setItem('address', localLocation);
-    });
-    }
+        localStorage.setItem("address", localLocation);
+      });
+  };
 }
 
-export { navbar, cart, setLocation, inflateProfile};
+export { navbar, cart, setLocation, inflateProfile };
