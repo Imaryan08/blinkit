@@ -1,4 +1,4 @@
-const mobile = localStorage.getItem('mobile');
+const mobile = localStorage.getItem('mobile')||"9399667720";
 document.querySelector('#mobile').innerHTML = mobile;
 
 let walletAmt = Number(localStorage.getItem("inputForAmt")) || 0;
@@ -34,10 +34,11 @@ document.querySelector(".addAmtBtn").addEventListener("click", (event) => {
 
 function logout() {
   let isLoggedIn = localStorage.getItem('isLoggedIn');
-  isLoggedIn = false;
+  isLoggedIn = false; 
   localStorage.setItem('isLoggedIn', isLoggedIn);
   window.location.href = "index.html";
 }
+
 
 
 let foot = document.querySelector('.footer');
