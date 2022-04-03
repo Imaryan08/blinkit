@@ -30,8 +30,14 @@
 }
 
 #main-order-info img{
-    margin-top: -120px;
+    /* margin-top: -120px; */
+    width: 100% !important;
+    height: 300px;
 }   
+
+#main-order-info button {
+    width: 150px;
+}
 
 #start-shopping{
     background-color: green;

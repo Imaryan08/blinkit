@@ -20,7 +20,7 @@ function navbar() {
             <div class="nav__login">Profile</div>
 
 
-            <div id="container">
+      <div id="container">
         <div class="bold">my account</div>
         <div class="light" id="mobile" onclick="mobile()">num</div>
         <div class="light" onclick="order()">my orders</div>
@@ -36,7 +36,7 @@ function navbar() {
                 <div class="light" style="font-size: 15px;">scan the qr code and <br> download blinkit app</div>
             </div>
         </div>
-    </div>
+      </div>
 
 
 
