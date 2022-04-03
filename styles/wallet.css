@@ -12,6 +12,18 @@
     justify-content: space-evenly;
     align-items: center;
 }
+#money-input, #id-input{
+    height: 30px;
+    width: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    border: 2px solid rgb(114, 105, 105);
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+}
+#money-add-btn, #submit-btn{
+    font-size: 17px;
+    padding: 3px;
+}
 
 .addMoneyDiv{
     display: block;
