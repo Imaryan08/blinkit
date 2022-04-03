@@ -483,7 +483,7 @@ let singUPData = async ()=>
         }
         register_data = JSON.stringify(register_data);
         // console.log(register_data)
-        let requst = await fetch("http://localhost:5000/register",{
+        let requst = await fetch("http://blinkit-auth.herokuapp.com/register",{
             method:"POST",
             body:register_data,
             headers:{
@@ -531,7 +531,7 @@ let loginData = async ()=>
     let login = JSON.stringify(loginUser);
 
     let request =  await fetch(
-        "http://localhost:5000/login",
+        "http://blinkit-auth.herokuapp.com/login",
         {
         method:"POST",
         body:login,
@@ -578,7 +578,7 @@ let loginData = async ()=>
 document.querySelector("#login-user").addEventListener("click",async(event)=>{
     // event.preventDefault();
     login_page = await loginData();
-    console.log(login_page,'fasdkljflksdjafj')
+    // console.log(login_page,'fasdkljflksdjafj')
     if(login_page)
     {
         document.querySelector(".nav__profile").style.display="none"
