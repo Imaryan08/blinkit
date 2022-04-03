@@ -2,21 +2,23 @@
     /* border: 2px solid black; */
     margin: auto;
     width: 95%;
-    margin-top: 30px;
+    margin-top: 16px;
     /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.1) 0px 2px 16px 0px; */
 }
 
 #order-info{
     width: 80%;
     margin: auto;
-    height: 600px;
+    height: 100%;
+    padding: 20px 0;
     display: grid;
     grid-template-columns: 270px auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: -50px;
 }
 
 #side-info{
-    height: 70%;
+    height: 80%;
     border-right: 1px solid rgb(218, 213, 213);
     display: flex;
     flex-direction: column;
