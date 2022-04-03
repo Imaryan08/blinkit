@@ -185,7 +185,11 @@
 
   let isLoggedIn = localStorage.getItem("isLoggedIn") || false;
 
+
+  import { mobileandWallet } from './scripts/mobileWallet.js';
+
   window.onload = function () {
+    mobileandWallet();
     if (isLoggedIn == "true") {
       document.querySelector(".nav__profile").style.display = "none"; // login btn
       document.querySelector(".nav__login").style.display = "block"; // profile btn
@@ -204,3 +208,6 @@ document.querySelector("main").addEventListener("click",()=>{
     document.body.style.background = "rgba(256, 256, 256, 1)";
 })
 </script>
+
+
+<script src="/scripts/newProfile.js"></script>

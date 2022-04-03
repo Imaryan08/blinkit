@@ -108,8 +108,9 @@
   inflateProfile();
 
   let isLoggedIn = localStorage.getItem("isLoggedIn") || false;
-
-window.onload = function () {
+  import { mobileandWallet } from './scripts/mobileWallet.js';
+  window.onload = function () {
+  mobileandWallet();
   if (isLoggedIn == "true") {
     document.querySelector(".nav__profile").style.display = "none"; // login btn
     document.querySelector(".nav__login").style.display = "block"; // profile btn
@@ -131,3 +132,4 @@ document.querySelector("main").addEventListener("click",()=>{
 
 <script src="/scripts/cleaning.js" type="module"></script>
 <script src="/components/brandlinks.js"></script>
+<script src="/scripts/newProfile.js"></script>
