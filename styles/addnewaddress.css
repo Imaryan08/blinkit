@@ -54,7 +54,7 @@ body {
 }
 #radio {
     display: flex;
-    margin:-6% 6.5% 2%;
+    margin:-6% 7% 2%;
 }
 #radio input[name="address-type"] {
     accent-color: green;
