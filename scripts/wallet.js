@@ -45,3 +45,5 @@ let foot = document.querySelector('.footer');
     import footer from '/components/footer.js';
 
     foot.innerHTML = footer();
+
+    
