@@ -38,3 +38,10 @@ function logout() {
   localStorage.setItem('isLoggedIn', isLoggedIn);
   window.location.href = "index.html";
 }
+
+
+let foot = document.querySelector('.footer');
+
+    import footer from '/components/footer.js';
+
+    foot.innerHTML = footer();
