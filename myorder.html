@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
-    <!-- <link rel="stylesheet" href="styles/cart.css"> -->
+    <link rel="stylesheet" href="styles/cart.css">
     <link data-react-helmet="true" rel="icon" href="https://blinkit.com/images/faviconChange.ico" type="image/x-icon">
 </head>
 <body>
@@ -54,7 +54,7 @@
             
             <div id="main-order-info">
                 <div>
-                    <center><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=400/assets/ui/empty_states/emp_empty_order_history.png" /></center>
+                    <center ><img style="width: 40%;height: 40%;margin-top:10px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=400/assets/ui/empty_states/emp_empty_order_history.png" /></center>
                     <center id="head-1">you have no past orders</center>
                     <center id="head-2">let's get you started</center>
                     <center><button id="start-shopping">Start Shopping</button></center>
@@ -86,3 +86,13 @@ import footer from '/components/footer.js';
 
 foot.innerHTML = footer();
 </script>
+<script type="module">
+    import {navbar, cart, setLocation,inflateProfile} from './components/navbar.js';
+    import { createSlideout, cartBuilder } from './scripts/cart.js';
+
+    document.getElementById('nav').innerHTML = navbar();
+    document.getElementById('cart').innerHTML = cart();
+    const slideout = createSlideout();
+    setLocation();
+</script>
+
