@@ -16,7 +16,8 @@
     right: 4.5%;
     opacity: 15;
     background-color: rgba(0, 0, 0, 0.8);
-    color:rgba(255, 255, 255,2)
+    color:rgba(255, 255, 255,2);
+    display: none;
 }
 
 .bold {
