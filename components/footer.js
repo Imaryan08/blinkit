@@ -205,8 +205,8 @@ let footer = () => {
         </div>
         <div class="col-4 download">
             <ul>
-                <a href=""><li><img src="https://blinkit.com/images/home/google-play_1x-0c7086a.png" alt=""></li></a>
-                <a href=""><li><img src="https://blinkit.com/images/home/app-store_1x-cbeb7ea.png" alt=""></li></a>
+                <a href=""><li><img src="https://blinkit.com/images/home/google-play_1x-9335bb6.png" alt=""></li></a>
+                <a href=""><li><img src="https://blinkit.com/images/home/app-store_1x-b88bb81.png" alt=""></li></a>
             </ul>
         </div>
     </div>
