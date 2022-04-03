@@ -149,5 +149,19 @@ foot.innerHTML = footer();
     document.getElementById('cart').innerHTML = cart();
     const slideout = createSlideout();
     setLocation();
+
+    var isLoggedIn = localStorage.getItem("isLoggedIn") || false;
+    window.onload = function(){ 
+    if(isLoggedIn == 'true')
+    {   
+        document.querySelector(".nav__profile").style.display="none"        // login btn
+        document.querySelector(".nav__login").style.display="block"         // profile btn
+        document.querySelector(".container-login100").style.display = "none" 
+
+    }else{
+        document.querySelector(".nav__profile").style.display="block"
+        document.querySelector(".nav__login").style.display="none"
+    }
+}
 </script>
 

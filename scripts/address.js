@@ -1,4 +1,4 @@
-const mobile = localStorage.getItem("mobile");
+const mobile = localStorage.getItem("mobile") || "9399667720";
 document.querySelector("#mobile").innerHTML = mobile;
 var modal = document.getElementById("container");
 var btn = document.getElementById("add-adress");
