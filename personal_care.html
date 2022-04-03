@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/newProfile.css"> 
     <link data-react-helmet="true" rel="icon" href="https://blinkit.com/images/faviconChange.ico" type="image/x-icon">
 </head>
 <body>
@@ -100,6 +101,14 @@ window.onload = function () {
     document.querySelector(".nav__login").style.display = "none";
   }
 };
+document.querySelector(".nav__login").addEventListener("click",()=>{
+    document.querySelector("#container").style.display="block"
+    document.body.style.background = "rgba(33, 32, 32, 0.3)";
+})
+document.querySelector("main").addEventListener("click",()=>{
+    document.querySelector("#container").style.display="none"
+    document.body.style.background = "rgba(256, 256, 256, 1)";
+})
 </script>
 
 <script src="/scripts/personal_care.js" type="module"></script> 

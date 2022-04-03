@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buy atta, rice & dal online</title>
+    <link rel="stylesheet" href="styles/newProfile.css"> 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -192,7 +193,16 @@
       document.querySelector(".nav__profile").style.display = "block";
       document.querySelector(".nav__login").style.display = "none";
     }
+    
   };
+  document.querySelector(".nav__login").addEventListener("click",()=>{
+    document.querySelector("#container").style.display="block"
+    document.body.style.background = "rgba(33, 32, 32, 0.3)";
+})
+document.querySelector("main").addEventListener("click",()=>{
+    document.querySelector("#container").style.display="none"
+    document.body.style.background = "rgba(256, 256, 256, 1)";
+})
 </script>
 
 

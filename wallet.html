@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/myorder.css">
     <link rel="stylesheet" href="./styles/wallet.css">
 
-
+    <link rel="stylesheet" href="styles/newProfile.css"> 
     <title>Everything delivered in 10 minutes | blinkit</title>
     <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -117,6 +117,14 @@ window.onload = function(){
         document.querySelector(".nav__login").style.display="none"
     }
 }
+document.querySelector(".nav__login").addEventListener("click",()=>{
+    document.querySelector("#container").style.display="block"
+    document.body.style.background = "rgba(33, 32, 32, 0.3)";
+})
+document.querySelector("main").addEventListener("click",()=>{
+    document.querySelector("#container").style.display="none"
+    document.body.style.background = "rgba(256, 256, 256, 1)";
+})
 </script>
 
 
