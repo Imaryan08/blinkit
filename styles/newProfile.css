@@ -7,6 +7,12 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding-top: 0.3%;
     border-radius: 0 0 7px 7px;
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    right: 13%;
+    display: none;
+    opacity: 15;
 }
 
 .bold {
