@@ -19,6 +19,7 @@ function navbar() {
             <div class="nav__profile">Login</div>
             <div class="nav__login">Profile</div>
 
+
       <div id="container">
         <div class="bold">my account</div>
         <div class="light" id="mobile" onclick="mobile()">num</div>
@@ -36,6 +37,7 @@ function navbar() {
             </div>
         </div>
       </div>
+
 
 
             <div id="btn-toggle-cart">

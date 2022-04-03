@@ -591,7 +591,10 @@ document.querySelector("#login-user").addEventListener("click",async(event)=>{
 
 isLoggedIn = localStorage.getItem("isLoggedIn") || false;
 
+import { mobileandWallet } from './scripts/mobileWallet.js';
+
 window.onload = function(){ 
+    mobileandWallet();
     if(isLoggedIn == 'true')
     {   
         document.querySelector(".nav__profile").style.display="none"        // login btn
@@ -618,3 +621,6 @@ document.querySelector(".main-body-container").addEventListener("click",()=>{
 
 <script src="/scripts/homepage.js" type="module"></script>
 <script type="module" src="/components/brandlinks.js"></script>
+
+<script src="./scripts/newProfile.js"></script>
+
