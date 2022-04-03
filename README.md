@@ -20,6 +20,7 @@ Javascript, HTML, CSS
 <a href="https://github.com/dmehra2102">Deepanshu mehra</a>
 <a href="https://github.com/SamSumit007">Sumit Thakur</a>
 <a href="https://github.com/VikashKumarNokha">Vikash Kumar</a>
+<a href="https://github.com/rupamShaw1998">Rupam Shaw</a>
 
 ## Screenshots
 
