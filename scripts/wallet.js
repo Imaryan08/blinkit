@@ -34,10 +34,11 @@ document.querySelector(".addAmtBtn").addEventListener("click", (event) => {
 
 function logout() {
   let isLoggedIn = localStorage.getItem('isLoggedIn');
-  isLoggedIn = false;
+  isLoggedIn = false; 
   localStorage.setItem('isLoggedIn', isLoggedIn);
   window.location.href = "index.html";
 }
+
 
 
 let foot = document.querySelector('.footer');
