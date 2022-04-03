@@ -1,5 +1,4 @@
-// wallet();
-// mobile();
+
 function order() {
     window.location.href = "myorder.html";
 }
@@ -23,12 +22,12 @@ function faq() {
     window.location.href = "https://blinkit.com/faq";
 }
 
-function mobileandWallet(){
-    let mobile = localStorage.getItem('mobile');
-    document.querySelector('#mobile').innerHTML = mobile;
+// function mobileandWallet(){
+//     let mobile = localStorage.getItem('mobile');
+//     document.querySelector('#mobile').innerHTML = mobile;
 
-    let walletAmount = localStorage.getItem('inputForAmt');
-    document.querySelector('.walletAmount').innerHTML = '₹' + walletAmount;
-}
+//     let walletAmount = localStorage.getItem('inputForAmt');
+//     document.querySelector('.walletAmount').innerHTML = '₹' + walletAmount;
+// }
 
-export{mobileandWallet};
+// export{mobileandWallet};
