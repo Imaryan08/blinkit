@@ -48,8 +48,13 @@ if (!cart) {
 }
 
 function refreshCartCount(cart) {
-  let cartCount = document.getElementById("cart-count");
-  cartCount.textContent = " Cart Count : " + cart.length;
+  let cartCount = document.querySelector(".nav-cart-count") || [];
+  
+  let cartProductLen = JSON.parse(localStorage.getItem('cart'));
+  cartProductLen = cartProductLen.length;
+  console.log('cart length:', cartProductLen);
+
+  cartCount.innerHTML =  cartProductLen;
 }
 
 //low to high  filter
@@ -165,6 +170,8 @@ function renderproduct(data) {
     var Button = document.createElement("button");
     Button.setAttribute("id", "duttom");
     Button.textContent = "Add to Cart";
+
+    //  add to cart button event listener 
     Button.addEventListener('click', () => {
 
       Button.style.background="red";
@@ -186,7 +193,7 @@ function renderproduct(data) {
   });
 
   function addToCart(prod) {
-    let cart = JSON.parse(localStorage.getItem("cart"));
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     cart.push(prod);
 
