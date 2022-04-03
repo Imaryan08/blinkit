@@ -26,7 +26,7 @@ for (let i = 0; i < bakery.length; i++) {
 let getproduct = async (d) => {
   try {
     let P_data = await fetch(
-      `https://littlebluepenguin.s3.ap-south-1.amazonaws.com/data/pharmaAndWellness/${d}`
+      `https://blinkit-backend.herokuapp.com/personal_care`
     );
     let data = await P_data.json();
     renderproduct(data);
