@@ -120,9 +120,12 @@ cartItems.forEach((item, index) => {
       localStorage.setItem('checkoutItems', JSON.stringify(checkoutItems));
     } else {
       p.innerText = n;
-      let cost = Number(h2.innerText);
+      let cost = h2.innerText;
+      cost = cost.split('');
+      cost.shift();
+      cost = +cost.join('');
       cost -=  Number(item.price);
-      h2.innerText = cost;
+      h2.innerText = rupeeSymbol+(Number(cost));
 
       checkoutItems[index].count -= 1;
 
