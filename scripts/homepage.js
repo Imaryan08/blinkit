@@ -476,6 +476,7 @@ var pharama=[
         price: "₹68"
     },
 ]
+
 let display1= document.querySelector(".chemist");
 product1(pharama,display1)
 //sliding functionality here
@@ -918,7 +919,7 @@ var dairyprod=[
 let display3= document.querySelector(".dairy");
 product3(dairyprod,display3)
 
-
+// importing footer
 let foot = document.querySelector('.footer');
 
     import footer from '/components/footer.js';
