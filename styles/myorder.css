@@ -1,0 +1,119 @@
+#main_div{
+    /* border: 2px solid black; */
+    margin: auto;
+    width: 95%;
+    margin-top: 30px;
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.1) 0px 2px 16px 0px; */
+}
+
+#order-info{
+    width: 80%;
+    margin: auto;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 270px auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#side-info{
+    height: 70%;
+    border-right: 1px solid rgb(218, 213, 213);
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(223, 217, 217);
+}
+
+#main-order-info{
+    height: 100%;
+}
+
+#main-order-info img{
+    margin-top: -120px;
+}   
+
+#start-shopping{
+    background-color: green;
+    height: 32px;
+    width: 105px;
+    border-radius: 3px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#head-1{
+    margin-top: -10px;
+    font-size: 23px;
+}
+#head-2{
+    margin-top: 2px;
+    color: grey;
+    font-size: 18px;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+#wallet-info > div{
+    margin-top: 20px;
+    background-color: rgb(242, 248, 248);
+    height: 120px;
+}
+#add-new-address{
+    border: 1px solid rgb(158, 158, 158);
+    width: 85%;
+    margin: auto;
+    font-size: 19px;
+    margin-top: 20px;
+    padding: 15px;
+}
+#saved-address{
+    border: 1px solid rgb(158, 158, 158);
+    border-top: none;
+    width: 85%;
+    margin: auto;
+    font-size: 19px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+#address-name{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+}
+#addr-info{
+    padding-right: 2px;
+    margin-left: 30px;
+}
+#remove-edit{
+    padding-left: 15px;
+    line-height: 21px;
+}
+
+#order-pic {
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    from {background: url('https://media.istockphoto.com/photos/shopping-basket-full-of-variety-of-grocery-products-food-and-drink-on-picture-id1319625327?b=1&k=20&m=1319625327&s=170667a&w=0&h=FRRQT4yPOTumTJkCOmthHBcRvzoGvqw7drlSlYZhUNo=');}
+    to {background: url('https://img.choice.com.au/-/media/1418ee8b9e374505b04139caf5324d0e.ashx?w=660&jq=80%20660w');}
+  }
+
+  #add-new-address-form{
+      border: 2px solid black;
+      width: 50%;
+      margin: auto;
+      height: 500px;
+  }
+.w3-modal{
+    /* display: none; */
+    position: fixed;
+    z-index: 1;
+    /* height: 100%;
+    width: 100%; */
+    overflow: auto;
+    color: white;
+    background-color: black;
+}

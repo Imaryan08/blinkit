@@ -17,7 +17,7 @@
     <!-- start write by Abhishek -->
 
     <!-- ===============================================================================================-->
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!-- <link rel="icon" type="image/png" href="images/icons/favicon.ico" /> -->
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
@@ -588,14 +588,18 @@ document.querySelector("#login-user").addEventListener("click",async(event)=>{
     }
 })
 
-isLoggedIn = localStorage.getItem("isLoggedIn") || false
-window.onload = function(){ 
-    if(isLoggedIn)
-    {
-        document.querySelector(".nav__profile").style.display="none"
-        document.querySelector(".nav__login").style.display="block"
-        document.querySelector(".container-login100").style.display = "none"
+isLoggedIn = localStorage.getItem("isLoggedIn") || false;
 
+window.onload = function(){ 
+    if(isLoggedIn == 'true')
+    {   
+        document.querySelector(".nav__profile").style.display="none"        // login btn
+        document.querySelector(".nav__login").style.display="block"         // profile btn
+        document.querySelector(".container-login100").style.display = "none" 
+
+    }else{
+        document.querySelector(".nav__profile").style.display="block"
+        document.querySelector(".nav__login").style.display="none"
     }
 }
 

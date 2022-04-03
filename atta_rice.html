@@ -1,173 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buy atta, rice & dal online</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/product.css">
-    <link rel="stylesheet" href="./styles/footer.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ea67fa5627.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/product.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
-    <link rel="stylesheet" href="styles/cart.css">
-    <link data-react-helmet="true" rel="icon" href="https://blinkit.com/images/faviconChange.ico" type="image/x-icon">
-</head> 
-<body>
-    <nav id="nav">
+    <link rel="stylesheet" href="styles/cart.css" />
+    <link
+      data-react-helmet="true"
+      rel="icon"
+      href="https://blinkit.com/images/faviconChange.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav id="nav"></nav>
 
-    </nav>
-
-    <div id="cart">
-    </div>
+    <div id="cart"></div>
 
     <main id="panel" class="panel">
-
-    <div class="subMenuParent container-fluid">
+      <div class="subMenuParent container-fluid">
         <div class="nav"></div>
-        
+
         <div class="subMenu container">
-            <a href="./atta_rice.html" class="col">atta,rice & dal</a>
-            <a href="./veg_fruits.html" class="col">vegetables & fruits</a>
-            <a href="./cleaning.html" class="col">cleaning & essentials</a>
-            <a href="./breakfast.html" class="col">breakfast & instant food</a>
-            <a href="./bakery.html" class="col">bakery & biscuits</a>
-            <a href="./personal_care.html" class="col">Personal care</a>
-            <a href="./pharma_wellness.html" class="col">Pharma & Wellness</a>
-            <a href="" class="col">More <i class='fas fa-angle-down'></i></a>
+          <a href="./atta_rice.html" class="col">atta,rice & dal</a>
+          <a href="./veg_fruits.html" class="col">vegetables & fruits</a>
+          <a href="./cleaning.html" class="col">cleaning & essentials</a>
+          <a href="./breakfast.html" class="col">breakfast & instant food</a>
+          <a href="./bakery.html" class="col">bakery & biscuits</a>
+          <a href="./personal_care.html" class="col">Personal care</a>
+          <a href="./pharma_wellness.html" class="col">Pharma & Wellness</a>
+          <a href="" class="col">More <i class="fas fa-angle-down"></i></a>
         </div>
-    </div>
-    <!-- cart count  -->
-        <div id="cart-count" style="text-align: center;  visibility: hidden;"></div>
+      </div>
+      <!-- cart count  -->
+      <div id="cart-count" style="text-align: center; visibility: hidden"></div>
 
-    <div class="container">
+      <div class="container">
         <div class="row products">
-            <div class="col-3 productCat">
-                <div id= "dals.json" class="row background-effect productCatList">Besan, Sooji & Maida</div>
-                <div id= "flour.json" class="row productCatList">Other Flours</div>
-                <div id= "rice.json" class="row productCatList">Rice</div>
-                <div id= "all.json" class="row productCatList">Atta, Rice & Dal</div>
-                <div id= "poha.json" class="row productCatList">Poha Dailya & Others Grains</div>
-                <div id= "pulses.json" class="row productCatList">Toor, Urad & Chana</div>
-                <div id= "atta.json" class="row productCatList">Atta</div>
-                <div id= "dals.json" class="row productCatList">Moong & Massor</div>
-                <div id= "pulses.json" class="row productCatList">Rajma, Chhole & Others</div>
+          <div class="col-3 productCat">
+            <div id="dals.json" class="row background-effect productCatList">
+              Besan, Sooji & Maida
             </div>
-            
-            <div class="col-9">
-                <div style="display: flex; justify-content: space-between;">
-                    <div>Atta, Rice & Dal</div>  
-                  <div id="sort-filter">
-                     <select name="sort" id="sortButton">
-                       <option value="" selected>SORT</option>
-                       <option value="asc">Low to High</option>
-                       <option value="desc">High to Low</option>
-                     </select>
-                  </div>
-                 </div>
-                 <div class="row" id="box" style="border:1px solid #eee; padding: 10px 5px">
-                     
-                 </div>
+            <div id="flour.json" class="row productCatList">Other Flours</div>
+            <div id="rice.json" class="row productCatList">Rice</div>
+            <div id="all.json" class="row productCatList">Atta, Rice & Dal</div>
+            <div id="poha.json" class="row productCatList">
+              Poha Dailya & Others Grains
             </div>
-        </div>
-    </div>
+            <div id="pulses.json" class="row productCatList">
+              Toor, Urad & Chana
+            </div>
+            <div id="atta.json" class="row productCatList">Atta</div>
+            <div id="dals.json" class="row productCatList">Moong & Massor</div>
+            <div id="pulses.json" class="row productCatList">
+              Rajma, Chhole & Others
+            </div>
+          </div>
 
-    <div class="footer"></div>
-</main>
-        
-    </body>
+          <div class="col-9">
+            <div style="display: flex; justify-content: space-between">
+              <div>Atta, Rice & Dal</div>
+              <div id="sort-filter">
+                <select name="sort" id="sortButton">
+                  <option value="" selected>SORT</option>
+                  <option value="asc">Low to High</option>
+                  <option value="desc">High to Low</option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="row"
+              id="box"
+              style="border: 1px solid #eee; padding: 10px 5px"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer"></div>
+    </main>
+  </body>
 </html>
 
 <script type="module">
+  import {
+    navbar,
+    cart,
+    setLocation,
+    inflateProfile,
+  } from "./components/navbar.js";
+  import { createSlideout, cartBuilder } from "./scripts/cart.js";
+  // import{isLog} from './index.html'
 
-    import {navbar, cart, setLocation, inflateProfile} from './components/navbar.js';
-    import { createSlideout, cartBuilder } from './scripts/cart.js';
-    // import{isLog} from './index.html'
-
-    document.getElementById('nav').innerHTML = navbar();
-    document.getElementById('cart').innerHTML = cart();
-    const slideout = createSlideout();
-    setLocation();
-    inflateProfile();
-    // profileHidden()
-    // isLog()
-
+  document.getElementById("nav").innerHTML = navbar();
+  document.getElementById("cart").innerHTML = cart();
+  const slideout = createSlideout();
+  setLocation();
+  inflateProfile();
+  // profileHidden()
+  // isLog()
 </script>
 
-<script src="/scripts/atta_rice.js" type="module"></script> 
-<script type="module" src="/components/brandlinks.js"></script> 
-
+<script src="/scripts/atta_rice.js" type="module"></script>
+<script type="module" src="/components/brandlinks.js"></script>
 
 <!-- Search functionality  -->
 <script type="module">
-    var Ffech = document.getElementById("searchbar");
-        Ffech.addEventListener("input", () => {
-                Appendmovies(main, 1000);
-            });
+  var Ffech = document.getElementById("searchbar");
+  Ffech.addEventListener("input", () => {
+    Appendmovies(main, 1000);
+  });
 
-        let timerid;
-        let Container = document.getElementById("container");
-        async function fechmovies(){
-            try{
-                let name = document.getElementById("searchbar").value;
-              let fetchvalue = await fetch(`https://littlebluepenguin.s3.ap-south-1.amazonaws.com/data/attaRiceDall/${name}.json`);
-                let data = await fetchvalue.json();
-                   let Data = data;
-                   console.log(Data);
-                   return Data;
-            }
-            catch(err){
-              console.log(`err ${err}`);
-            }
-        }
-    
-        async function main(){
-             let X = await fechmovies();
-             if(X==undefined){
-                 return false;
-             }
-             Container.textContent =null;
-             console.log(X);
-             X.forEach(function(e1){
-                let Div =document.createElement("div");
-                 Div.setAttribute("id","box");
-                 let Img = document.createElement("img");
-                 Img.setAttribute("src",e1.Poster);
-                 Img.onclick= function(){
-                    //  Details(e1);
-                 } 
-                 Div.append(Img);
-                 Container.append(Div);
-             });
-        }
-         
-         function Appendmovies(fun, delay){
-              if(timerid){
-                clearTimeout(timerid);
-              }
-              timerid = 
-              setTimeout(function(){
-                  fun();
-              },delay);
-         }
-
-
-var isLoggedIn = localStorage.getItem("isLoggedIn") || false
-
-window.onload = function(){ 
-    console.log(isLoggedIn)
-    if(isLoggedIn)
-    {
-        document.querySelector(".nav__profile").style.display="none"
-        document.querySelector(".nav__login").style.display="block"
-
-    }else{
-        document.querySelector(".nav__profile").style.display="block"
-        document.querySelector(".nav__login").style.display="none"
+  let timerid;
+  let Container = document.getElementById("container");
+  async function fechmovies() {
+    try {
+      let name = document.getElementById("searchbar").value;
+      let fetchvalue = await fetch(
+        `https://littlebluepenguin.s3.ap-south-1.amazonaws.com/data/attaRiceDall/${name}.json`
+      );
+      let data = await fetchvalue.json();
+      let Data = data;
+      console.log(Data);
+      return Data;
+    } catch (err) {
+      console.log(`err ${err}`);
     }
-}
-      
-    </script>
+  }
 
+  async function main() {
+    let X = await fechmovies();
+    if (X == undefined) {
+      return false;
+    }
+    Container.textContent = null;
+    console.log(X);
+    X.forEach(function (e1) {
+      let Div = document.createElement("div");
+      Div.setAttribute("id", "box");
+      let Img = document.createElement("img");
+      Img.setAttribute("src", e1.Poster);
+      Img.onclick = function () {
+        //  Details(e1);
+      };
+      Div.append(Img);
+      Container.append(Div);
+    });
+  }
+
+  function Appendmovies(fun, delay) {
+    if (timerid) {
+      clearTimeout(timerid);
+    }
+    timerid = setTimeout(function () {
+      fun();
+    }, delay);
+  }
+
+  let isLoggedIn = localStorage.getItem("isLoggedIn") || false;
+
+  window.onload = function () {
+    if (isLoggedIn == "true") {
+      document.querySelector(".nav__profile").style.display = "none"; // login btn
+      document.querySelector(".nav__login").style.display = "block"; // profile btn
+    } else {
+      document.querySelector(".nav__profile").style.display = "block";
+      document.querySelector(".nav__login").style.display = "none";
+    }
+  };
+</script>

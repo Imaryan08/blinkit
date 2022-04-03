@@ -12,7 +12,7 @@ document.querySelector('#btn-home').addEventListener('click', () => {
 });
 
 document.querySelector('#btn-status').addEventListener('click', () => {
-    window.location = 'order.html';
+    window.location = 'myorder.html';
 });
 
 const order_placed = JSON.parse(localStorage.getItem('checkoutItems'));

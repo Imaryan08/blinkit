@@ -106,19 +106,17 @@
   setLocation();
   inflateProfile();
 
-  var isLoggedIn = localStorage.getItem("isLoggedIn") || false
+  let isLoggedIn = localStorage.getItem("isLoggedIn") || false;
 
-  window.onload = function () {
-    console.log(isLoggedIn)
-    if (isLoggedIn) {
-      document.querySelector(".nav__profile").style.display = "none"
-      document.querySelector(".nav__login").style.display = "block"
-
-    } else {
-      document.querySelector(".nav__profile").style.display="block"
-        document.querySelector(".nav__login").style.display="none"
-    }
+window.onload = function () {
+  if (isLoggedIn == "true") {
+    document.querySelector(".nav__profile").style.display = "none"; // login btn
+    document.querySelector(".nav__login").style.display = "block"; // profile btn
+  } else {
+    document.querySelector(".nav__profile").style.display = "block";
+    document.querySelector(".nav__login").style.display = "none";
   }
+};
 
 </script>
 
