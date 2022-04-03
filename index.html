@@ -482,7 +482,7 @@ let singUPData = async ()=>
         }
         register_data = JSON.stringify(register_data);
         // console.log(register_data)
-        let requst = await fetch("http://blinkit-auth.herokuapp.com/register",{
+        let requst = await fetch("https://blinkit-auth.herokuapp.com/register",{
             method:"POST",
             body:register_data,
             headers:{
@@ -530,7 +530,7 @@ let loginData = async ()=>
     let login = JSON.stringify(loginUser);
 
     let request =  await fetch(
-        "http://blinkit-auth.herokuapp.com/login",
+        "https://blinkit-auth.herokuapp.com/login",
         {
         method:"POST",
         body:login,
