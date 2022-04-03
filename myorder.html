@@ -5,9 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/myorder.css">
-    <title>Document</title>
+    <title>Everything delivered in 10 minutes | blinkit</title>
+    <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <!-- <link rel="stylesheet" href="styles/cart.css"> -->
+    <link data-react-helmet="true" rel="icon" href="https://blinkit.com/images/faviconChange.ico" type="image/x-icon">
 </head>
 <body>
+    
+    <nav id="nav">
+
+    </nav>
+
+    <div id="cart">
+    </div>
+
+    <main id="panel" class="panel">
+
     <div id="main_div">
         <div id="order-info">
             <div id="side-info">
@@ -44,7 +61,9 @@
                 </div>
             </div>
         </div>
+        <div class="footer"></div>
     </div>
+</main>
 </body>
 </html>
 <script src="https://kit.fontawesome.com/fb2bac42ef.js" crossorigin="anonymous"></script>
@@ -58,4 +77,12 @@
     localStorage.setItem('isLoggedIn', isLoggedIn);
     window.location.href = "index.html";
 }
+</script>
+<script type="module" src="/components/brandlinks.js"></script>
+<script type="module">
+    let foot = document.querySelector('.footer');
+
+import footer from '/components/footer.js';
+
+foot.innerHTML = footer();
 </script>
