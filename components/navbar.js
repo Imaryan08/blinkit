@@ -3,7 +3,7 @@ function navbar() {
         <div class="nav__left"> 
             <div id="logo">
                 <a href="/index.html">
-                    <img src="https://blinkit.com/images/header/blinkit-logo-header-05a0b5f.png" alt="blinkit (formerly Grofers)" />
+                    <img src="https://blinkit.com/images/header/blinkit-logo-05a0b5f.png" alt="blinkit (formerly Grofers)" />
                 </a>
             </div>
             <div class="location-info">
@@ -77,7 +77,7 @@ function cart() {
         </div>
     `;
 }
-
+ 
 function inflateProfile() {
   const profile = `
     <div class="dropdown">

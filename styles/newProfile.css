@@ -1,65 +1,66 @@
-
-
-
 #container {
-    /* border: 2px solid red; */
-    margin: auto;
-    width: 22%;
-    /* height: 398px; */
-    font-family: lighter, sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding-top: 0.3%;
-    border-radius: 0 0 7px 7px;
-    position: absolute;
-    z-index: 2;
-    top: 9.5%;
-    right: 4.5%;
-    opacity: 15;
-    background-color: rgba(0, 0, 0, 0.8);
-    color:rgba(255, 255, 255,2);
-    display: none;
+  margin: auto;
+  width: 22%;
+  font-family: lighter, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-top: 0.3%;
+  border-radius: 0 0 7px 7px;
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  right: 4.5%;
+  opacity: 15;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 2);
+  display: none;
 }
 
 .bold {
-    font-size: 17px;
-    font-weight: bold;
-    margin: 7% 5% 1%;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 2% 5% 0%;
+  text-shadow: #fc0 1px 0 10px;
 }
 
 .light {
-    font-size: 16px;
-  
-    font-weight: lighter;
-    margin: 1% 5% 8%;
-    cursor: pointer;
-   
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0% 5% 4%;
+  cursor: pointer;
+  text-shadow: #fc0 1px 0 10px;
 }
 
 .light span {
-    margin-left: 59%;
+  margin-left: 59%;
 }
-
+.walletAmount {
+  color: #ffffff;
+  background: #232323;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+  color: #ffffff;
+  background: #232323;
+}
 #scan {
-    display: flex;
-    background-color: #f6fbff;
-    border-radius: 0 0 7px 7px;
-    color: black;
+  display: flex;
+  background-color: #f6fbff;
+  border-radius: 0 0 7px 7px;
+  color: black;
 }
 
-#scan>div {
-    /* border: 1px solid green; */
-    width: 65%;
-    margin: -2%;
-    margin-left: 1%;
+#scan > div {
+  width: 65%;
+  margin: -2%;
+  margin-left: 1%;
 }
 
 #scan img {
-    width: 95px;
-    height: 80px;
-    margin: 5% 3% 5% 2.5%;
+  width: 95px;
+  height: 80px;
+  margin: 5% 3% 5% 2.5%;
 }
 
 #blue {
-    color: #1991ff;
-    margin-top: -2%;
+  color: #1991ff;
+  margin-top: -2%;
 }

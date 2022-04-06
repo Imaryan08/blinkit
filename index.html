@@ -582,7 +582,7 @@ document.querySelector("#login-user").addEventListener("click",async(event)=>{
     if(login_page)
     {
         document.querySelector(".nav__profile").style.display="none"
-        isLoggedIn = true
+        isLoggedIn = true;
         localStorage.setItem("isLoggedIn",isLoggedIn)
         document.querySelector(".nav__login").style.display="block"
         document.querySelector(".container-login100").style.display = "none"
