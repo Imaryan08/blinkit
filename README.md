@@ -12,7 +12,7 @@ Javascript, HTML, CSS
 
 ## Deplyement Link
 
-<a href="https://unruffled-mcnulty-573d70.netlify.app/">Netlify link</a>
+<a href="https://blinkit.netlify.app/">Netlify link</a>
 
 ## Collaborators
 
