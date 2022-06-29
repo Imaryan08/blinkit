@@ -4,11 +4,11 @@
 
 Blinkit is an Indian instant delivery service. It was founded in December 2013 and is based out of Gurgaon. Customers of the company use a mobile application to order groceries and essentials online. Blinkit's employees then secure the items from their warehouse and deliver the items to the consumer within 10 minutes.
 
-I worked on this project during unit-3 construct week at Masai School with the help of other four team members.
+I worked on this project during unit-3 and unit-4 construct week at Masai School with the help of other four team members.
 
 ## Tech stack used in this project
 
-Javascript, HTML, CSS
+Javascript, HTML, CSS,NodeJs,Express,MongoDB
 
 ## Deplyement Link
 
@@ -21,6 +21,7 @@ Javascript, HTML, CSS
 <a href="https://github.com/dmehra2102">Deepanshu mehra</a>
 <a href="https://github.com/SamSumit007">Sumit Thakur</a>
 <a href="https://github.com/VikashKumarNokha">Vikash Kumar</a>
+<a href="https://github.com/abhimeh-1824">Abhishek Mehra</a>
 
 ## Screenshots
 
